@@ -7011,7 +7011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputManager: {fileID: 8164078558231104960}
-  moveSpeed: 7.5
+  moveSpeed: 10
   rotationSpeed: 0.1
   moveDirection: {x: 0, y: 0, z: 0}
   canRotate: 1
