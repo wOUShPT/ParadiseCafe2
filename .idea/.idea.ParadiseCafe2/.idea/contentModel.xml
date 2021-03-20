@@ -3,6 +3,63 @@
   <component name="ContentModelStore">
     <e p="C:\Users\gusta\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\gusta\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ParadiseCafe2.-1251649589.00" t="ExcludeRecursive" />
+    <e p="E:\Unity Editors Path\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor" t="Include">
+      <e p="AssemblyInfo.cs" t="Include" />
+      <e p="Interface" t="Include">
+        <e p="IAssetDatabase.cs" t="Include" />
+        <e p="IEvent.cs" t="Include" />
+        <e p="IGL.cs" t="Include" />
+        <e p="IGUIUtility.cs" t="Include" />
+        <e p="IHandles.cs" t="Include" />
+        <e p="ISpriteEditorDataProvider.cs" t="Include" />
+        <e p="ITexture.cs" t="Include" />
+        <e p="IUndoSystem.cs" t="Include" />
+      </e>
+      <e p="ObjectMenuCreation" t="Include">
+        <e p="ItemCreationUtility.cs" t="Include" />
+        <e p="MenuItems.cs" t="Include" />
+      </e>
+      <e p="Obsolete" t="Include">
+        <e p="ObsoleteSupport.cs" t="Include" />
+      </e>
+      <e p="ShapeEditor" t="Include">
+        <e p="ShapeEditor.cs" t="Include" />
+        <e p="ShapeEditorRectSelection.cs" t="Include" />
+      </e>
+      <e p="SpriteEditor" t="Include">
+        <e p="SpriteEditorHandles.cs" t="Include" />
+        <e p="SpriteEditorMenu.cs" t="Include" />
+        <e p="SpriteEditorUtility.cs" t="Include" />
+        <e p="SpriteEditorWindow.cs" t="Include" />
+        <e p="SpriteRect.cs" t="Include" />
+        <e p="SpriteUtilityWindow.cs" t="Include" />
+      </e>
+      <e p="SpriteEditorModule" t="Include">
+        <e p="ISpriteEditorModule.cs" t="Include" />
+        <e p="SpriteEditorData.cs" t="Include" />
+        <e p="SpriteFrameModule" t="Include">
+          <e p="SpriteFrameModule.cs" t="Include" />
+          <e p="SpriteFrameModuleBase.cs" t="Include" />
+          <e p="SpriteFrameModuleBaseView.cs" t="Include" />
+          <e p="SpriteFrameModuleView.cs" t="Include" />
+          <e p="SpritePolygonModeModule.cs" t="Include" />
+          <e p="SpritePolygonModeModuleView.cs" t="Include" />
+        </e>
+        <e p="SpriteOutlineModule.cs" t="Include" />
+        <e p="SpritePhysicsShapeModule.cs" t="Include" />
+        <e p="SpriteSecondaryTexturesModule.cs" t="Include" />
+        <e p="TextureImporterDataProvider.cs" t="Include" />
+        <e p="TextureImporterDataProviderImplementation.cs" t="Include" />
+      </e>
+      <e p="UI" t="Include">
+        <e p="SpriteEditor" t="Include">
+          <e p="PolygonChangeShapeWindow.uxml" t="Include" />
+          <e p="SpriteEditor.uss" t="Include" />
+          <e p="SpriteFrameModuleInspector.uxml" t="Include" />
+        </e>
+      </e>
+      <e p="Unity.2D.Sprite.Editor.asmdef" t="Include" />
+    </e>
     <e p="E:\Unity Editors Path\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor" t="Include">
       <e p="EventSystem" t="Include">
         <e p="EventSystemEditor.cs" t="Include" />
@@ -171,12 +228,50 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Choice.cs" t="Include" />
+          <e p="ChoiceHighlighter.cs" t="Include" />
+          <e p="Dialogue.cs" t="Include" />
+          <e p="DialogueChoiceSelection.cs" t="Include" />
+          <e p="DialogueEvents.cs" t="Include" />
+          <e p="DialogueManager.cs" t="Include" />
+          <e p="DialogueTrigger.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
           <e p="ThirdPersonController.cs" t="Include" />
         </e>
         <e p="Settings" t="Include">
           <e p="BlitRenderPassFeature.cs" t="Include" />
           <e p="InputActions.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Cinemachine.csproj" t="IncludeRecursive" />
@@ -4052,6 +4147,7 @@
       <e p="Packages" t="ExcludeRecursive" />
       <e p="ParadiseCafe2.sln" t="IncludeFlat" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="Unity.2D.Sprite.Editor.csproj" t="IncludeRecursive" />
       <e p="Unity.CollabProxy.Editor.csproj" t="IncludeRecursive" />
       <e p="Unity.InputSystem.csproj" t="IncludeRecursive" />
       <e p="Unity.Mathematics.csproj" t="IncludeRecursive" />

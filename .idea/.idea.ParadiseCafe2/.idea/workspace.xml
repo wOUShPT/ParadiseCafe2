@@ -20,11 +20,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4c6e0d-73b5-4f46-949d-e05e640a1ad5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixelation.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pixelation.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Plane.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Plane.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Material2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Material2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/MaterialSkin.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/MaterialSkin.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Materials/Paradise_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Materials/Paradise_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Paradise.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Paradise.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Paradise_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Paradise_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixelation.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pixelation.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Unlit.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Unlit.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CharacterText 1.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CharacterText 1.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CharacterText.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CharacterText.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CharacterText.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CharacterText.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CharacterText.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CharacterText.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Low_poly.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Low_poly.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/smooth.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/smooth.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/voxel.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/voxel.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/voxel.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/voxel.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/voxel.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/voxel.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/voxel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/voxel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gustavo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gustavo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/InputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/InputActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/InputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/InputActions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +84,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Choice.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueChoiceSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoiceHighlighter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,7 +107,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ThirdPersonCameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ThirdPersonUserControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ChoiceHighlighter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Choice.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogueEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogueTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogueChoiceSelection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogueManager.cs" />
       </list>
     </option>
   </component>
@@ -107,6 +168,15 @@
       <workItem from="1615513381217" duration="1170000" />
       <workItem from="1615514877845" duration="616000" />
       <workItem from="1615546996216" duration="4233000" />
+      <workItem from="1615741957939" duration="7071000" />
+      <workItem from="1615799630024" duration="18997000" />
+      <workItem from="1615895168915" duration="6447000" />
+      <workItem from="1616005570111" duration="3421000" />
+      <workItem from="1616089442563" duration="13016000" />
+      <workItem from="1616200441482" duration="4361000" />
+      <workItem from="1616252760444" duration="799000" />
+      <workItem from="1616271229037" duration="635000" />
+      <workItem from="1616277887594" duration="2996000" />
     </task>
     <servers />
   </component>
@@ -129,5 +199,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4456" y="777" key="run.anything.popup" timestamp="1615828447400">
+      <screen x="3840" y="1074" width="1920" height="1020" />
+    </state>
+    <state x="4456" y="777" key="run.anything.popup/3840.1074.1920.1020/0.0.2560.1400@3840.1074.1920.1020" timestamp="1615828447400" />
+    <state x="4463" y="1299" width="672" height="678" key="search.everywhere.popup" timestamp="1616095785090">
+      <screen x="3840" y="1074" width="1920" height="1020" />
+    </state>
+    <state x="4463" y="1299" width="672" height="678" key="search.everywhere.popup/3840.1074.1920.1020/0.0.2560.1400@3840.1074.1920.1020" timestamp="1616095785090" />
   </component>
 </project>
