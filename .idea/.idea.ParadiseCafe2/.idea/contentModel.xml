@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\gusta\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\gusta\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ParadiseCafe2.-1251649589.00" t="ExcludeRecursive" />
+    <e p="C:\Users\gusta\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\gusta\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_ParadiseCafe2.-1251649589.00" t="ExcludeRecursive" />
     <e p="E:\Unity Editors Path\2020.2.3f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor" t="Include">
       <e p="AssemblyInfo.cs" t="Include" />
       <e p="Interface" t="Include">
@@ -225,18 +225,30 @@
       <e p="UnityEngine.UI.asmdef" t="Include" />
     </e>
     <e p="E:\Users\Gustavo\Documents\GitHub\ParadiseCafe2" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Choice.cs" t="Include" />
-          <e p="ChoiceHighlighter.cs" t="Include" />
-          <e p="Dialogue.cs" t="Include" />
-          <e p="DialogueChoiceSelection.cs" t="Include" />
-          <e p="DialogueEvents.cs" t="Include" />
-          <e p="DialogueManager.cs" t="Include" />
-          <e p="DialogueTrigger.cs" t="Include" />
+          <e p="DayNightController.cs" t="Include" />
+          <e p="Dialogue" t="Include">
+            <e p="ChoiceHighlighter.cs" t="Include" />
+            <e p="Dialogue.cs" t="Include" />
+            <e p="DialogueActions.cs" t="Include" />
+            <e p="DialogueChoiceSelection.cs" t="Include" />
+            <e p="DialogueManager.cs" t="Include" />
+            <e p="DialogueTrigger.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="DialogueInspector.cs" t="Include" />
+          </e>
           <e p="InputManager.cs" t="Include" />
+          <e p="LightingPreset.cs" t="Include" />
+          <e p="NPCStats.cs" t="Include" />
+          <e p="PlayerStats.cs" t="Include" />
           <e p="ThirdPersonController.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="HUD.cs" t="Include" />
+          </e>
         </e>
         <e p="Settings" t="Include">
           <e p="BlitRenderPassFeature.cs" t="Include" />

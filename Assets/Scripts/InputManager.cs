@@ -20,10 +20,9 @@ public class InputManager : MonoBehaviour
             _controls.Player.Movement.performed += ctx => _movementInputDirection = ctx.ReadValue<Vector2>();
             _controls.Player.Look.performed += ctx => _lookInputDirection = ctx.ReadValue<Vector2>();
             _controls.Player.Action.performed += ctx => _actionInput = ctx.ReadValue<float>();
-
-            _controls.UI.Navigate.performed += ctx => _navigationInputDirection = ctx.ReadValue<Vector2>();
-            _controls.UI.Navigate.canceled += ctx => _navigationInputDirection = Vector2.zero;
-            _controls.UI.Submit.performed += ctx => _confirmButton = ctx.ReadValue<float>();
+            _controls.Menu.Navigate.performed += ctx => _navigationInputDirection = ctx.ReadValue<Vector2>();
+            _controls.Menu.Navigate.canceled += ctx => _navigationInputDirection = Vector2.zero;
+            _controls.Menu.Confirm.performed += ctx => _confirmButton = ctx.ReadValue<float>();
         }
     }
 
