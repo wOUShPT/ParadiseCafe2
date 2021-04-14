@@ -7,6 +7,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Lightning Preset", menuName = "Scriptable Objects/Lightning Preset")]
 public class LightingPreset : ScriptableObject
 {
-    public Gradient ambientColor;
-    public Gradient directionalColor;
+    public Gradient skyColor;
 }

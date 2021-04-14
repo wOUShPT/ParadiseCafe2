@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69599aeacff77d4f86adc6187486e32, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  moneyAmount: 4800
-  drugsAmount: 2
-  hasWeapon: 0
-  wantedLevel: 1
+  moneyAmount: 8900
+  drugsAmount: 0
+  hasWeapon: 1
+  wantedLevel: 3

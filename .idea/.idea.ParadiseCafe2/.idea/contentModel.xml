@@ -229,7 +229,8 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="DayNightController.cs" t="Include" />
+          <e p="AudioManager.cs" t="Include" />
+          <e p="DayCycleController.cs" t="Include" />
           <e p="Dialogue" t="Include">
             <e p="ChoiceHighlighter.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
@@ -243,9 +244,12 @@
           </e>
           <e p="InputManager.cs" t="Include" />
           <e p="LightingPreset.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
           <e p="NPCStats.cs" t="Include" />
           <e p="PlayerStats.cs" t="Include" />
+          <e p="SettingsMenu.cs" t="Include" />
           <e p="ThirdPersonController.cs" t="Include" />
+          <e p="TimeController.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="HUD.cs" t="Include" />
           </e>
