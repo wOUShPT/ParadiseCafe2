@@ -20,39 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4c6e0d-73b5-4f46-949d-e05e640a1ad5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Paradise.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Paradise.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/CharacterText 1.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/CharacterText 1.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/CharacterText.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/CharacterText.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/CharacterText.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/CharacterText.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Grey.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Orange.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Orange.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/PP.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/PP.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/voxel.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/voxel.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/voxel.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/voxel.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/voxel.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/voxel.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/voxel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/voxel.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gustavo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gustavo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DayNightController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DayCycleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DayNightController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DayCycleController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LightingPreset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LightingPreset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Lightning Settings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Lightning Settings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/LightningDatNightPreset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/LightningDatNightPreset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Stats/PlayerStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Stats/PlayerStats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SkyBox.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/SkyBox.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Nokia SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Nokia SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMixer.mixer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMixer.mixer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample Scene/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample Scene/LightingData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample Scene/ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample Scene/ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene test.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +80,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/DayNightController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DayCycleController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pU6uQclUHI28WyBvQg2toUKpSL" />
@@ -179,6 +165,8 @@
       <workItem from="1618253773590" duration="598000" />
       <workItem from="1618317342936" duration="1256000" />
       <workItem from="1618324558140" duration="3998000" />
+      <workItem from="1618424317099" duration="597000" />
+      <workItem from="1618506613500" duration="4213000" />
     </task>
     <servers />
   </component>

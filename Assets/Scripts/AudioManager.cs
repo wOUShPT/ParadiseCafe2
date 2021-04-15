@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class AudioManager : MonoBehaviour
     #endregion
 
     #region Fields
+
+    public AudioMixerGroup masterMixer;
     private AudioSource musicSource;
     private AudioSource musicSource2;
     private AudioSource sfxSource;
@@ -44,10 +47,13 @@ public class AudioManager : MonoBehaviour
         sfxSource = this.gameObject.AddComponent<AudioSource>();
 
         musicSource.loop = true;
+        musicSource.outputAudioMixerGroup = masterMixer;
         musicSource2.loop = true;
+        musicSource2.outputAudioMixerGroup = masterMixer;
+        sfxSource.outputAudioMixerGroup = masterMixer;
     }
 
-public void PlayMusic(AudioClip musicClip)
+    public void PlayMusic(AudioClip musicClip)
     {
         AudioSource activeSource = (firstMusicSourceIsPlaying) ? musicSource : musicSource2;
         
@@ -55,6 +61,13 @@ public void PlayMusic(AudioClip musicClip)
         activeSource.volume = volume;
         activeSource.Play();
     }
+
+    public void StopMusic()
+    {
+        musicSource.Stop();
+        musicSource2.Stop();
+    }
+    
     public void PlayMusicWithFade(AudioClip newClip,float transitionTime =1.0f)
     {
         AudioSource activeSource = (firstMusicSourceIsPlaying) ? musicSource : musicSource2;

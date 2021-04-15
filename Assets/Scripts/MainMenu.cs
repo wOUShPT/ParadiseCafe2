@@ -24,14 +24,17 @@ public class MainMenu : MonoBehaviour
     public void SelectScene()
     {
         SceneManager.LoadScene(scene1);
+        AudioManager.Instance.StopMusic();
     }
     public void SelectScene2()
     {
         SceneManager.LoadScene(scene2);
+        AudioManager.Instance.StopMusic();
     }
     public void SelectScene3()
     {
         SceneManager.LoadScene(scene3);
+        AudioManager.Instance.StopMusic();
     }
     public void QuitGame()
     {
