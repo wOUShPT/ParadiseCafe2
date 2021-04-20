@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gustavo.unity
     guid: c91ae3ad3a192634383dc754180f905d
+  - enabled: 1
+    path: Assets/Scenes/interiorTest.unity
+    guid: 5853bb1ae35576246bf069fdaeb8f59b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ff1250402d9c4744d876d3095ada31db, type: 2}

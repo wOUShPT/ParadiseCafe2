@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -8,28 +9,45 @@ using UnityEngine;
 
 public class ThirdPersonController : MonoBehaviour
 {
-    public InputManager _inputManager;
+    private InputManager _inputManager;
+    private LevelManager _LevelManager;
+    private DialogueManager _dialogueManager;
     public float moveSpeed = 7.5f;
     public float rotationSpeed;
     public Vector3 moveDirection;
     private Vector3 _move;
     private float _horizontalVelocity;
+    public bool canMove;
     public bool canRotate;
     public float allowPlayerRotation;
     private CharacterController _characterController;
+    public CinemachineFreeLook cameraCinemachine;
     private Transform playerCameraTransform;
 
-    void Awake()
+    void Start()
     {
+        _LevelManager = FindObjectOfType<LevelManager>();
+        _inputManager = FindObjectOfType<InputManager>();
+        _dialogueManager = FindObjectOfType<DialogueManager>();
+        _dialogueManager.startedDialogue.AddListener(() => { canMove = false; });
+        _dialogueManager.endedDialogue.AddListener(() => { canMove = true; });
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         _characterController = GetComponent<CharacterController>();
         playerCameraTransform = Camera.main.transform;
+        if (_LevelManager.previousLevel != "")
+        {
+            _LevelManager.SpawnOnDoor();
+            StartCoroutine(RecenterCamera());
+        }
     }
 
     private void Update()
     {
-        InputMagnitude();
+        if (canMove)
+        {
+            InputMagnitude();
+        }
     }
 
     void PlayerMoveAndRotate()
@@ -60,5 +78,14 @@ public class ThirdPersonController : MonoBehaviour
         }
 
         _characterController.SimpleMove(transform.forward * _horizontalVelocity * moveSpeed);
+    }
+
+
+    IEnumerator RecenterCamera()
+    {
+        cameraCinemachine.m_RecenterToTargetHeading.m_enabled = true;
+        yield return new WaitForEndOfFrame();
+        cameraCinemachine.m_RecenterToTargetHeading.m_enabled = false;
+        yield return null;
     }
 }

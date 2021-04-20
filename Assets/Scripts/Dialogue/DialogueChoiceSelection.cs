@@ -20,10 +20,41 @@ public class DialogueChoiceSelection : MonoBehaviour
 
     private void Awake()
     {
+        _inputManager = FindObjectOfType<InputManager>();
         ButtonSelect = new buttonSelectionEvent();
     }
 
     private void OnEnable()
+    {
+        
+    }
+    
+    public void ResetButtons()
+    {
+        lastButtonIndex = 0;
+        currentButtonIndex = 0;
+        canNavigate = false;
+        _activeButtons = null;
+        timer = 0;
+        foreach (var button in buttons)
+        {
+            button.text = "";
+            button.color = buttonColor;
+        }
+    }
+
+    void Update()
+    {
+        
+    }
+
+    void HighlightButton()
+    {
+        buttons[currentButtonIndex].color = buttonHighlightColor;
+        buttons[lastButtonIndex].color = buttonColor;
+    }
+
+    public IEnumerator Selection()
     {
         if (_inputManager == null)
         {
@@ -42,72 +73,57 @@ public class DialogueChoiceSelection : MonoBehaviour
             }
         }
         buttons[currentButtonIndex].color = buttonHighlightColor;
-    }
-
-    private void OnDisable()
-    {
-        lastButtonIndex = 0;
-        currentButtonIndex = 0;
-        canNavigate = false;
-        _activeButtons = null;
-        timer = 0;
-        foreach (var button in buttons)
-        {
-            button.color = buttonColor;
-        }
-    }
-
-    void Update()
-    {
-        timer += Time.deltaTime;
-        if (timer >= 0.2f)
-        {
-            canNavigate = true;
-        }
         
-        if (_inputManager.NavigationInputDirection.x > 0 && canNavigate)
+        while (true)
         {
-            if (currentButtonIndex == _activeButtons.Count-1)
+            timer += Time.deltaTime;
+            if (timer >= 0.2f)
             {
-                currentButtonIndex = 0;
+                canNavigate = true;
             }
-            else
-            {
-                currentButtonIndex++;
-            }
-        }
-        else if(_inputManager.NavigationInputDirection.x < 0 && canNavigate)
-        {
-            if (currentButtonIndex == 0)
-            {
-                currentButtonIndex = _activeButtons.Count-1;
-            }
-            else
-            {
-                currentButtonIndex--;
-            }
-        }
-
-        if (lastButtonIndex != currentButtonIndex)
-        {
-            HighlightButton();
-            canNavigate = false;
-            timer = 0;
-        }
-
-        if (_inputManager.ConfirmButton == 1)
-        {
-            ButtonSelect.Invoke(currentButtonIndex);
-            enabled = false;
-        }
         
-        lastButtonIndex = currentButtonIndex;
-    }
+            if (_inputManager.NavigationInputDirection.y < 0 && canNavigate)
+            {
+                if (currentButtonIndex == _activeButtons.Count-1)
+                {
+                    currentButtonIndex = 0;
+                }
+                else
+                {
+                    currentButtonIndex++;
+                }
+                
+                HighlightButton();
+                canNavigate = false;
+                timer = 0;
+                
+            }
+            else if(_inputManager.NavigationInputDirection.y > 0 && canNavigate)
+            {
+                if (currentButtonIndex == 0)
+                {
+                    currentButtonIndex = _activeButtons.Count-1;
+                }
+                else
+                {
+                    currentButtonIndex--;
+                }
+                
+                HighlightButton();
+                canNavigate = false;
+                timer = 0;
+            }
+            
 
-    void HighlightButton()
-    {
-        buttons[currentButtonIndex].color = buttonHighlightColor;
-        buttons[lastButtonIndex].color = buttonColor;
+            if (_inputManager.ConfirmButton == 1)
+            {
+                ButtonSelect.Invoke(currentButtonIndex);
+                StopAllCoroutines();
+            }
+        
+            lastButtonIndex = currentButtonIndex;
+            yield return null;
+        }
     }
 
 

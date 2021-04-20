@@ -55,7 +55,8 @@ public class Choice
         SellDrugs = 2,
         BuyPistol = 3,
         Steal = 4,
-        Rape = 5
+        Rape = 5,
+        BuyDrink = 6
     }
 
     [SerializeField]
@@ -67,6 +68,14 @@ public class Choice
     private Dialogue failedDialogue;
 
     public Dialogue FailedDialogue => failedDialogue;
+
+    [SerializeField]
+    private Dialogue failedNoDrugsDialogue;
+    public Dialogue FailedNoDrugsDialogue => failedNoDrugsDialogue;
+    
+    [SerializeField]
+    private Dialogue failedNoMoneyDialogue;
+    public Dialogue FailedNoMoneyDialogue => failedNoMoneyDialogue;
 
     [SerializeField]
     private Dialogue nextDialogue;

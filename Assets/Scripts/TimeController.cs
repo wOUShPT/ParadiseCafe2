@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TimeController : MonoBehaviour
 {
-    public TextMeshProUGUI _textClock;
+    private TextMeshProUGUI _textClock;
     [Range(0,1)]
     public float dayTime;
     public float durationOfDayInMinutes;
@@ -20,20 +20,19 @@ public class TimeController : MonoBehaviour
     public int hours => _hours;
 
     public int minutes => _minutes;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
+        _textClock = FindObjectOfType<HUDReferences>().clock.GetComponent<TextMeshProUGUI>();
         _time = 0;
         _hours = 0;
         _minutes = 0;
+        _time = dayTime;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        _time = dayTime;
-        
+
         if (!timeFreeze)
         {
             _time += Time.deltaTime/(60*durationOfDayInMinutes);
@@ -49,6 +48,7 @@ public class TimeController : MonoBehaviour
         _minutes = (int)(60 * (((24*_time)/durationOfDayInMinutes) - _hours));
 
         string time = string.Format("{0:00}:{1:00}", _hours, _minutes);
+        
         _textClock.text = time;
     }
 }

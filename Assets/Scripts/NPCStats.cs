@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "newNPCStats", menuName = "Scriptable Objects/NPC Stats")]
 public class NPCStats : ScriptableObject
 {
+    public string iD;
     public float moneyAmount;
     public int aggressiveness;
     public bool hasWeapon;
@@ -16,5 +17,6 @@ public class NPCStats : ScriptableObject
     {
         public float buy;
         public float sell;
+        public float buyPistol;
     }
 }

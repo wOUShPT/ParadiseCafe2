@@ -17,7 +17,7 @@ public class DialogueEditor : Editor
         _sentence = serializedObject.FindProperty("sentence");
     }
 
-    public override void OnInspectorGUI()
+    /*public override void OnInspectorGUI()
     {
         serializedObject.Update();
         EditorGUILayout.PropertyField(_type, new GUIContent("Dialogue Type"));
@@ -108,5 +108,5 @@ public class DialogueEditor : Editor
 
                 break;
         }
-    }
+    }*/
 }

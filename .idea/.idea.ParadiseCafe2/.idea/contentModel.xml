@@ -231,19 +231,30 @@
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
           <e p="DayCycleController.cs" t="Include" />
+          <e p="DDOL.cs" t="Include" />
           <e p="Dialogue" t="Include">
             <e p="ChoiceHighlighter.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
-            <e p="DialogueActions.cs" t="Include" />
             <e p="DialogueChoiceSelection.cs" t="Include" />
             <e p="DialogueManager.cs" t="Include" />
             <e p="DialogueTrigger.cs" t="Include" />
+            <e p="GameActions.cs" t="Include" />
           </e>
+          <e p="DoorTrigger.cs" t="Include" />
           <e p="Editor" t="Include">
             <e p="DialogueInspector.cs" t="Include" />
           </e>
+          <e p="GameEvents" t="Include">
+            <e p="GameEventHub.cs" t="Include" />
+            <e p="GameEventListener.cs" t="Include" />
+            <e p="GaneEvent.cs" t="Include" />
+          </e>
+          <e p="HUDReferences.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
           <e p="LightingPreset.cs" t="Include" />
+          <e p="Loader.cs" t="Include" />
+          <e p="LookAtPlayer.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="NPCStats.cs" t="Include" />
           <e p="PlayerStats.cs" t="Include" />

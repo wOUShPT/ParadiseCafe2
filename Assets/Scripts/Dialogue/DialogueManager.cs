@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
     private List<TextMeshProUGUI> _optionButtonsText;
     public Animator dialogueBoxAnimator;
     public float typingSpeed;
-    public DialogueActions dialogueActions;
+    public GameActions gameActions;
     public PlayerStats playerStats;
     private int _choiceSelectedIndex;
     private bool _choiceSelected;
@@ -37,7 +37,6 @@ public class DialogueManager : MonoBehaviour
         endedDialogue = new UnityEvent();
         _playerController = FindObjectOfType<ThirdPersonController>();
         _InputManager = FindObjectOfType<InputManager>();
-        dialogueTriggers = FindObjectsOfType<DialogueTrigger>().ToList();
         _currentNpcStats = null;
         _choiceSelected = false;
         _choiceSelectedIndex = 0;
@@ -52,7 +51,8 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue, DialogueTrigger npcDialogueTrigger, NPCStats npcStats)
     {
         startedDialogue.Invoke();
-        _playerController.enabled = false;
+        dialogueTriggers = null;
+        dialogueTriggers = FindObjectsOfType<DialogueTrigger>().ToList();
         foreach (var dialogueTrigger in dialogueTriggers)
         {
             dialogueTrigger.enabled = false;
@@ -82,8 +82,6 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         endedDialogue.Invoke();
-        endedDialogue.RemoveAllListeners();
-        _playerController.enabled = true;
         dialogueText.text = "";
         _choiceSelected = false;
         _choiceSelectedIndex = 0;
@@ -122,7 +120,7 @@ public class DialogueManager : MonoBehaviour
         bool waiting = true;
         if (_currentDialogue.Type == Dialogue.TypeProp.Branch)
         {
-            dialogueChoiceSelection.enabled = true;
+            dialogueChoiceSelection.StartCoroutine(dialogueChoiceSelection.Selection());
         }
         
         while (waiting)
@@ -132,11 +130,9 @@ public class DialogueManager : MonoBehaviour
                 yield return new WaitForSeconds(0.05f);
                 for (int i = 0; i < dialogueChoiceSelection.buttons.Count; i++)
                 {
-                    dialogueChoiceSelection.buttons[i].text = "";
                     dialogueChoiceSelection.buttons[i].gameObject.SetActive(false);
-                    dialogueChoiceSelection.enabled = false;
                 }
-
+                dialogueChoiceSelection.ResetButtons();
                 _currentDialogue = _nextDialogue;
                 _nextDialogue = null;
                 _choiceSelectedIndex = 0;
@@ -182,62 +178,104 @@ public class DialogueManager : MonoBehaviour
         switch (action)
         {
             case Choice.ActionType.Generic:
-                if (_currentDialogue.Choices[index].triggerEvent != null)
-                {
-                    dialogueActions.Generic.Invoke(playerStats, _currentNpcStats);
-                }
                 _nextDialogue = _currentDialogue.Choices[index].NextDialogue;
-                
                 break;
             
             case Choice.ActionType.Rape:
                 if (playerStats.hasWeapon && !_currentNpcStats.hasWeapon)
                 {
-                    dialogueActions.Rape.Invoke(playerStats, _currentNpcStats);
+                    gameActions.Rape.Invoke(_currentNpcStats);
                     _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue;
+                    return;
                 }
-                else
-                {
-                    _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
-                }
+                
+                _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
                 
                 break;
             
             case Choice.ActionType.Steal:
                 if (playerStats.hasWeapon && !_currentNpcStats.hasWeapon)
                 {
-                    dialogueActions.Steal.Invoke(playerStats, _currentNpcStats);
+                    gameActions.Steal.Invoke(_currentNpcStats);
                     _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue;
+                    return;
                 }
-                else
-                {
-                    _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
-                }
+
+                _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                
                 break;
             
             case Choice.ActionType.BuyDrugs:
+                if (playerStats.moneyAmount == 0)
+                {
+                    _nextDialogue = _currentDialogue.Choices[index].FailedNoDrugsDialogue;
+                    return;
+                }
+                
                 if (playerStats.moneyAmount >= _currentNpcStats.tradePrices.buy)
                 {
-                    dialogueActions.Buy.Invoke(playerStats, _currentNpcStats);
+                    gameActions.BuyDrugs.Invoke(_currentNpcStats);
                     _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue;
+                    return;
                 }
-                else
+                
+                _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                
+                break;
+            
+            case Choice.ActionType.BuyPistol:
+                if (playerStats.moneyAmount == 0)
                 {
-                    _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
-
+                    _nextDialogue = _currentDialogue.Choices[index].FailedNoMoneyDialogue;
+                    return;
                 }
+                
+                if (playerStats.moneyAmount >= _currentNpcStats.tradePrices.buyPistol)
+                {
+                    gameActions.BuyPistol.Invoke(_currentNpcStats);
+                    _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue;
+                    return;
+                }
+                
+                _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                
+                break;
+            
+            case Choice.ActionType.BuyDrink:
+                
+                if (playerStats.moneyAmount >= _currentNpcStats.tradePrices.buy)
+                {
+                    gameActions.BuyDrink.Invoke(_currentNpcStats);
+                    _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue;
+                    return;
+                }
+                
+                _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                
                 break;
             
             case Choice.ActionType.SellDrugs:
-                if (_currentNpcStats.moneyAmount >= _currentNpcStats.tradePrices.sell && playerStats.drugsAmount != 0)
+                if (playerStats.drugsAmount == 0)
                 {
-                    dialogueActions.Sell.Invoke(playerStats, _currentNpcStats);
-                    _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue;
+                    _nextDialogue = _currentDialogue.Choices[index].FailedNoDrugsDialogue;
+                    return;
                 }
-                else
+                
+                if (_currentNpcStats.iD == "Bofia" && _currentNpcStats.aggressiveness >= 3)
                 {
                     _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                    return;
                 }
+
+                if (_currentNpcStats.moneyAmount > _currentNpcStats.tradePrices.sell)
+                {
+                    gameActions.SellDrugs.Invoke(_currentNpcStats);
+                    _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue;
+                    return;
+                }
+                
+                _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                
                 break;
         }
     }
