@@ -37,9 +37,6 @@
             "m_Id": "207b6b7372e2472fb508b24d4592ad73"
         },
         {
-            "m_Id": "e80e4a03f74646ad976c83a078ed5986"
-        },
-        {
             "m_Id": "5835187ba85448768b925857925558c0"
         },
         {
@@ -173,8 +170,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 1302.0001220703125,
-            "y": -62.66669464111328
+            "x": 665.3331909179688,
+            "y": -85.33338165283203
         },
         "m_Blocks": [
             {
@@ -190,8 +187,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 1299.333251953125,
-            "y": 270.0
+            "x": 662.0000610351563,
+            "y": 247.99993896484376
         },
         "m_Blocks": [
             {
@@ -801,21 +798,6 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "696a10c9bbab45de91a3fef3fc62a85c",
-    "m_Id": 1,
-    "m_DisplayName": "X",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "X",
-    "m_StageCapability": 3,
-    "m_Value": 50.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "7157876802824ff4ab7d1f07606fb99d",
     "m_Id": 5,
     "m_DisplayName": "G",
@@ -948,21 +930,6 @@
         "e32": 0.0,
         "e33": 1.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "a099cf6bd45d4b059980b82a5b1b7573",
-    "m_Id": 0,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
@@ -1283,43 +1250,6 @@
     "m_TwoSided": false,
     "m_AlphaClip": false,
     "m_CustomEditorGUI": ""
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1Node",
-    "m_ObjectId": "e80e4a03f74646ad976c83a078ed5986",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Float",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1676.666748046875,
-            "y": 912.6665649414063,
-            "width": 126.0,
-            "height": 77.33331298828125
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "696a10c9bbab45de91a3fef3fc62a85c"
-        },
-        {
-            "m_Id": "a099cf6bd45d4b059980b82a5b1b7573"
-        }
-    ],
-    "synonyms": [
-        "Vector 1"
-    ],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Value": 0.0
 }
 
 {

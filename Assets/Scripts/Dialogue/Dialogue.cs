@@ -22,7 +22,7 @@ public class Dialogue: ScriptableObject
     private string sentence;
     
     [SerializeField]
-    private Choice[] choices;
+    private Choice[] choices = new Choice[4];
 
     public TypeProp Type => type;
     
@@ -33,6 +33,7 @@ public class Dialogue: ScriptableObject
     public string Sentence => sentence;
 
     public Choice[] Choices => choices;
+    
 }
 
 [Serializable]
@@ -53,16 +54,22 @@ public class Choice
         Generic = 0,
         BuyDrugs = 1,
         SellDrugs = 2,
-        BuyPistol = 3,
+        BuyWeapon = 3,
         Steal = 4,
         Rape = 5,
-        BuyDrink = 6
+        BuyDrink = 6,
+        GetRobbed = 7
     }
 
     [SerializeField]
-    private Dialogue successDialogue;
+    private Dialogue successDialogue01;
+
+    public Dialogue SuccessDialogue01 => successDialogue01;
     
-    public Dialogue SuccessDialogue => successDialogue;
+    [SerializeField]
+    private Dialogue successDialogue02;
+
+    public Dialogue SuccessDialogue02 => successDialogue02;
 
     [SerializeField]
     private Dialogue failedDialogue;
@@ -76,6 +83,10 @@ public class Choice
     [SerializeField]
     private Dialogue failedNoMoneyDialogue;
     public Dialogue FailedNoMoneyDialogue => failedNoMoneyDialogue;
+    
+    [SerializeField]
+    private Dialogue failedNoWeaponDialogue;
+    public Dialogue FailedNoWeaponDialogue => failedNoWeaponDialogue;
 
     [SerializeField]
     private Dialogue nextDialogue;

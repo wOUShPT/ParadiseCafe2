@@ -29,8 +29,6 @@ public class ThirdPersonController : MonoBehaviour
         _LevelManager = FindObjectOfType<LevelManager>();
         _inputManager = FindObjectOfType<InputManager>();
         _dialogueManager = FindObjectOfType<DialogueManager>();
-        _dialogueManager.startedDialogue.AddListener(() => { canMove = false; });
-        _dialogueManager.endedDialogue.AddListener(() => { canMove = true; });
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         _characterController = GetComponent<CharacterController>();

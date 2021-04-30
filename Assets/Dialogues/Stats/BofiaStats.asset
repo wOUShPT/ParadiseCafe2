@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: BofiaStats
   m_EditorClassIdentifier: 
   iD: Bofia
-  moneyAmount: 1e+9
-  aggressiveness: 3
+  moneyAmount: 0
+  aggressiveness: 0
+  timesBeenRaped: 0
+  timesBeenRobbed: 0
   hasWeapon: 1
   tradePrices:
-    buy: 5
-    sell: 0
+    buy: 0
+    sell: 5
     buyPistol: 0

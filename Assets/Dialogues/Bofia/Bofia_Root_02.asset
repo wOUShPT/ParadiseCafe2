@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
+  m_Name: Bofia_Root_02
+  m_EditorClassIdentifier: 
+  type: 1
+  characterName: Bofia
+  nextDialogue: {fileID: 0}
+  sentence: Bom dia seu fofooooo.
+  choices:
+  - choiceText: Cumprimentar
+    action: 0
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: a2c7943f843c14b4f851708e632eac6c, type: 2}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: Insultar
+    action: 0
+    successDialogue01: {fileID: 11400000, guid: 27765c3a9cf319345ad9b34e90ef6b52, type: 2}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 11400000, guid: f50e458547308dd43841026e7a1cea1b, type: 2}
+    failedNoDrugsDialogue: {fileID: 11400000, guid: 038895a903d83b24a8ddf11f611df279, type: 2}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: f502d992bb5a9454e8c1950006d812a5, type: 2}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: Vender droga
+    action: 2
+    successDialogue01: {fileID: 11400000, guid: 27765c3a9cf319345ad9b34e90ef6b52, type: 2}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 11400000, guid: f50e458547308dd43841026e7a1cea1b, type: 2}
+    failedNoDrugsDialogue: {fileID: 11400000, guid: 038895a903d83b24a8ddf11f611df279, type: 2}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: Dar o bazo
+    action: 0
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []

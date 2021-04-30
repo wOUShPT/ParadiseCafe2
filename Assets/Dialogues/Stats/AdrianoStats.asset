@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6b8f551b8d4fc48871141a98e9c241, type: 3}
   m_Name: AdrianoStats
   m_EditorClassIdentifier: 
-  iD: Macaco
+  iD: Adriano
   moneyAmount: 0
   aggressiveness: 0
+  timesBeenRaped: 0
+  timesBeenRobbed: 0
   hasWeapon: 0
   tradePrices:
     buy: 0

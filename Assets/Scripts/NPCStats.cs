@@ -7,16 +7,18 @@ using UnityEngine;
 public class NPCStats : ScriptableObject
 {
     public string iD;
-    public float moneyAmount;
+    public int moneyAmount;
     public int aggressiveness;
+    public int timesBeenRaped;
+    public int timesBeenRobbed;
     public bool hasWeapon;
     public TradePrices tradePrices;
     
     [System.Serializable]
     public struct TradePrices
     {
-        public float buy;
-        public float sell;
-        public float buyPistol;
+        public int buy;
+        public int sell;
+        public int buyPistol;
     }
 }

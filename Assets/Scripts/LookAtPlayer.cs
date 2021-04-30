@@ -8,8 +8,7 @@ public class LookAtPlayer : MonoBehaviour
     private Transform playerTransform;
     void Awake()
     {
-        playerTransform = FindObjectOfType<ThirdPersonController>().transform;
-        enabled = false;
+        playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     private void Update()

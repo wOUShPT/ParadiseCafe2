@@ -8,6 +8,7 @@ public class HUD: MonoBehaviour
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI wantedLevel;
     public TextMeshProUGUI hasWeapon;
+    public TextMeshProUGUI drugsAmount;
     public PlayerStats playerStats;
     void Update()
     {
@@ -20,6 +21,15 @@ public class HUD: MonoBehaviour
         else
         {
             hasWeapon.text = "Não tens uma arma";
+        }
+
+        if (playerStats.drugsAmount > 0)
+        {
+            drugsAmount.SetText("Tens " + playerStats.drugsAmount + " doses de droga");
+        }
+        else
+        {
+            drugsAmount.text = "Não tens droga";
         }
     }
 }

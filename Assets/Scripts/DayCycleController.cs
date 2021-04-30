@@ -2,25 +2,35 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ProBuilder;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class DayCycleController : MonoBehaviour
 {
     private TimeController _timeController;
-    public Light directionalLight;
+    public Volume _postProcessVolume;
+    private Bloom _bloom;
+    public Light sunLight;
+    public Transform sunPivotTransform;
     public Material skyBoxMaterial;
-    private Transform sunTransform;
-    public LightingPreset preset;
+    public LightingPreset colorsPreset;
+    public AnimationCurve starsOpacityOvertime;
 
     private void Awake()
     {
         _timeController = FindObjectOfType<TimeController>();
-        sunTransform = directionalLight.transform;
+        Bloom tmpBloom;
+        if (_postProcessVolume.profile.TryGet(out tmpBloom))
+        {
+            _bloom = tmpBloom;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (preset == null)
+        if (colorsPreset == null)
         {
             return;
         }
@@ -33,23 +43,26 @@ public class DayCycleController : MonoBehaviour
 
     private void UpdateLightning(float timePercentage)
     {
-        skyBoxMaterial.SetColor("_HorizonColor", preset.skyColor.Evaluate(timePercentage));
-        skyBoxMaterial.SetColor("_SkyColor", preset.skyColor.Evaluate(timePercentage));
+        sunLight.color = colorsPreset.lightColor.Evaluate(timePercentage);
+        skyBoxMaterial.SetColor("_HorizonColor", colorsPreset.skyColor.Evaluate(timePercentage));
+        skyBoxMaterial.SetColor("_SkyColor", colorsPreset.skyColor.Evaluate(timePercentage));
+        skyBoxMaterial.SetFloat("_StarsOpacity", starsOpacityOvertime.Evaluate(timePercentage));
         if (timePercentage > 0.25 && timePercentage < 0.75)
         {
-            skyBoxMaterial.SetFloat("_StarDensity", 10f);
+            _bloom.intensity.value = 0f;
+            //skyBoxMaterial.SetFloat("_StarDensity", 0f);
         }
         else
         {
-            skyBoxMaterial.SetFloat("_StarDensity", 0f);
+            _bloom.intensity.value = 0.01f;
+            //skyBoxMaterial.SetFloat("_StarDensity", 10f);
         }
 
-        if (directionalLight != null)
+        if (sunLight != null)
         {
-            sunTransform.localRotation = Quaternion.Euler(new Vector3((timePercentage * 360f) - 90f, 170, 0));
-            directionalLight.transform.localRotation = sunTransform.localRotation;
-            skyBoxMaterial.SetVector("_SunDirection", sunTransform.forward);
-            skyBoxMaterial.SetVector("_MoonDirection",-sunTransform.forward);
+            sunPivotTransform.localRotation = Quaternion.Euler(new Vector3((timePercentage * 360f) - 90f, 170, 0));
+            skyBoxMaterial.SetVector("_SunDirection", sunPivotTransform.forward);
+            skyBoxMaterial.SetVector("_MoonDirection",-sunPivotTransform.forward);
         }
     }
 }

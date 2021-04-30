@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
+  m_Name: SenhorTono_PedirInformacao_03
+  m_EditorClassIdentifier: 
+  type: 0
+  characterName: "Rog\xE9rio"
+  nextDialogue: {fileID: 0}
+  sentence: "Olha-me esta! Estou fodido com isto! Agora vem-me um an\xE3o dizer que
+    n\xE3o posso ter a disquete porque os criadores desta merda andam a co\xE7ar
+    os guizos. Despachem-se com isso p\xE1!"
+  choices: []

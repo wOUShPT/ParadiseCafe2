@@ -230,6 +230,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
+          <e p="DailyIncome.cs" t="Include" />
           <e p="DayCycleController.cs" t="Include" />
           <e p="DDOL.cs" t="Include" />
           <e p="Dialogue" t="Include">
@@ -238,17 +239,19 @@
             <e p="DialogueChoiceSelection.cs" t="Include" />
             <e p="DialogueManager.cs" t="Include" />
             <e p="DialogueTrigger.cs" t="Include" />
-            <e p="GameActions.cs" t="Include" />
+            <e p="DialogueUpdater.cs" t="Include" />
           </e>
           <e p="DoorTrigger.cs" t="Include" />
           <e p="Editor" t="Include">
             <e p="DialogueInspector.cs" t="Include" />
           </e>
+          <e p="GameActions.cs" t="Include" />
           <e p="GameEvents" t="Include">
             <e p="GameEventHub.cs" t="Include" />
             <e p="GameEventListener.cs" t="Include" />
             <e p="GaneEvent.cs" t="Include" />
           </e>
+          <e p="GameOver.cs" t="Include" />
           <e p="HUDReferences.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
