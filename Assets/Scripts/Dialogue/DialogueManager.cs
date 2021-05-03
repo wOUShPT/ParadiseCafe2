@@ -7,6 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -26,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     private ThirdPersonController _playerController;
     private List<DialogueTrigger> dialogueTriggers;
     private DialogueTrigger _currentDialogueTrigger;
+    private NPCInteractionsTracker npcInteractionsTracker;
     private NPCStats _currentNpcStats;
     private Dialogue _currentDialogue;
     private Dialogue _nextDialogue;
@@ -37,6 +39,7 @@ public class DialogueManager : MonoBehaviour
         startedDialogue = new UnityEvent();
         endedDialogue = new UnityEvent();
         _InputManager = FindObjectOfType<InputManager>();
+        npcInteractionsTracker = FindObjectOfType<NPCInteractionsTracker>();
         _currentNpcStats = null;
         _choiceSelected = false;
         _choiceSelectedIndex = 0;
@@ -48,13 +51,13 @@ public class DialogueManager : MonoBehaviour
         dialogueChoiceSelection.enabled = false;
     }
 
-    public void StartDialogue(Dialogue dialogue, DialogueTrigger npcDialogueTrigger, NPCStats npcStats)
+    public void StartDialogue(DialogueTrigger npcDialogueTrigger)
     {
         startedDialogue.RemoveAllListeners();
         endedDialogue.RemoveAllListeners();
         _playerController = FindObjectOfType<ThirdPersonController>();
-        startedDialogue.AddListener(() => { _playerController.canMove = false; });
-        endedDialogue.AddListener(() => { _playerController.canMove = true; });
+        startedDialogue.AddListener(() => { _playerController.FreezePlayer(true); });
+        endedDialogue.AddListener(() => { _playerController.FreezePlayer(false); });
         startedDialogue.Invoke();
         dialogueTriggers = null;
         dialogueTriggers = FindObjectsOfType<DialogueTrigger>().ToList();
@@ -62,8 +65,8 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueTrigger.enabled = false;
         }
-        _currentNpcStats = npcStats;
-        _currentDialogue = dialogue;
+        _currentNpcStats = npcDialogueTrigger.npcStats;
+        _currentDialogue = npcDialogueTrigger.dialogue;
         dialogueBoxAnimator.SetBool("IsOpen", true);
         Debug.Log("StartingConversation with " + _currentDialogue.CharacterName);
         nameText.text = _currentDialogue.CharacterName;
@@ -166,7 +169,10 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         foreach (var dialogueTrigger in dialogueTriggers)
         {
-            dialogueTrigger.enabled = true;
+            if (dialogueTrigger != null)
+            {
+                dialogueTrigger.enabled = true;
+            }
         }
     }
 
@@ -178,13 +184,13 @@ public class DialogueManager : MonoBehaviour
 
     void SelectChoice(int index)
     {
-        CallAction(_currentDialogue.Choices[index].Action, index);
+        AssignAction(_currentDialogue.Choices[index].Action, index);
         _choiceSelectedIndex = index;
         _choiceSelected = true;
     }
 
     
-    void CallAction(Choice.ActionType action, int index)
+    void AssignAction(Choice.ActionType action, int index)
     {
         switch (action)
         {
@@ -209,17 +215,18 @@ public class DialogueManager : MonoBehaviour
                     if (playerStats.wantedLevel == 3)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                        endedDialogue.AddListener(() => SceneManager.LoadScene("Choldra"));
                         return;
                     }
                     
-                    if (_currentNpcStats.timesBeenRaped == 0)
+                    if (npcInteractionsTracker.Velha.numberOfRapeInteractions == 0)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
                         endedDialogue.AddListener(() => gameActions.Rape.Invoke(_currentNpcStats));
                         return;
                     }
 
-                    if (_currentNpcStats.timesBeenRaped >= 1)
+                    if (npcInteractionsTracker.Velha.numberOfRapeInteractions >= 1)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue02;
                         endedDialogue.AddListener(() => gameActions.Rape.Invoke(_currentNpcStats));
@@ -242,17 +249,18 @@ public class DialogueManager : MonoBehaviour
                     if (playerStats.wantedLevel == 3)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                        endedDialogue.AddListener(() => SceneManager.LoadScene("Choldra"));
                         return;
                     }
                     
-                    if (_currentNpcStats.timesBeenRobbed == 0)
+                    if (npcInteractionsTracker.Velha.numberOfStealInteractions == 0)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
                         endedDialogue.AddListener(() => gameActions.Steal.Invoke(_currentNpcStats));
                         return;
                     }
 
-                    if (_currentNpcStats.timesBeenRobbed >= 1)
+                    if (npcInteractionsTracker.Velha.numberOfStealInteractions >= 1)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue02;
                         endedDialogue.AddListener(() => gameActions.Steal.Invoke(_currentNpcStats));
@@ -341,6 +349,13 @@ public class DialogueManager : MonoBehaviour
                 
                 break;
             
+            case Choice.ActionType.Sex:
+                
+                _nextDialogue = _currentDialogue.Choices[index].NextDialogue;
+                endedDialogue.AddListener(() => gameActions.Sex.Invoke(_currentNpcStats));
+                
+                break;
+
         }
     }
 }

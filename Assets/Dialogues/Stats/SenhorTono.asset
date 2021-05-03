@@ -13,12 +13,10 @@ MonoBehaviour:
   m_Name: SenhorTono
   m_EditorClassIdentifier: 
   iD: SenhorTono
-  moneyAmount: 1e+21
+  moneyAmount: 1
   aggressiveness: 0
-  timesBeenRaped: 0
-  timesBeenRobbed: 0
   hasWeapon: 0
   tradePrices:
-    buy: 0
+    buy: 5
     sell: 0
-    buyPistol: 200
+    buyPistol: 0

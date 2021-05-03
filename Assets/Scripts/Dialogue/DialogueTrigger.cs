@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class DialogueTrigger : MonoBehaviour
     public Transform sphereCastOrigin;
     public float dialogueMinDistance;
     public float dialogueMaxDistance;
+    public DialogueTriggerEvent triggerDialogue;
     public float radius;
     private Transform playerTransform;
     
@@ -23,17 +25,19 @@ public class DialogueTrigger : MonoBehaviour
     {
         dialoguePrompt.SetActive(false);
         _inputManager = FindObjectOfType<InputManager>();
-        _dialogueManager = FindObjectOfType<DialogueManager>();
+        triggerDialogue = new DialogueTriggerEvent();
+        triggerDialogue.AddListener(FindObjectOfType<DialogueManager>().StartDialogue);
         playerTransform = GameObject.FindGameObjectWithTag(playerTag).transform;
     }
 
     private void TriggerDialogue()
     {
-        _dialogueManager.StartDialogue(dialogue, this, npcStats);
+        triggerDialogue.Invoke( this);
     }
 
     private void OnEnable()
     {
+        triggerDialogue.AddListener(FindObjectOfType<DialogueManager>().StartDialogue);
         dialoguePrompt.SetActive(false);
     }
 
@@ -54,4 +58,9 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
     }
+}
+
+public class DialogueTriggerEvent : UnityEvent<DialogueTrigger>
+{
+    
 }

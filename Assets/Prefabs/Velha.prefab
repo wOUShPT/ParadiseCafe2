@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9151618761164104039}
   - component: {fileID: 9151618761164104036}
+  - component: {fileID: 1803858822}
   m_Layer: 0
   m_Name: DialogueTrigger
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9151618761164104038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0.026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9151618762268220506}
@@ -54,6 +55,22 @@ MonoBehaviour:
   dialogueMinDistance: 0
   dialogueMaxDistance: 1.5
   radius: 1.5
+--- !u!114 &1803858822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9151618761164104038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744e58d0f93e7c14ea1a16b168fdfb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstInteractionDayDialogue: {fileID: 11400000, guid: 3fef1f1947d7e504c92dc8400eacf8f0, type: 2}
+  firstInteractionNightDialogue: {fileID: 0}
+  dayDialogue: {fileID: 11400000, guid: 932c0cf533ebfcf48b5655fb18c375eb, type: 2}
+  nightDialogue: {fileID: 0}
 --- !u!1 &9151618761479828778
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,7 +96,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9151618761479828778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.8, z: 0}
+  m_LocalPosition: {x: 0, y: 1.8, z: 0.155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9151618762139681155}
@@ -439,6 +456,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 5694316011624370798, guid: a0f4ded8b7640b143b79bbd671ddedf2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee01e08d1714a464f996b907febe0103, type: 2}
+    - target: {fileID: 5694316011624370798, guid: a0f4ded8b7640b143b79bbd671ddedf2, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f9a70e0c5238b954c8103cdef03e41f3, type: 2}
+    - target: {fileID: 5694316011624370798, guid: a0f4ded8b7640b143b79bbd671ddedf2, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 06b9dcf63fce5104ba04be2cf9423020, type: 2}
+    - target: {fileID: 5694316011624370798, guid: a0f4ded8b7640b143b79bbd671ddedf2, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20ef8ae3aca64c24d9952fa4299eaced, type: 2}
+    - target: {fileID: 5694316011624370798, guid: a0f4ded8b7640b143b79bbd671ddedf2, type: 3}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3262c82b5ba29042bdb0ed013797223, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0f4ded8b7640b143b79bbd671ddedf2, type: 3}
 --- !u!4 &2153332792168191781 stripped

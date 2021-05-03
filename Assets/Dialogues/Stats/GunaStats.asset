@@ -15,10 +15,8 @@ MonoBehaviour:
   iD: Guna
   moneyAmount: 20
   aggressiveness: 0
-  timesBeenRaped: 0
-  timesBeenRobbed: 0
   hasWeapon: 1
   tradePrices:
     buy: 0
     sell: 0
-    buyPistol: 200
+    buyPistol: 50

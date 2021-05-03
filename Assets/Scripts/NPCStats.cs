@@ -9,8 +9,6 @@ public class NPCStats : ScriptableObject
     public string iD;
     public int moneyAmount;
     public int aggressiveness;
-    public int timesBeenRaped;
-    public int timesBeenRobbed;
     public bool hasWeapon;
     public TradePrices tradePrices;
     

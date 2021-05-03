@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510039206993645368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.0866828, z: 0}
+  m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1510039208965133017}
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510039207078635607}
-  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -27.93361, y: 0.041316748, z: -7.644086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -170,6 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510039208833590925}
   - component: {fileID: 1510039208833590930}
+  - component: {fileID: 2068972911}
   m_Layer: 0
   m_Name: DialogueTrigger
   m_TagString: Untagged
@@ -185,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510039208833590924}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.968, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1510039207078635604}
@@ -214,6 +215,22 @@ MonoBehaviour:
   dialogueMinDistance: 0
   dialogueMaxDistance: 1.5
   radius: 1.5
+--- !u!114 &2068972911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510039208833590924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013d24ef2f48bc342aa3b3be4b6d63ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstInteractionDayDialogue: {fileID: 11400000, guid: 93998618e067803458d548ac876ddd05, type: 2}
+  firstInteractionNightDialogue: {fileID: 11400000, guid: 8a0793c85419ca2458ca19131bbab0f4, type: 2}
+  dayDialogue: {fileID: 11400000, guid: 93998618e067803458d548ac876ddd05, type: 2}
+  nightDialogue: {fileID: 11400000, guid: 8a0793c85419ca2458ca19131bbab0f4, type: 2}
 --- !u!1 &1510039208965133016
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +456,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 7820183113835650498, guid: d98eda90ac62de445b19db43c5afaaa7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1c7b7bff207feb54ea1bb26bb5b22f2c, type: 2}
+    - target: {fileID: 7820183113835650498, guid: d98eda90ac62de445b19db43c5afaaa7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 06b9dcf63fce5104ba04be2cf9423020, type: 2}
+    - target: {fileID: 7820183113835650498, guid: d98eda90ac62de445b19db43c5afaaa7, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 12c4b593f4a79c149b0ae69167f8cc0b, type: 2}
+    - target: {fileID: 7820183113835650498, guid: d98eda90ac62de445b19db43c5afaaa7, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee01e08d1714a464f996b907febe0103, type: 2}
+    - target: {fileID: 7820183113835650498, guid: d98eda90ac62de445b19db43c5afaaa7, type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: d9f7cd5fa2904354fb0b25394355bd5d, type: 2}
+    - target: {fileID: 7820183113835650498, guid: d98eda90ac62de445b19db43c5afaaa7, type: 3}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee01e08d1714a464f996b907febe0103, type: 2}
+    - target: {fileID: 7820183113835650498, guid: d98eda90ac62de445b19db43c5afaaa7, type: 3}
+      propertyPath: m_Materials.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee01e08d1714a464f996b907febe0103, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d98eda90ac62de445b19db43c5afaaa7, type: 3}
 --- !u!4 &2256739100911128615 stripped

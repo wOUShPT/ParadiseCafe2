@@ -34,11 +34,8 @@ public class DayCycleController : MonoBehaviour
         {
             return;
         }
-
-        if (Application.isPlaying)
-        {
-            UpdateLightning(_timeController.timePercentage);
-        }
+        
+        UpdateLightning(_timeController.timePercentage);
     }
 
     private void UpdateLightning(float timePercentage)

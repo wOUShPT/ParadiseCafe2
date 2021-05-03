@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -20,6 +21,7 @@ public class ThirdPersonController : MonoBehaviour
     public bool canMove;
     public bool canRotate;
     public float allowPlayerRotation;
+    public Animator _animator;
     private CharacterController _characterController;
     public CinemachineFreeLook cameraCinemachine;
     private Transform playerCameraTransform;
@@ -38,6 +40,7 @@ public class ThirdPersonController : MonoBehaviour
             _LevelManager.SpawnOnDoor();
             StartCoroutine(RecenterCamera());
         }
+        
     }
 
     private void Update()
@@ -46,6 +49,8 @@ public class ThirdPersonController : MonoBehaviour
         {
             InputMagnitude();
         }
+        
+        UpdateAnimation();
     }
 
     void PlayerMoveAndRotate()
@@ -69,6 +74,7 @@ public class ThirdPersonController : MonoBehaviour
     {
         
         _horizontalVelocity = _inputManager.MovementInputDirection.sqrMagnitude;
+        
 
         if (_horizontalVelocity > allowPlayerRotation)
         {
@@ -76,6 +82,7 @@ public class ThirdPersonController : MonoBehaviour
         }
 
         _characterController.SimpleMove(transform.forward * _horizontalVelocity * moveSpeed);
+        
     }
 
 
@@ -85,5 +92,24 @@ public class ThirdPersonController : MonoBehaviour
         yield return new WaitForEndOfFrame();
         cameraCinemachine.m_RecenterToTargetHeading.m_enabled = false;
         yield return null;
+    }
+
+    void UpdateAnimation()
+    {
+        _animator.SetFloat("Velocity",_horizontalVelocity);
+    }
+
+
+    public void FreezePlayer(bool state)
+    {
+        if (state)
+        {
+            canMove = false;
+            _horizontalVelocity = 0;
+        }
+        else
+        {
+            canMove = true;
+        }
     }
 }

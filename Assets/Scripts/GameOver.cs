@@ -5,17 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    private InputManager _inputManager;
     void Start()
     {
-        _inputManager = FindObjectOfType<InputManager>();
+        StartCoroutine(ResetGame());
     }
     
-    void Update()
+
+    IEnumerator ResetGame()
     {
-        if (_inputManager.ConfirmButton == 1)
-        {
-            SceneManager.LoadScene("Gustavo");
-        }
+        yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene("Exterior");
     }
 }

@@ -12,10 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: d450ceb5f5594284bb82db5741aebc37
   - enabled: 1
-    path: Assets/Scenes/Gustavo.unity
+    path: Assets/Scenes/Exterior.unity
     guid: c91ae3ad3a192634383dc754180f905d
   - enabled: 1
-    path: Assets/Scenes/interiorTest.unity
+    path: Assets/Scenes/Cafe.unity
     guid: 5853bb1ae35576246bf069fdaeb8f59b
+  - enabled: 1
+    path: Assets/Scenes/Bordel.unity
+    guid: 0e44358743e7f9e4494548e9e947ac40
+  - enabled: 1
+    path: Assets/Scenes/Choldra.unity
+    guid: c6c58fb320fe62440b38d5f9e9841648
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ff1250402d9c4744d876d3095ada31db, type: 2}

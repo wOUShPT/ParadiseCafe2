@@ -58,7 +58,8 @@ public class Choice
         Steal = 4,
         Rape = 5,
         BuyDrink = 6,
-        GetRobbed = 7
+        GetRobbed = 7,
+        Sex = 8
     }
 
     [SerializeField]

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Managers
+  - SceneTransition
+  - Persistence
+  - HUD
   layers:
   - Default
   - TransparentFX

@@ -203,6 +203,15 @@ public class DialogueEditor : Editor
 
                             break;
                         
+                        case Choice.ActionType.Sex:
+                            
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(nextDialogue, new GUIContent());
+                            
+                            break;
+                        
                     }
 
                     EditorGUILayout.EndFoldoutHeaderGroup();

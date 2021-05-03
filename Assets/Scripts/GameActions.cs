@@ -18,6 +18,7 @@ public class GameActions : MonoBehaviour
     public CustomActionEvent SellDrugs;
     public CustomActionEvent GetRobbed;
     public CustomActionEvent GameOver;
+    public CustomActionEvent Sex;
 
     private void Awake()
     {
@@ -30,6 +31,7 @@ public class GameActions : MonoBehaviour
         BuyDrink = new CustomActionEvent();
         GetRobbed = new CustomActionEvent();
         GameOver = new CustomActionEvent();
+        Sex = new CustomActionEvent();
         Generic.AddListener(DoGeneric);
         Rape.AddListener(DoRape);
         Steal.AddListener(DoSteal);
@@ -39,11 +41,7 @@ public class GameActions : MonoBehaviour
         BuyWeapon.AddListener(DoBuyWeapon);
         GetRobbed.AddListener(DoGetRobbed);
         GameOver.AddListener(DoGameOver);
-    }
-
-    private void Start()
-    {
-        
+        Sex.AddListener(DoSex);
     }
 
     public void DoGeneric(NPCStats npcStats)
@@ -54,14 +52,14 @@ public class GameActions : MonoBehaviour
     public void DoRape(NPCStats npcStats)
     {
         playerStats.wantedLevel++;
-        npcStats.timesBeenRaped++;
+        FindObjectOfType<DialogueTrackerVelha>().UpdateNumberOfRapeInteractions();
     }
 
     public void DoSteal(NPCStats npcStats)
     {
         IncreaseMoney(npcStats.moneyAmount);
         IncreaseWantedLevel();
-        npcStats.timesBeenRobbed++;
+        FindObjectOfType<DialogueTrackerVelha>().UpdateNumberOfStealInteractions();
     }
 
     public void DoBuyDrugs(NPCStats npcStats)
@@ -117,6 +115,11 @@ public class GameActions : MonoBehaviour
         }
         
         playerStats.wantedLevel++;
+    }
+
+    public void DoSex(NPCStats npcStats)
+    {
+        SceneManager.LoadScene("Bordel");
     }
 
     public void DecreaseWantedLevel(int amount)

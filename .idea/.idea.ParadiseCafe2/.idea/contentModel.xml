@@ -238,9 +238,10 @@
             <e p="Dialogue.cs" t="Include" />
             <e p="DialogueChoiceSelection.cs" t="Include" />
             <e p="DialogueManager.cs" t="Include" />
+            <e p="DialoguesTracker.cs" t="Include" />
             <e p="DialogueTrigger.cs" t="Include" />
-            <e p="DialogueUpdater.cs" t="Include" />
           </e>
+          <e p="DialogueTrackerVelha.cs" t="Include" />
           <e p="DoorTrigger.cs" t="Include" />
           <e p="Editor" t="Include">
             <e p="DialogueInspector.cs" t="Include" />
@@ -259,8 +260,10 @@
           <e p="Loader.cs" t="Include" />
           <e p="LookAtPlayer.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
+          <e p="NPCInteractionsTracker.cs" t="Include" />
           <e p="NPCStats.cs" t="Include" />
           <e p="PlayerStats.cs" t="Include" />
+          <e p="SetPlayerStats.cs" t="Include" />
           <e p="SettingsMenu.cs" t="Include" />
           <e p="ThirdPersonController.cs" t="Include" />
           <e p="TimeController.cs" t="Include" />

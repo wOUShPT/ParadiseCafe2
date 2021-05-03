@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
+  m_Name: Guna_Day_Root_02
+  m_EditorClassIdentifier: 
+  type: 1
+  characterName: Guna
+  nextDialogue: {fileID: 0}
+  sentence: Taz a olhare pa onde primaxo?
+  choices:
+  - choiceText: Cumprimentar
+    action: 7
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 11400000, guid: 211a43fb4469c124d9ad0ed782850f3b, type: 2}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: fffafe49c84d77e468c86344c03db020, type: 2}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: Insultar
+    action: 0
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: 9f8c00cc4fb5acd42a92a2586f6a07f0, type: 2}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: Comprar arma
+    action: 3
+    successDialogue01: {fileID: 11400000, guid: 06f14056688003f4cb8402491656d66d, type: 2}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 11400000, guid: c697fb4eb65cae94cb3ea89fd1c73409, type: 2}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: Dar o bazo
+    action: 0
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
