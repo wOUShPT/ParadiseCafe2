@@ -18,11 +18,14 @@ public class InputManager : MonoBehaviour
             _controls = new InputActions();
             _controls.Enable();
             _controls.Player.Movement.performed += ctx => _movementInputDirection = ctx.ReadValue<Vector2>();
+            _controls.Player.Movement.canceled += ctx => _movementInputDirection = Vector2.zero;
             _controls.Player.Look.performed += ctx => _lookInputDirection = ctx.ReadValue<Vector2>();
             _controls.Player.Action.performed += ctx => _actionInput = ctx.ReadValue<float>();
+            _controls.Player.Action.canceled += ctx => _actionInput = 0;
             _controls.Menu.Navigate.performed += ctx => _navigationInputDirection = ctx.ReadValue<Vector2>();
             _controls.Menu.Navigate.canceled += ctx => _navigationInputDirection = Vector2.zero;
             _controls.Menu.Confirm.performed += ctx => _confirmButton = ctx.ReadValue<float>();
+            _controls.Menu.Confirm.canceled += ctx => _confirmButton = 0;
         }
     }
 

@@ -94,7 +94,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
-    - _Amount: 350
+    - _Amount: 250
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0

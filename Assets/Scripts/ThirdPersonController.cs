@@ -5,6 +5,7 @@ using Cinemachine;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -21,10 +22,12 @@ public class ThirdPersonController : MonoBehaviour
     public bool canMove;
     public bool canRotate;
     public float allowPlayerRotation;
-    public Animator _animator;
     private CharacterController _characterController;
     public CinemachineFreeLook cameraCinemachine;
     private Transform playerCameraTransform;
+
+    public float Velocity => _horizontalVelocity;
+    
 
     void Start()
     {
@@ -49,8 +52,6 @@ public class ThirdPersonController : MonoBehaviour
         {
             InputMagnitude();
         }
-        
-        UpdateAnimation();
     }
 
     void PlayerMoveAndRotate()
@@ -96,7 +97,7 @@ public class ThirdPersonController : MonoBehaviour
 
     void UpdateAnimation()
     {
-        _animator.SetFloat("Velocity",_horizontalVelocity);
+        
     }
 
 

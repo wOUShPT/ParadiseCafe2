@@ -35,7 +35,7 @@ public class DayCycleController : MonoBehaviour
             return;
         }
         
-        UpdateLightning(_timeController.timePercentage);
+        UpdateLightning(_timeController.TimePercentage);
     }
 
     private void UpdateLightning(float timePercentage)
@@ -47,12 +47,10 @@ public class DayCycleController : MonoBehaviour
         if (timePercentage > 0.25 && timePercentage < 0.75)
         {
             _bloom.intensity.value = 0f;
-            //skyBoxMaterial.SetFloat("_StarDensity", 0f);
         }
         else
         {
             _bloom.intensity.value = 0.01f;
-            //skyBoxMaterial.SetFloat("_StarDensity", 10f);
         }
 
         if (sunLight != null)

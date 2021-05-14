@@ -13,7 +13,8 @@ public class TimeController : MonoBehaviour
     public float durationOfDayInMinutes;
     private int _hours;
     private int _minutes;
-    private double _time;
+    private float _time;
+    private float _timePercentage;
     public UnityEvent dayStateChange;
     public bool timeFreeze;
     
@@ -26,21 +27,25 @@ public class TimeController : MonoBehaviour
     private DayState _state;
 
     public DayState dayState => _state;
-    
 
-    public float timePercentage => (float)_time;
+    public float TimePercentage => _timePercentage;
 
     public int hours => _hours;
 
     public int minutes => _minutes;
-    
+
+
+    private void OnValidate()
+    {
+        _timePercentage = inGameTime;
+    }
+
     void Awake()
     {
         _textClock = FindObjectOfType<HUDReferences>().clock.GetComponent<TextMeshProUGUI>();
-        _time = inGameTime;
-        _hours = (int)((24*_time)/durationOfDayInMinutes);
-        _minutes = (int)(60 * (((24*_time)/durationOfDayInMinutes) - _hours));
-        
+        _timePercentage = inGameTime;
+        ConvertToHoursMinutes();
+
         if (_hours >= 19)
         {
             Debug.Log("Night");
@@ -62,20 +67,15 @@ public class TimeController : MonoBehaviour
     
     void Update()
     {
-
         if (!timeFreeze)
         {
-            _time += Time.deltaTime/(60*durationOfDayInMinutes);
+            _timePercentage = Mathf.Repeat(_timePercentage + Time.deltaTime / (durationOfDayInMinutes*60), 1);
+            //Debug.Log(_timePercentage);
+            //_timePercentage += Time.deltaTime/(60* durationOfDayInMinutes);
         }
 
-        if (_time >= 1)
-        {
-            _time = 0;
-        }
-
-        _hours = (int)((24*_time)/durationOfDayInMinutes);
-        _minutes = (int)(60 * (((24*_time)/durationOfDayInMinutes) - _hours));
-
+        ConvertToHoursMinutes();
+        
         if (_hours == 19)
         {
             Debug.Log("Night");
@@ -93,17 +93,24 @@ public class TimeController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F11))
         {
             durationOfDayInMinutes--;
-            Mathf.Clamp(durationOfDayInMinutes, 0, Mathf.Infinity);
+            Mathf.Clamp(durationOfDayInMinutes, 1, Mathf.Infinity);
         }
 
         if (Input.GetKeyDown(KeyCode.F12))
         {
             durationOfDayInMinutes++;
-            Mathf.Clamp(durationOfDayInMinutes, 0, Mathf.Infinity);
+            Mathf.Clamp(durationOfDayInMinutes, 1, Mathf.Infinity);
         }
 
         string time = string.Format("{0:00}:{1:00}", _hours, _minutes);
         
         _textClock.text = time;
+    }
+    
+
+    void ConvertToHoursMinutes()
+    {
+        _hours = (int)(_timePercentage*24);
+        _minutes = (int)(((_timePercentage*24) - _hours) *60);
     }
 }
