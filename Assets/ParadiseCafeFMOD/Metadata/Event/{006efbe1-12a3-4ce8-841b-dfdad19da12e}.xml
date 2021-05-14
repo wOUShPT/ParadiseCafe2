@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{006efbe1-12a3-4ce8-841b-dfdad19da12e}">
 		<property name="name">
-			<value>Teste</value>
+			<value>Menu</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -30,9 +30,6 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{7a6a26e4-0fe1-44d4-8680-adecf9da7e17}</destination>
-		</relationship>
-		<relationship name="parameters">
-			<destination>{60c8ea7d-0be4-46b5-8f04-98f28c36764a}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{7044fbf8-806d-4e5c-a19d-b1471d64a7c0}</destination>
@@ -78,11 +75,6 @@
 		</relationship>
 		<relationship name="markers">
 			<destination>{070e189e-e668-410c-92a3-0d4edff164e8}</destination>
-		</relationship>
-	</object>
-	<object class="ParameterProxy" id="{60c8ea7d-0be4-46b5-8f04-98f28c36764a}">
-		<relationship name="preset">
-			<destination>{e52a6242-9574-4286-9972-8344d65fd161}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{f38a576b-48ea-451f-9c2e-b3cbfd86a824}">
