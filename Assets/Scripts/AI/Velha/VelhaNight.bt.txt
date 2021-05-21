@@ -1,0 +1,8 @@
+tree("Night")
+    while 
+        isNight
+        sequence
+            StopClean
+            SetDestination
+            GoToDestination
+            CheckArrival

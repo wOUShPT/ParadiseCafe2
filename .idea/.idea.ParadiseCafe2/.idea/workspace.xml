@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,66 +23,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4c6e0d-73b5-4f46-949d-e05e640a1ad5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Dom.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Dom.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Fence_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Fence_02.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Floor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Floor.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Leaves_Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Leaves_Tree.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Materials/creme_nata.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Materials/creme_nata.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Materials/fence.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Materials/fence.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Materials/road_corner.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Materials/road_corner.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Materials/road_straight_to_intersect.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Materials/road_straight_to_intersect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/LightGrey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/LightGrey.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Passeio_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Passeio_1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Passeio_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Passeio_2.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Passeio_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Passeio_3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Pixelation.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Pixelation.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Water.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Water.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/road.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/road.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/roman_bridge.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/roman_bridge.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Dom.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Dom.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Dom.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Dom.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/White.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/White.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Idle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Idle.fbx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Leaves_Tree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Leaves_Tree.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/UITransparentPanels.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/UI/UITransparentPanels.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/seamless noise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/seamless noise.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Adriano.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Adriano.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bofia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bofia.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dealer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dealer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dom.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Guna.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Guna.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Idle_Idle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Idle_Idle.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Idle_Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Idle_Idle.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Walk.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Walk.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player_Walk.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Stats/PlayerStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Stats/PlayerStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{c1286801-82db-4072-8903-ebd4e54f40eb}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{c1286801-82db-4072-8903-ebd4e54f40eb}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Velha.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Velha.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Choldra.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Choldra.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DayCycleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DayCycleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LookAtPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LookAt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LookAtPlayer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LookAt.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogueInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogueInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/DayCycleSkyColorPreset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/DayCycleSkyColorPreset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/InputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/InputActions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/InputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/InputActions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/InputSystem.inputsettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/InputSystem.inputsettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SkyBox.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/SkyBox.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Water.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Water.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Nokia SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Nokia SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +75,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Bofia/BofiaAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DayCycleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DailyIncome.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,12 +85,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetPlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUDReferences.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/DialogueInspector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DDOL.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCInteractionsTracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/NpcAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0049532E-C432-485C-A342-60937DA7A054/19/1cc912d2/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueTrackerVelha.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AlignNPCToPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
@@ -121,37 +100,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/Choice.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueEvents.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DayNightController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DoorsManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DDOL.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/HUDReferences.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEventListener.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents/GaneEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueActions.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEventHub.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DoorTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LightingPreset.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/GameActions.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialoguesController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/UpdateDialoguesOnContext.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialoguesUpdate.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueUpdater.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerStats.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DayIncome.cs" />
-      <option value="$PROJECT_DIR$/Assets/Settings/BlitRenderPassFeature.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/NPCInteractionsNumber.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialoguesTracker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/NPCInteractionsTracker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DialogueTrackerVelha.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/NPCStats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DailyIncome.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SetPlayerStats.cs" />
@@ -159,7 +107,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameActions.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DialogueInspector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DayCycleController.cs" />
@@ -169,8 +116,41 @@
       <option value="$PROJECT_DIR$/Assets/AnimationController.cs" />
       <option value="$PROJECT_DIR$/Assets/PlayerAnimationController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GunaAgent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/VelhaAgent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DialogueTrackerVelha.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialoguesTracker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Rest1.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Rest2.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/GOAP/GWorld.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GetPatient.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Rest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Clean.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/VelhaAgent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/NPC.bt.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/VelhaAIBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/NPC_Main.bt.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/NPCAIBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NpcInteractionsTracker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaDay.bt.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaNight.bt.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/GunaAIBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaAIBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AlignPlayerToNPC.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NPCToPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AlignNPCToPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/CafeOpenClosed.cs" />
+      <option value="$PROJECT_DIR$/Assets/TriggerOnOffTime.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Guna/GunaDay.bt.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Guna/GunaNight.bt.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Guna/GunaAIBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Bofia/BofiaAIBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Bofia/BofiaDay.bt.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Bofia/BofiaNight.bt.txt" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAnimationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/NpcAIBehaviour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pU6uQclUHI28WyBvQg2toUKpSL" />
@@ -180,6 +160,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -286,6 +267,16 @@
       <workItem from="1620726245239" duration="1819000" />
       <workItem from="1620841065119" duration="2765000" />
       <workItem from="1621000790277" duration="349000" />
+      <workItem from="1621019606144" duration="6885000" />
+      <workItem from="1621099880783" duration="1249000" />
+      <workItem from="1621113189641" duration="3514000" />
+      <workItem from="1621130875918" duration="3651000" />
+      <workItem from="1621137173041" duration="886000" />
+      <workItem from="1621171191231" duration="7434000" />
+      <workItem from="1621266300190" duration="21472000" />
+      <workItem from="1621328998455" duration="5327000" />
+      <workItem from="1621338980913" duration="2002000" />
+      <workItem from="1621506069800" duration="595000" />
     </task>
     <servers />
   </component>

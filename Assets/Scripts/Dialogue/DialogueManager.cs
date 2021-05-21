@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -28,11 +29,13 @@ public class DialogueManager : MonoBehaviour
     private List<DialogueTrigger> dialogueTriggers;
     private DialogueTrigger _currentDialogueTrigger;
     private NPCInteractionsTracker npcInteractionsTracker;
+    private GameObject _currentNpc;
     private NPCStats _currentNpcStats;
     private Dialogue _currentDialogue;
     private Dialogue _nextDialogue;
     public UnityEvent startedDialogue;
     public UnityEvent endedDialogue;
+    public GameObject CurrentNPC => _currentNpc;
 
     private void Awake()
     {
@@ -53,11 +56,16 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueTrigger npcDialogueTrigger)
     {
-        startedDialogue.RemoveAllListeners();
-        endedDialogue.RemoveAllListeners();
+        _currentNpc = npcDialogueTrigger.GetComponentInParent<Transform>().parent.gameObject;
         _playerController = FindObjectOfType<ThirdPersonController>();
         startedDialogue.AddListener(() => { _playerController.FreezePlayer(true); });
         endedDialogue.AddListener(() => { _playerController.FreezePlayer(false); });
+        NpcAIBehaviour _currentNPCAgent = _currentNpc.GetComponent<NpcAIBehaviour>();
+        if (_currentNPCAgent != null)
+        {
+            startedDialogue.AddListener(_currentNPCAgent.StopMovement);
+            endedDialogue.AddListener(_currentNPCAgent.ResumeMovement);
+        }
         startedDialogue.Invoke();
         dialogueTriggers = null;
         dialogueTriggers = FindObjectsOfType<DialogueTrigger>().ToList();
@@ -167,6 +175,8 @@ public class DialogueManager : MonoBehaviour
     IEnumerator DialogueTriggerWaitToEnable()
     {
         yield return new WaitForSeconds(2);
+        startedDialogue.RemoveAllListeners();
+        endedDialogue.RemoveAllListeners();
         foreach (var dialogueTrigger in dialogueTriggers)
         {
             if (dialogueTrigger != null)
@@ -223,6 +233,10 @@ public class DialogueManager : MonoBehaviour
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
                         endedDialogue.AddListener(() => gameActions.Rape.Invoke(_currentNpcStats));
+                        PlayerAnimationController playerAnimationController =
+                            FindObjectOfType<PlayerAnimationController>();
+                        playerAnimationController.PointWeapon();
+                        endedDialogue.AddListener(playerAnimationController.HolsterWeapon);
                         return;
                     }
 
@@ -230,6 +244,10 @@ public class DialogueManager : MonoBehaviour
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue02;
                         endedDialogue.AddListener(() => gameActions.Rape.Invoke(_currentNpcStats));
+                        PlayerAnimationController playerAnimationController =
+                            FindObjectOfType<PlayerAnimationController>();
+                        playerAnimationController.PointWeapon();
+                        endedDialogue.AddListener(playerAnimationController.HolsterWeapon);
                     }
                 }
 
@@ -257,6 +275,10 @@ public class DialogueManager : MonoBehaviour
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
                         endedDialogue.AddListener(() => gameActions.Steal.Invoke(_currentNpcStats));
+                        PlayerAnimationController playerAnimationController =
+                            FindObjectOfType<PlayerAnimationController>();
+                        playerAnimationController.PointWeapon();
+                        endedDialogue.AddListener(playerAnimationController.HolsterWeapon);
                         return;
                     }
 
@@ -264,6 +286,10 @@ public class DialogueManager : MonoBehaviour
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue02;
                         endedDialogue.AddListener(() => gameActions.Steal.Invoke(_currentNpcStats));
+                        PlayerAnimationController playerAnimationController =
+                            FindObjectOfType<PlayerAnimationController>();
+                        playerAnimationController.PointWeapon();
+                        endedDialogue.AddListener(playerAnimationController.HolsterWeapon);
                     }
                     
                 }

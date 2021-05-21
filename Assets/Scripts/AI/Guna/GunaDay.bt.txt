@@ -1,0 +1,6 @@
+tree("Day")
+    while isDay
+        sequence
+            SetWaypoint
+            GoToDestination
+            CheckArrival

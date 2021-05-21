@@ -1,0 +1,4 @@
+tree("Root")
+    fallback
+        tree("Day")
+        tree("Night")

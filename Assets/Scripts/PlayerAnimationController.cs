@@ -35,11 +35,9 @@ public class PlayerAnimationController : MonoBehaviour
             }
             
             idleIdleTimer += Time.deltaTime;
-            Debug.Log("Idle Idle Timer: " + idleIdleTimer);
-            
+
             if (idleIdleTimer >= idleIdleTriggerTime)
             {
-                Debug.Log("Idle Idle triggered");
                 canIdleIdle = false;
                 idleIdleTriggerTime = 0;
                 idleIdleTimer = 0;
@@ -56,10 +54,18 @@ public class PlayerAnimationController : MonoBehaviour
 
     IEnumerator DelayIdleIdle()
     {
-        Debug.Log("Waiting cooldown");
         yield return new WaitForSeconds(IdleIdleCooldownTime);
-        Debug.Log("Ready to Idle Idle again");
         canIdleIdle = true;
         yield return null;
+    }
+
+    public void PointWeapon()
+    {
+        _animator.SetTrigger("PointWeapon");
+    }
+
+    public void HolsterWeapon()
+    {
+        _animator.SetTrigger("HolsterWeapon");
     }
 }
