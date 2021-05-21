@@ -692,6 +692,7 @@ GameObject:
   - component: {fileID: 471888600}
   - component: {fileID: 471888599}
   - component: {fileID: 471888598}
+  - component: {fileID: 471888602}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -830,6 +831,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &471888602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471888596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: "event:/Caf\xE9"
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &564440013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1059,15 +1083,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1877375327, guid: c004ace4012257f4ab36a2ff41afe968, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00993372
+      value: -0.009933721
       objectReference: {fileID: 0}
     - target: {fileID: 1877375327, guid: c004ace4012257f4ab36a2ff41afe968, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -5.376729e-10
+      value: 5.376729e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1877375327, guid: c004ace4012257f4ab36a2ff41afe968, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -5.3413554e-12
+      value: 5.341356e-12
       objectReference: {fileID: 0}
     - target: {fileID: 1906955270, guid: c004ace4012257f4ab36a2ff41afe968, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3860,6 +3884,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93293a973ce031746b6007a5d815d417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectTag: 
+  objectTransform: {fileID: 0}
+  canRotateX: 0
+  canRotateY: 0
+  canRotateZ: 0
 --- !u!4 &409308432412441745
 Transform:
   m_ObjectHideFlags: 0
