@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
@@ -11,60 +12,86 @@ public class LevelManager : MonoBehaviour
     public Transform startSpawn;
     public string previousLevel;
     public string currentLevel;
-    private List<DoorTrigger> _doorTriggers;
-    private Transform playerSpawnTransform;
-    public Transform PlayerSpawnTransform => playerSpawnTransform;
+    private List<DoorController> _doorTriggers;
+    private ThirdPersonController playerController;
+    private Animator _sceneTransitionAnimator;
+    private Transform _currentSpawnLocation;
+    private DoorController _currentDoorController;
+    public Transform brodelCameraTransform;
+    private HUDReferences _hudReferences;
+    private Camera mainCamera;
+    private GameObject cineMachineCamera;
+    private TimeController _timeController;
+    private DailyIncome _dailyIncomeScript;
     private bool canLoad;
 
     private void Awake()
     {
         canLoad = true;
-        playerSpawnTransform = FindObjectOfType<ThirdPersonController>().transform;
+        playerController = FindObjectOfType<ThirdPersonController>();
+        _sceneTransitionAnimator = GameObject.FindGameObjectWithTag("SceneTransition").GetComponent<Animator>();
         currentLevel = SceneManager.GetActiveScene().name;
-        playerSpawnTransform = startSpawn;
+        cineMachineCamera = FindObjectOfType<CinemachineFreeLook>().gameObject;
+        _hudReferences = FindObjectOfType<HUDReferences>();
+        _timeController = FindObjectOfType<TimeController>();
+        _dailyIncomeScript = FindObjectOfType<DailyIncome>();
+        mainCamera = Camera.main;
     }
 
-    private void OnEnable()
+    public void LoadLevel(DoorController doorController, Transform spawnLocation)
     {
-        _doorTriggers = FindObjectsOfType<DoorTrigger>().ToList();
+        _currentSpawnLocation = spawnLocation;
+        _currentDoorController = doorController;
+        StartCoroutine(LevelTransition());
     }
 
-    public void LoadLevel(string previousLevelName, string nextLevelName)
+    public void LoadBrodel()
     {
-        if (canLoad)
-        {
-            canLoad = false;
-            previousLevel = currentLevel;
-            SceneManager.LoadScene(nextLevelName);
-            StartCoroutine(WaitToLoad());
-        }
+        _timeController.timeFreeze = true;
+        _dailyIncomeScript.enabled = false;
+        StartCoroutine(TransitionToBrodel());
+    }
+    
+
+    public void SpawnOnLocation(Transform spawnLocation)
+    {
+        playerController.transform.position = spawnLocation.position;
+        playerController.transform.rotation = spawnLocation.rotation;
     }
 
-    public void SpawnOnDoor()
+    IEnumerator LevelTransition()
     {
-        FindObjectOfType<HUDReferences>().doorsPrompt.SetActive(false);
-        
-        _doorTriggers = null;
-        
-        _doorTriggers = FindObjectsOfType<DoorTrigger>().ToList();
-
-        foreach (var _door in _doorTriggers)
-        {
-            currentLevel = SceneManager.GetActiveScene().name;
-            Debug.Log(_door.transform.position.ToString() + " " +  _door.nextSceneName);
-            if (_door.nextSceneName == previousLevel)
-            {
-                Debug.Log("Door");
-                Transform playerTransform = FindObjectOfType<ThirdPersonController>().transform;
-                playerTransform.position = _door.playerSpawnLocation.position;
-                playerTransform.rotation = _door.playerSpawnLocation.rotation;
-            }
-        }
-    }
-
-    IEnumerator WaitToLoad()
-    {
+        _currentDoorController.isEnabled = false;
+        playerController.FreezePlayer(true);
+        _sceneTransitionAnimator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(0.5f);
         yield return new WaitForSeconds(1f);
-        canLoad = true;
+        SpawnOnLocation(_currentSpawnLocation);
+        playerController.RecenterCamera();
+        _sceneTransitionAnimator.SetTrigger("FadeIn");
+        yield return new WaitForSeconds(0.5f);
+        previousLevel = _currentDoorController.currentLevelName;
+        currentLevel = _currentDoorController.nextLevelName;
+        playerController.FreezePlayer(false);
+        _currentDoorController.isEnabled = true;
+        _currentDoorController = null;
+        _currentSpawnLocation = null;
+    }
+
+    IEnumerator TransitionToBrodel()
+    {
+        playerController.FreezePlayer(true);
+        _sceneTransitionAnimator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
+        cineMachineCamera.SetActive(false);
+        _hudReferences.HUDPanel.SetActive(false);
+        mainCamera.transform.position = brodelCameraTransform.position;
+        mainCamera.transform.rotation = brodelCameraTransform.rotation;
+        mainCamera.fieldOfView = 60;
+        _sceneTransitionAnimator.SetTrigger("FadeIn");
+        yield return new WaitForSeconds(0.5f);
+        previousLevel = _currentDoorController.currentLevelName;
+        currentLevel = _currentDoorController.nextLevelName;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Panda;
 using UnityEngine.AI;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(NpcAIBehaviour))]
@@ -11,7 +12,7 @@ public class VelhaAIBehaviour : MonoBehaviour
     private NavMeshAgent _agent;
     private NpcAIBehaviour _npcBehaviour;
     public DialogueTrigger _dialogueTrigger;
-    
+
     public Transform outsideWaypoint;
     public string outsideWaypointTag;
 
@@ -32,6 +33,8 @@ public class VelhaAIBehaviour : MonoBehaviour
         {
             insideWaypoint = GameObject.FindGameObjectWithTag(insideWaypointTag).GetComponent<Transform>();
         }
+
+        //Setup();
     }
 
     [Task]
@@ -62,5 +65,22 @@ public class VelhaAIBehaviour : MonoBehaviour
     {
         Debug.Log("StopCleaning");
         Task.current.Succeed();
+    }
+
+    void Setup()
+    {
+        SetDestination();
+        
+        _npcBehaviour.SetRotation();
+
+        if (_npcBehaviour.IsNight)
+        {
+            StopClean();
+        }
+
+        if (_npcBehaviour.IsDay)
+        {
+            StartClean();
+        }
     }
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dealer_Night_Root_02
   m_EditorClassIdentifier: 
   type: 1
-  characterName: Dealer
+  characterName: Dr Carlos
   nextDialogue: {fileID: 0}
   sentence: "Ent\xE3o. O que o tio pode fazer por ti a esta hora?"
   choices:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Velha_Day_Violar_Succeed_B_02
   m_EditorClassIdentifier: 
   type: 0
-  characterName: Velha
+  characterName: Dona Clara
   nextDialogue: {fileID: 0}
   sentence: "N\xE3o preocupes cota. Vou ser muito meigo."
   choices:

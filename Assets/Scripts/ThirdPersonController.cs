@@ -38,12 +38,6 @@ public class ThirdPersonController : MonoBehaviour
         Cursor.visible = false;
         _characterController = GetComponent<CharacterController>();
         playerCameraTransform = Camera.main.transform;
-        if (_LevelManager.previousLevel != "")
-        {
-            _LevelManager.SpawnOnDoor();
-            StartCoroutine(RecenterCamera());
-        }
-        
     }
 
     private void Update()
@@ -86,8 +80,12 @@ public class ThirdPersonController : MonoBehaviour
         
     }
 
+    public void RecenterCamera()
+    {
+        StartCoroutine(RecenterCineMachine());
+    }
 
-    IEnumerator RecenterCamera()
+    IEnumerator RecenterCineMachine()
     {
         cameraCinemachine.m_RecenterToTargetHeading.m_enabled = true;
         yield return new WaitForEndOfFrame();

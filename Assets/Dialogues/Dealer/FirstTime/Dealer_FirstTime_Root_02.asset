@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dealer_FirstTime_Root_02
   m_EditorClassIdentifier: 
   type: 1
-  characterName: Dealer
+  characterName: Dr Carlos
   nextDialogue: {fileID: 0}
   sentence: "Ol\xE1. Vejo que \xE9s novo por aqui, eu sou o dealer da zona, se precisares
     de algo podes falar aqui com o tio."

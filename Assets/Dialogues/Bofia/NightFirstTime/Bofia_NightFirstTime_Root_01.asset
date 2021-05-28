@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bofia_NightFirstTime_Root_01
   m_EditorClassIdentifier: 
   type: 0
-  characterName: Bofia
+  characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: b3bcad2a4b4e6f24e9be82e65aec947f, type: 2}
   sentence: Boa noite senhor guarda.
   choices:

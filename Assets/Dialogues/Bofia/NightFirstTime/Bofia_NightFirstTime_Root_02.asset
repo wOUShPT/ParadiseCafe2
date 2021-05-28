@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bofia_NightFirstTime_Root_02
   m_EditorClassIdentifier: 
   type: 1
-  characterName: Bofia
+  characterName: Agente Nuninho
   nextDialogue: {fileID: 0}
   sentence: "Uma nova cara por aqui. J\xE1 muito tempo que n\xE3o via uma cara t\xE3o
     linda. Se algo te acontecer vem logo ter comigo."

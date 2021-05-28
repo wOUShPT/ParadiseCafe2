@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.PlayerLoop;
@@ -8,6 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class GameActions : MonoBehaviour
 {
+    private LevelManager _levelManager;
     public PlayerStats playerStats;
     public CustomActionEvent Generic;
     public CustomActionEvent Rape;
@@ -22,6 +24,7 @@ public class GameActions : MonoBehaviour
 
     private void Awake()
     {
+        _levelManager = GetComponent<LevelManager>();
         Generic = new CustomActionEvent();
         Rape = new CustomActionEvent();
         Steal = new CustomActionEvent();
@@ -41,7 +44,7 @@ public class GameActions : MonoBehaviour
         BuyWeapon.AddListener(DoBuyWeapon);
         GetRobbed.AddListener(DoGetRobbed);
         GameOver.AddListener(DoGameOver);
-        Sex.AddListener(DoSex);
+        Sex.AddListener(DoBrodel);
     }
 
     public void DoGeneric(NPCStats npcStats)
@@ -117,9 +120,9 @@ public class GameActions : MonoBehaviour
         playerStats.wantedLevel++;
     }
 
-    public void DoSex(NPCStats npcStats)
+    public void DoBrodel(NPCStats npcStats)
     {
-        SceneManager.LoadScene("Bordel");
+        _levelManager.LoadBrodel();
     }
 
     public void DecreaseWantedLevel(int amount)
@@ -160,8 +163,9 @@ public class GameActions : MonoBehaviour
         }
         
         playerStats.drugsAmount -= amount;
-        
     }
+    
+    
 }
 
 public class CustomActionEvent: UnityEvent<NPCStats>

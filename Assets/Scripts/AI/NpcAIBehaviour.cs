@@ -23,7 +23,7 @@ public class NpcAIBehaviour : MonoBehaviour
     
     public Transform _currentTarget;
     
-    private TimeController _timeController;
+    public TimeController timeController;
 
     private DialogueManager dialogueManager;
 
@@ -31,15 +31,27 @@ public class NpcAIBehaviour : MonoBehaviour
 
     private Quaternion _currentNpcOrientation;
     
-    public void Start()
+    public void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
 
         isDay = false;
         isNight = false;
         
-        _timeController = FindObjectOfType<TimeController>();
-        _timeController.dayStateChange.AddListener(ChangeGoal);
+        timeController = FindObjectOfType<TimeController>();
+        timeController.dayStateChange.AddListener(ChangeGoal);
+
+        if (timeController.dayState == TimeController.DayState.Day)
+        {
+            isDay = true;
+            isNight = false;
+        }
+
+        if (timeController.dayState == TimeController.DayState.Night)
+        {
+            isDay = false;
+            isNight = true;
+        }
 
         dialogueManager = FindObjectOfType<DialogueManager>();
         
@@ -62,7 +74,7 @@ public class NpcAIBehaviour : MonoBehaviour
     {
         float distanceToTarget = Vector3.Distance(_currentTarget.position, transform.position);
 
-        if (distanceToTarget < 0.5f)
+        if (distanceToTarget < 0.1f)
         {
             Task.current.Succeed();
         }
@@ -70,13 +82,13 @@ public class NpcAIBehaviour : MonoBehaviour
     
     void ChangeGoal()
     {
-        if (_timeController.dayState == TimeController.DayState.Day)
+        if (timeController.dayState == TimeController.DayState.Day)
         {
             isDay = true;
             isNight = false;
         }
 
-        if (_timeController.dayState == TimeController.DayState.Night)
+        if (timeController.dayState == TimeController.DayState.Night)
         {
             isDay = false;
             isNight = true;
@@ -114,5 +126,12 @@ public class NpcAIBehaviour : MonoBehaviour
         
         _agent.isStopped = false;
         transform.rotation = _currentNpcOrientation;
+    }
+
+    [Task]
+    public void SetRotation()
+    {
+        transform.rotation = _currentTarget.rotation;
+        Task.current.Succeed();
     }
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Velha_Day_Violar_Succeed_A_02
   m_EditorClassIdentifier: 
   type: 0
-  characterName: Velha
+  characterName: Dona Clara
   nextDialogue: {fileID: 11400000, guid: 5b51df73bde1a7e40b312782c4d5a64d, type: 2}
   sentence: "Mas que pensas que est\xE1s a fazer patife?"
   choices: []

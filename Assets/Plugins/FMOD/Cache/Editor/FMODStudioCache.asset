@@ -288,7 +288,7 @@ MonoBehaviour:
   Path: Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637572043200025986
+  lastModified: 637566178295228680
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -485,7 +485,7 @@ MonoBehaviour:
   - {fileID: 6546407437052023258}
   StringsBanks:
   - {fileID: -3414285515574207322}
-  stringsBankWriteTime: 637572043200025986
+  stringsBankWriteTime: 637566178295228680
   cacheVersion: 6
 --- !u!114 &107968835105890815
 MonoBehaviour:
@@ -530,7 +530,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -5360038562441560267}
+  - {fileID: 2793614920924218380}
   MinDistance: 0
   MaxDistance: 0
   Length: 88163
@@ -600,6 +600,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &2793614920924218380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3030812105308385800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,7 +908,7 @@ MonoBehaviour:
   Path: Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637572043200015900
+  lastModified: 637566178295208678
   LoadResult: 0
   FileSizes: []
   Exists: 1

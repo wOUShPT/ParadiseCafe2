@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bofia_Day_VenderDroga_Failed_02
   m_EditorClassIdentifier: 
   type: 0
-  characterName: BOFIA
+  characterName: Agente Nuninho
   nextDialogue: {fileID: 0}
   sentence: "Gat\xE3aao... Tigreee... mas ignorante. Est\xE1s mesmo a tentar vender-me
     drogas?"

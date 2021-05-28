@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class HUDReferences : MonoBehaviour
 {
+    public GameObject HUDPanel;
     public GameObject money;
     public GameObject wantedLevel;
     public GameObject weapon;

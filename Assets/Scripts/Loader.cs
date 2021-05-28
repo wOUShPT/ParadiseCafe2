@@ -19,14 +19,14 @@ public class Loader : MonoBehaviour
 
             if (SceneManager.GetActiveScene().name == "Bordel")
             {
-                GameObject.FindGameObjectWithTag("HUD").SetActive(false);
+                FindObjectOfType<HUDReferences>().HUDPanel.SetActive(false);
+                FindObjectOfType<TimeController>().timeFreeze = true;
             }
             
             Destroy(gameObject);
         }
         else
         {
-            FindObjectOfType<SetPlayerStats>().ResetStats();
             DontDestroyOnLoad(gameObject);
         }
     }

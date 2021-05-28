@@ -5,4 +5,5 @@ tree("Day")
             SetDestination
             GoToDestination
             CheckArrival
+            SetRotation
             StartClean

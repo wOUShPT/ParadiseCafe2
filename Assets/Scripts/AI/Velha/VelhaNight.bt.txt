@@ -5,4 +5,5 @@ tree("Night")
             StopClean
             SetDestination
             GoToDestination
+            SetRotation
             CheckArrival

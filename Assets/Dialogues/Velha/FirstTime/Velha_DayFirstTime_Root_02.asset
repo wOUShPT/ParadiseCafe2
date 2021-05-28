@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Velha_DayFirstTime_Root_02
   m_EditorClassIdentifier: 
   type: 1
-  characterName: Velha
+  characterName: Dona Clara
   nextDialogue: {fileID: 0}
   sentence: "Ol\xE1 meu filho \xE9s o novo residente da rua certo? Fico muito feliz
     por teres vindo para aqui. Se precisares de alguma coisa que eu possa ajudar

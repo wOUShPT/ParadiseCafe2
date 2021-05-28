@@ -1,0 +1,9 @@
+tree("Day")
+    while 
+        isDay
+        sequence
+            SetDestination
+            GoToDestination
+            CheckArrival
+            SetRotation
+            StartWaiting

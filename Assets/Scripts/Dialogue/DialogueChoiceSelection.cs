@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using FMOD.Studio;
 
 public class DialogueChoiceSelection : MonoBehaviour
 {
@@ -17,11 +18,15 @@ public class DialogueChoiceSelection : MonoBehaviour
     private bool canNavigate;
     public buttonSelectionEvent ButtonSelect;
     private float timer;
+    private FMOD.Studio.EventInstance changeOptionSound;
+    private FMOD.Studio.EventInstance selectOptionSound;
 
     private void Awake()
     {
         _inputManager = FindObjectOfType<InputManager>();
         ButtonSelect = new buttonSelectionEvent();
+        changeOptionSound = FMODUnity.RuntimeManager.CreateInstance("event:/MudarDeInteração");
+        selectOptionSound = FMODUnity.RuntimeManager.CreateInstance("event:/SelecionarInteração");
     }
 
     private void OnEnable()
@@ -84,6 +89,7 @@ public class DialogueChoiceSelection : MonoBehaviour
         
             if (_inputManager.NavigationInputDirection.y < 0 && canNavigate)
             {
+                changeOptionSound.start();
                 if (currentButtonIndex == _activeButtons.Count-1)
                 {
                     currentButtonIndex = 0;
@@ -100,6 +106,7 @@ public class DialogueChoiceSelection : MonoBehaviour
             }
             else if(_inputManager.NavigationInputDirection.y > 0 && canNavigate)
             {
+                changeOptionSound.start();
                 if (currentButtonIndex == 0)
                 {
                     currentButtonIndex = _activeButtons.Count-1;
@@ -117,6 +124,7 @@ public class DialogueChoiceSelection : MonoBehaviour
 
             if (_inputManager.ConfirmButton == 1)
             {
+                selectOptionSound.start();
                 ButtonSelect.Invoke(currentButtonIndex);
                 StopAllCoroutines();
             }

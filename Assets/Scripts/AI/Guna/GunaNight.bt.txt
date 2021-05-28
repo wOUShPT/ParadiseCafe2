@@ -4,5 +4,6 @@ tree("Night")
                 SetWaypoints
                 GoToDestination
                 CheckArrival
+                SetRotation
                 ResetTimer
                 RunTimer

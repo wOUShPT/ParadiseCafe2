@@ -517,17 +517,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8462709953001013040, guid: b9448252f3a545d42aba1b099815560d, type: 3}
+      propertyPath: m_Name
+      value: crucifixo
+      objectReference: {fileID: 0}
+    - target: {fileID: -8247705428526778007, guid: b9448252f3a545d42aba1b099815560d, type: 3}
+      propertyPath: m_Name
+      value: "ma\xE7aneta"
+      objectReference: {fileID: 0}
     - target: {fileID: -6251363637093730038, guid: b9448252f3a545d42aba1b099815560d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d1aea944839d3804fb4d67c1f83e61d1, type: 2}
+    - target: {fileID: -3068240195741245191, guid: b9448252f3a545d42aba1b099815560d, type: 3}
+      propertyPath: m_Name
+      value: porta
+      objectReference: {fileID: 0}
+    - target: {fileID: -2909215208843765380, guid: b9448252f3a545d42aba1b099815560d, type: 3}
+      propertyPath: m_Name
+      value: Mesa de cabeceira
+      objectReference: {fileID: 0}
+    - target: {fileID: -1916899210259106318, guid: b9448252f3a545d42aba1b099815560d, type: 3}
+      propertyPath: m_Name
+      value: cama
+      objectReference: {fileID: 0}
     - target: {fileID: -1592289475483123607, guid: b9448252f3a545d42aba1b099815560d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d1aea944839d3804fb4d67c1f83e61d1, type: 2}
+    - target: {fileID: 52361805505633545, guid: b9448252f3a545d42aba1b099815560d, type: 3}
+      propertyPath: m_Name
+      value: paredes
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b9448252f3a545d42aba1b099815560d, type: 3}
       propertyPath: m_Name
-      value: bordel_interior (1)
+      value: bordel_interior
       objectReference: {fileID: 0}
     - target: {fileID: 1603246306389932429, guid: b9448252f3a545d42aba1b099815560d, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -611,7 +635,7 @@ GameObject:
   - component: {fileID: 2087445365}
   - component: {fileID: 2087445364}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: "ch\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

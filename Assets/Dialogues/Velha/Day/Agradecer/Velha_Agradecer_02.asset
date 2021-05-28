@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Velha_Agradecer_02
   m_EditorClassIdentifier: 
   type: 0
-  characterName: Velha
+  characterName: Dona Clara
   nextDialogue: {fileID: 0}
   sentence: "Valha-me deus esta juventude. Ainda levas uns biscoitos para casa que
     est\xE1s muito magrinho."

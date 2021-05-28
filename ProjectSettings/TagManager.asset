@@ -10,6 +10,7 @@ TagManager:
   - HUD
   - VelhaGate
   - VelhaCasa
+  - BordelCamera
   layers:
   - Default
   - TransparentFX

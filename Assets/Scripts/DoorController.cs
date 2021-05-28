@@ -7,26 +7,26 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(BoxCollider))]
-public class DoorTrigger : MonoBehaviour
+public class DoorController : MonoBehaviour
 {
-    public string nextSceneName;
-    public string currentSceneName;
-    public Transform playerSpawnLocation;
+    public string nextLevelName;
+    public string currentLevelName;
+    public Transform destinationSpawnLocation;
     private GameObject _promptText;
     private BoxCollider _trigger;
     private InputManager _inputManager;
     private LevelManager _levelManager;
     private StringEvent _doorTriggered;
-    IEnumerator Start()
+    public bool isEnabled;
+    void Start()
     {
         _trigger = GetComponent<BoxCollider>();
         _trigger.isTrigger = true;
-        _trigger.enabled = false;
         _promptText = FindObjectOfType<HUDReferences>().doorsPrompt;
         _promptText.SetActive(false);
         _inputManager = FindObjectOfType<InputManager>();
-        yield return new WaitForSeconds(1f);
         _trigger.enabled = true;
+        isEnabled = true;
     }
 
     private void OnEnable()
@@ -38,13 +38,18 @@ public class DoorTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        _promptText.SetActive(false);
-        if (other.CompareTag("Player"))
+        if (isEnabled)
         {
-            _promptText.SetActive(true);
-            if (_inputManager.ActionInput == 1)
+            _promptText.SetActive(false);
+            if (other.CompareTag("Player"))
             {
-                _doorTriggered.Invoke(currentSceneName, nextSceneName);
+                _promptText.SetActive(true);
+                if (_inputManager.ActionInput == 1)
+                {
+                    _doorTriggered.Invoke(this, destinationSpawnLocation);
+                    _promptText.SetActive(false);
+                    isEnabled = false;
+                }
             }
         }
     }
@@ -56,14 +61,10 @@ public class DoorTrigger : MonoBehaviour
             _promptText.SetActive(false);
         }
     }
-
-    private void OnDisable()
-    {
-        _doorTriggered.RemoveAllListeners();
-    }
+    
 }
 
-public class StringEvent : UnityEvent<string, string>
+public class StringEvent : UnityEvent<DoorController, Transform>
 {
     
 }

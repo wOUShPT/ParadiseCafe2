@@ -66,8 +66,13 @@ public class DialogueManager : MonoBehaviour
             startedDialogue.AddListener(_currentNPCAgent.StopMovement);
             endedDialogue.AddListener(_currentNPCAgent.ResumeMovement);
         }
+        NpcAnimationController _currentNPCAnimationController = _currentNpc.GetComponentInChildren<NpcAnimationController>();
+        if (_currentNPCAnimationController != null)
+        {
+            startedDialogue.AddListener(_currentNPCAnimationController.EnterInteraction);
+            endedDialogue.AddListener(_currentNPCAnimationController.ExitInteraction);
+        }
         startedDialogue.Invoke();
-        dialogueTriggers = null;
         dialogueTriggers = FindObjectsOfType<DialogueTrigger>().ToList();
         foreach (var dialogueTrigger in dialogueTriggers)
         {
@@ -184,6 +189,7 @@ public class DialogueManager : MonoBehaviour
                 dialogueTrigger.enabled = true;
             }
         }
+        dialogueTriggers = null;
     }
 
     IEnumerator DelayNextDialogue(float delayTime)
@@ -225,7 +231,7 @@ public class DialogueManager : MonoBehaviour
                     if (playerStats.wantedLevel == 3)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
-                        endedDialogue.AddListener(() => SceneManager.LoadScene("Choldra"));
+                        endedDialogue.AddListener(() => gameActions.GameOver.Invoke(_currentNpcStats));
                         return;
                     }
                     
@@ -267,7 +273,7 @@ public class DialogueManager : MonoBehaviour
                     if (playerStats.wantedLevel == 3)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
-                        endedDialogue.AddListener(() => SceneManager.LoadScene("Choldra"));
+                        endedDialogue.AddListener(() => gameActions.GameOver.Invoke(_currentNpcStats));
                         return;
                     }
                     

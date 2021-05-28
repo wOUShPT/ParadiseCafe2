@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,11 @@ public class SetPlayerStats : MonoBehaviour
     public bool hasWeapon;
     [Range(0,3)]
     public int wantedLevel;
+
+    private void Awake()
+    {
+        ResetStats();
+    }
 
     public void ResetStats()
     {
