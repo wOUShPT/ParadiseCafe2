@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{e6d2f7d7-b85a-4f2d-b8b4-a3644527ddc7}">
+		<property name="assetPath">
+			<value>Rekrut Kurbel - Gopnik Ahoi! - 04 Это Жесткий Хардбасс (This Is Hard Hardbass).mp3_music.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>164.04897959183674</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7d400f99-92d1-4484-9605-b14f8c24c6a7}</destination>
+		</relationship>
+	</object>
+</objects>
