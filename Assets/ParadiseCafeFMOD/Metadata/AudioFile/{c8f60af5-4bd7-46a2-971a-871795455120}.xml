@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c8f60af5-4bd7-46a2-971a-871795455120}">
+		<property name="assetPath">
+			<value>336598__inspectorj__footsteps-concrete-a.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>39.802902494331065</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7d400f99-92d1-4484-9605-b14f8c24c6a7}</destination>
+		</relationship>
+	</object>
+</objects>

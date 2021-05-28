@@ -5,7 +5,7 @@
 			<value>AndarExterior</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d3632844-b6c8-4ba6-99a6-a77becea50dc}</destination>
@@ -90,7 +90,11 @@
 			<destination>{5c21c28e-4198-4b8c-856d-3f5a6a7781c6}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{d613115a-aab7-4a14-9252-c971fc515779}" />
+	<object class="MultiSound" id="{d613115a-aab7-4a14-9252-c971fc515779}">
+		<relationship name="sounds">
+			<destination>{e9d3d243-9239-4c0c-b006-3758e80b6e45}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{d1a6cc9d-33b6-4f33-aac3-94919c01696b}">
 		<relationship name="effects">
 			<destination>{9b405d1a-c58b-420e-b514-120989177c62}</destination>
@@ -117,6 +121,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e9254da6-71f1-4234-b3bc-c35a046b3f6e}" />
+	<object class="SingleSound" id="{e9d3d243-9239-4c0c-b006-3758e80b6e45}">
+		<relationship name="audioFile">
+			<destination>{1f9e5b47-8007-4d5c-a6c2-b98264e348b7}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{9b405d1a-c58b-420e-b514-120989177c62}" />
 	<object class="MixerBusEffectChain" id="{27f7b205-3387-4a16-87a0-4a963bfe39e0}">
 		<relationship name="effects">

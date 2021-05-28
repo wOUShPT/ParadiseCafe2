@@ -23,14 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4c6e0d-73b5-4f46-949d-e05e640a1ad5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{2fa5b44b-433a-4a46-ae11-f70d315109ce}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{2fa5b44b-433a-4a46-ae11-f70d315109ce}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerAudioHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerAudioHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,12 +75,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AlignNPCToPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetPlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Bofia/BofiaAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DDOL.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerAudioHandler.cs" />
       </list>
     </option>
@@ -211,6 +215,7 @@
       <workItem from="1621888552328" duration="13442000" />
       <workItem from="1621932546743" duration="2053000" />
       <workItem from="1622208722319" duration="1148000" />
+      <workItem from="1622210584376" duration="936000" />
     </task>
     <servers />
   </component>
@@ -233,17 +238,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs</url>
-          <line>33</line>
-          <properties documentPath="E:\Users\Gustavo\Documents\GitHub\ParadiseCafe2\Assets\Scripts\Dialogue\DialogueChoiceSelection.cs" initialLine="29" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

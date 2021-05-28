@@ -6,11 +6,11 @@ using FMOD.Studio;
 
 public class PlayerAudioHandler : MonoBehaviour
 {
-    private FMOD.Studio.EventInstance stepsSound;
+    private FMOD.Studio.EventInstance walkSoundExterior;
 
     private void Start()
     {
-        stepsSound = FMODUnity.RuntimeManager.CreateInstance("events/")
+        walkSoundExterior = FMODUnity.RuntimeManager.CreateInstance("event:/AndarExterior");
     }
 
     void Update()
@@ -18,8 +18,8 @@ public class PlayerAudioHandler : MonoBehaviour
         
     }
 
-    void PlayStepsSound()
+    public void PlayWalkSound()
     {
-        stepsSound.
+        walkSoundExterior.start();
     }
 }

@@ -28,11 +28,7 @@ public class DialogueChoiceSelection : MonoBehaviour
         changeOptionSound = FMODUnity.RuntimeManager.CreateInstance("event:/MudarDeInteração");
         selectOptionSound = FMODUnity.RuntimeManager.CreateInstance("event:/SelecionarInteração");
     }
-
-    private void OnEnable()
-    {
-        
-    }
+    
     
     public void ResetButtons()
     {
