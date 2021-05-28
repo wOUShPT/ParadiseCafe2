@@ -24,15 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fe4c6e0d-73b5-4f46-949d-e05e640a1ad5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Walk.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{2fa5b44b-433a-4a46-ae11-f70d315109ce}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{2fa5b44b-433a-4a46-ae11-f70d315109ce}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerAudioHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerAudioHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/NpcAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUDReferences.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AmbientSounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEvents/GaneEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -84,6 +76,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerAudioHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/AmbientSounds.cs" />
       </list>
     </option>
   </component>
@@ -101,6 +94,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -216,6 +215,7 @@
       <workItem from="1621932546743" duration="2053000" />
       <workItem from="1622208722319" duration="1148000" />
       <workItem from="1622210584376" duration="936000" />
+      <workItem from="1622212833732" duration="992000" />
     </task>
     <servers />
   </component>
