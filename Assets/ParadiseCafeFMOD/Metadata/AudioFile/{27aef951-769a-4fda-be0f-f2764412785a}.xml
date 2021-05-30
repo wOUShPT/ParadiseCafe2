@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{27aef951-769a-4fda-be0f-f2764412785a}">
+		<property name="assetPath">
+			<value>Mozart.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>340.97512499999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7d400f99-92d1-4484-9605-b14f8c24c6a7}</destination>
+		</relationship>
+	</object>
+</objects>
