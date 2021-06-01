@@ -5,10 +5,10 @@
 			<value>SelecionarInteração</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{d3632844-b6c8-4ba6-99a6-a77becea50dc}</destination>
+			<destination>{4bcda542-c4a4-4089-9d79-aee1f7f9ffb3}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{500f6eaf-61c4-47c0-8170-53e89b69e6e5}</destination>
@@ -90,7 +90,11 @@
 			<destination>{500f6eaf-61c4-47c0-8170-53e89b69e6e5}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{b6dc5d96-e75f-4ebf-ae37-ebbbecb650ca}" />
+	<object class="MultiSound" id="{b6dc5d96-e75f-4ebf-ae37-ebbbecb650ca}">
+		<relationship name="sounds">
+			<destination>{2fac10e4-2fec-463c-83cc-e4f40ad8a630}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{4496de9a-29bc-4a1a-b54a-958b05b20961}">
 		<relationship name="effects">
 			<destination>{199b2ab9-716f-4527-94c6-fe7f83bd8c2c}</destination>
@@ -117,6 +121,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c3c25bd2-ea00-49ea-87ba-d64c9cf8410b}" />
+	<object class="SingleSound" id="{2fac10e4-2fec-463c-83cc-e4f40ad8a630}">
+		<relationship name="audioFile">
+			<destination>{ee0e070e-2cd9-4c64-aa03-6dae7ef9a805}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{199b2ab9-716f-4527-94c6-fe7f83bd8c2c}" />
 	<object class="MixerBusEffectChain" id="{97d0fe7f-c9d5-4344-bec6-f452b2ae6dba}">
 		<relationship name="effects">

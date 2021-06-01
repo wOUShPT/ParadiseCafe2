@@ -5,10 +5,10 @@
 			<value>Tiro</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{d3632844-b6c8-4ba6-99a6-a77becea50dc}</destination>
+			<destination>{c627cfcc-e18c-44a6-b44b-928ef2acf6f3}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{8b0a4284-332c-4399-a0be-ded983bd928f}</destination>
@@ -90,7 +90,11 @@
 			<destination>{8b0a4284-332c-4399-a0be-ded983bd928f}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{f5baa492-ede2-4c50-a820-6d86eabb4a80}" />
+	<object class="MultiSound" id="{f5baa492-ede2-4c50-a820-6d86eabb4a80}">
+		<relationship name="sounds">
+			<destination>{f90d2e2a-3810-4596-a973-0fdf8ee06c2e}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{d2a00164-bd82-4e8c-8b14-53202d5917b1}">
 		<relationship name="effects">
 			<destination>{78135b09-856d-4cff-bf98-b5de06f2c343}</destination>
@@ -117,6 +121,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a62b3b8b-ebc7-49b4-98ff-da44bab2050c}" />
+	<object class="SingleSound" id="{f90d2e2a-3810-4596-a973-0fdf8ee06c2e}">
+		<property name="volume">
+			<value>-14</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{b0aa1a83-7697-4e1b-991c-10c6425738e4}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{78135b09-856d-4cff-bf98-b5de06f2c343}" />
 	<object class="MixerBusEffectChain" id="{cd1f8421-87a7-4423-953f-aa6da948c278}">
 		<relationship name="effects">
