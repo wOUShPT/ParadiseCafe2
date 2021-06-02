@@ -10,6 +10,8 @@ using UnityEngine.SceneManagement;
 public class GameActions : MonoBehaviour
 {
     private LevelManager _levelManager;
+    private FMOD.Studio.EventInstance _earnMoney;
+    private FMOD.Studio.EventInstance _loseMoney;
     public PlayerStats playerStats;
     public CustomActionEvent Generic;
     public CustomActionEvent Rape;
@@ -47,6 +49,12 @@ public class GameActions : MonoBehaviour
         Sex.AddListener(DoBrodel);
     }
 
+    private void Start()
+    {
+        _earnMoney = FMODUnity.RuntimeManager.CreateInstance("event:/Stingers/GanharDinheiro");
+        _loseMoney = FMODUnity.RuntimeManager.CreateInstance("event:/Stingers/PerderDinheiro");
+    }
+
     public void DoGeneric(NPCStats npcStats)
     {
         
@@ -56,6 +64,7 @@ public class GameActions : MonoBehaviour
     {
         playerStats.wantedLevel++;
         FindObjectOfType<DialogueTrackerVelha>().UpdateNumberOfRapeInteractions();
+        _levelManager.LoadRape();
     }
 
     public void DoSteal(NPCStats npcStats)
@@ -138,6 +147,7 @@ public class GameActions : MonoBehaviour
     public void IncreaseMoney(int amount)
     {
         playerStats.moneyAmount += amount;
+        _earnMoney.start();
     }
 
     public void DecreaseMoney(int amount)

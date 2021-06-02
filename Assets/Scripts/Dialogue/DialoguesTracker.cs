@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(DialogueTrigger))]
+[RequireComponent(typeof(NPCDialogueTrigger))]
 public class DialoguesTracker : MonoBehaviour
 {
     protected int numberOfOccurredInteractions;
@@ -12,15 +12,15 @@ public class DialoguesTracker : MonoBehaviour
     public Dialogue dayDialogue;
     public Dialogue nightDialogue;
     private TimeController _timeController;
-    protected DialogueTrigger _dialogueTrigger;
+    protected NPCDialogueReferences NpcDialogueReferences;
 
     IEnumerator Start()
     {
         yield return new WaitForSeconds(0.1f);
         numberOfOccurredInteractions = 0;
-        _dialogueTrigger = GetComponent<DialogueTrigger>();
+        NpcDialogueReferences = GetComponent<NPCDialogueReferences>();
         _npcInteractionsTracker = FindObjectOfType<NPCInteractionsTracker>();
-        _dialogueTrigger.triggerDialogue.AddListener(UpdateNumberOfInteractions);
+        GetComponent<NPCDialogueTrigger>().triggerDialogue.AddListener(UpdateNumberOfInteractions);
         _timeController = FindObjectOfType<TimeController>();
         _timeController.dayStateChange.AddListener(UpdateDialogue);
         GetNumberOfInteractions();
@@ -35,11 +35,11 @@ public class DialoguesTracker : MonoBehaviour
         {
             if (numberOfOccurredInteractions == 0)
             {
-                _dialogueTrigger.dialogue = firstInteractionDayDialogue;
+                NpcDialogueReferences.dialogue = firstInteractionDayDialogue;
                 return;
             }
             
-            _dialogueTrigger.dialogue = dayDialogue;
+            NpcDialogueReferences.dialogue = dayDialogue;
             return;
         }
 
@@ -47,17 +47,17 @@ public class DialoguesTracker : MonoBehaviour
         {
             if (numberOfOccurredInteractions == 0)
             {
-                _dialogueTrigger.dialogue = firstInteractionNightDialogue;
+                NpcDialogueReferences.dialogue = firstInteractionNightDialogue;
                 return;
             }
             
-            _dialogueTrigger.dialogue = nightDialogue;
+            NpcDialogueReferences.dialogue = nightDialogue;
         }
     }
 
     protected virtual void GetNumberOfInteractions()
     {
-        switch (_dialogueTrigger.npcStats.iD)
+        switch (NpcDialogueReferences.npcStats.iD)
         {
             case "Bofia":
 
@@ -97,9 +97,9 @@ public class DialoguesTracker : MonoBehaviour
     }
     
     
-    protected virtual void UpdateNumberOfInteractions(DialogueTrigger dialogueTrigger)
+    protected virtual void UpdateNumberOfInteractions(NPCDialogueReferences npcDialogueReferences)
     {
-        switch (dialogueTrigger.npcStats.iD)
+        switch (npcDialogueReferences.npcStats.iD)
         {
             case "Bofia":
 

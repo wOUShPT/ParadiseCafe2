@@ -11,6 +11,9 @@ TagManager:
   - VelhaGate
   - VelhaCasa
   - BordelCamera
+  - RapeCamera
+  - CholdraCamera
+  - PlayerHoldPoint
   layers:
   - Default
   - TransparentFX
