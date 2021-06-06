@@ -12,16 +12,16 @@ public class DialogueTrackerVelha : DialoguesTracker
         GetNumberOfInteractions();
         if (numberOfOccurredInteractions == 0)
         {
-            _dialogueTrigger.dialogue = firstInteractionDayDialogue;
+            NpcDialogueReferences.dialogue = firstInteractionDayDialogue;
             return;
         }
         
-        _dialogueTrigger.dialogue = dayDialogue;
+        NpcDialogueReferences.dialogue = dayDialogue;
     }
 
     protected override void GetNumberOfInteractions()
     {
-        switch (_dialogueTrigger.npcStats.iD)
+        switch (NpcDialogueReferences.npcStats.iD)
         {
             case "Bofia":
 
@@ -60,9 +60,9 @@ public class DialogueTrackerVelha : DialoguesTracker
         }
     }
 
-    protected override void UpdateNumberOfInteractions(DialogueTrigger dialogueTrigger)
+    protected override void UpdateNumberOfInteractions(NPCDialogueReferences npcDialogueReferences)
     {
-        switch (dialogueTrigger.npcStats.iD)
+        switch (npcDialogueReferences.npcStats.iD)
         {
             case "Bofia":
 

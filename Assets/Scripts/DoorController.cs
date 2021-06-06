@@ -33,7 +33,7 @@ public class DoorController : MonoBehaviour
     {
         _levelManager = FindObjectOfType<LevelManager>();
         _doorTriggered = new StringEvent();
-        _doorTriggered.AddListener(_levelManager.LoadLevel);
+        _doorTriggered.AddListener(_levelManager.LoadCafe);
     }
 
     private void OnTriggerStay(Collider other)

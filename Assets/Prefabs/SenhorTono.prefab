@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &4473597703813441904
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662553192463373349}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8be55f94c445219428df9489b5253b14, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4473597703813441905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662553192463373349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19703404970bb214694520b6b906e1f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4304120391154636750
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93293a973ce031746b6007a5d815d417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectTag: 
+  objectTag: Player
   objectTransform: {fileID: 0}
   canRotateX: 0
   canRotateY: 0
@@ -126,13 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb8dad32568f77448e961310f0517e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePrompt: {fileID: 4304120392818338826}
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   playerTag: Player
-  dialogue: {fileID: 11400000, guid: d8064cfbe81bc884ea8a81484f70244c, type: 2}
-  npcStats: {fileID: 11400000, guid: cd85d0eea511a044a9e408e1fcbcbadf, type: 2}
   sphereCastOrigin: {fileID: 4304120392343418985}
   dialogueMinDistance: 0
   dialogueMaxDistance: 1.5
@@ -323,37 +351,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!95 &4473597703813441904
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3662553192463373349}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8be55f94c445219428df9489b5253b14, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4473597703813441905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3662553192463373349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19703404970bb214694520b6b906e1f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4473597703813441908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -405,6 +402,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 745117416337114130, guid: 7383c9db45f679a4db6283ba6b64b0a4, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1c7b7bff207feb54ea1bb26bb5b22f2c, type: 2}
+    - target: {fileID: 745117416337114130, guid: 7383c9db45f679a4db6283ba6b64b0a4, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 12c4b593f4a79c149b0ae69167f8cc0b, type: 2}
+    - target: {fileID: 745117416337114130, guid: 7383c9db45f679a4db6283ba6b64b0a4, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 06b9dcf63fce5104ba04be2cf9423020, type: 2}
     - target: {fileID: 919132149155446097, guid: 7383c9db45f679a4db6283ba6b64b0a4, type: 3}
       propertyPath: m_Name
       value: Mesh

@@ -11,7 +11,7 @@ public class VelhaAIBehaviour : MonoBehaviour
 {
     private NavMeshAgent _agent;
     private NpcAIBehaviour _npcBehaviour;
-    public DialogueTrigger _dialogueTrigger;
+    public NPCDialogueTrigger npcDialogueTrigger;
 
     public Transform outsideWaypoint;
     public string outsideWaypointTag;

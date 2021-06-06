@@ -26,8 +26,8 @@ public class DialogueManager : MonoBehaviour
     private bool _choiceSelected;
     private InputManager _InputManager;
     private ThirdPersonController _playerController;
-    private List<DialogueTrigger> dialogueTriggers;
-    private DialogueTrigger _currentDialogueTrigger;
+    private List<NPCDialogueTrigger> dialogueTriggers;
+    private NPCDialogueTrigger _currentNpcDialogueTrigger;
     private NPCInteractionsTracker npcInteractionsTracker;
     private GameObject _currentNpc;
     private NPCStats _currentNpcStats;
@@ -54,9 +54,9 @@ public class DialogueManager : MonoBehaviour
         dialogueChoiceSelection.enabled = false;
     }
 
-    public void StartDialogue(DialogueTrigger npcDialogueTrigger)
+    public void StartDialogue(NPCDialogueReferences npcDialogueReferences)
     {
-        _currentNpc = npcDialogueTrigger.GetComponentInParent<Transform>().parent.gameObject;
+        _currentNpc = npcDialogueReferences.GetComponentInParent<Transform>().parent.gameObject;
         _playerController = FindObjectOfType<ThirdPersonController>();
         startedDialogue.AddListener(() => { _playerController.FreezePlayer(true); });
         endedDialogue.AddListener(() => { _playerController.FreezePlayer(false); });
@@ -73,13 +73,13 @@ public class DialogueManager : MonoBehaviour
             endedDialogue.AddListener(_currentNPCAnimationController.ExitInteraction);
         }
         startedDialogue.Invoke();
-        dialogueTriggers = FindObjectsOfType<DialogueTrigger>().ToList();
+        dialogueTriggers = FindObjectsOfType<NPCDialogueTrigger>().ToList();
         foreach (var dialogueTrigger in dialogueTriggers)
         {
             dialogueTrigger.enabled = false;
         }
-        _currentNpcStats = npcDialogueTrigger.npcStats;
-        _currentDialogue = npcDialogueTrigger.dialogue;
+        _currentNpcStats = npcDialogueReferences.npcStats;
+        _currentDialogue = npcDialogueReferences.dialogue;
         dialogueBoxAnimator.SetBool("IsOpen", true);
         Debug.Log("StartingConversation with " + _currentDialogue.CharacterName);
         nameText.text = _currentDialogue.CharacterName;

@@ -19,6 +19,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1413198651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2645209817203927154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19703404970bb214694520b6b906e1f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3981083639013192959
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,13 +327,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb8dad32568f77448e961310f0517e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePrompt: {fileID: 3981083639013192959}
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   playerTag: Player
-  dialogue: {fileID: 11400000, guid: 64571dfa404bdd543a01b9bab0975c91, type: 2}
-  npcStats: {fileID: 11400000, guid: 69893849c47cac743afa125d4322b157, type: 2}
   sphereCastOrigin: {fileID: 3981083639086014620}
   dialogueMinDistance: 0
   dialogueMaxDistance: 1.5
@@ -400,6 +409,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3981083640577265466}
+  - component: {fileID: 3981083638604562619}
+  - component: {fileID: 3981083638604562620}
+  - component: {fileID: 3981083638604562621}
+  - component: {fileID: 3981083638604562622}
   m_Layer: 0
   m_Name: Bofia
   m_TagString: Untagged
@@ -425,6 +438,99 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3981083638604562619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981083640577265467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e43e7170fb45b4b81dcd16d0ff55d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scripts:
+  - {fileID: 4900000, guid: df388acf4648e52459ea27a964cb642c, type: 3}
+  - {fileID: 4900000, guid: df2cafadde3f21a4ebfff40c5ed75867, type: 3}
+  - {fileID: 4900000, guid: 30c22c6a91c4f8a49938ee9cdc4d766c, type: 3}
+  autoReset: 1
+  tickOn: 1
+  sourceInfos:
+  - isFoldout: 1
+    breakPoints: 
+    breakPointStatuses: 
+    collapsedLines: 
+    btScript: 
+  - isFoldout: 1
+    breakPoints: 
+    breakPointStatuses: 
+    collapsedLines: 
+    btScript: 
+  - isFoldout: 1
+    breakPoints: 
+    breakPointStatuses: 
+    collapsedLines: 
+    btScript: 
+--- !u!114 &3981083638604562620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981083640577265467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56b353e536914541be5dce249346f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointsList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveRadius: 20
+  minimumWaitTime: 10
+  maximumWaitTime: 10
+--- !u!114 &3981083638604562621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981083640577265467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a3c285905e23e49b5a601c67ea5a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentTarget: {fileID: 0}
+  timeController: {fileID: 0}
+--- !u!195 &3981083638604562622
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981083640577265467}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 8
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &2915172019657889059
 PrefabInstance:
   m_ObjectHideFlags: 0

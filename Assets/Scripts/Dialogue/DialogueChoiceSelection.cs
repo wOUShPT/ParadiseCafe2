@@ -25,8 +25,8 @@ public class DialogueChoiceSelection : MonoBehaviour
     {
         _inputManager = FindObjectOfType<InputManager>();
         ButtonSelect = new buttonSelectionEvent();
-        changeOptionSound = FMODUnity.RuntimeManager.CreateInstance("event:/MudarDeInteração");
-        selectOptionSound = FMODUnity.RuntimeManager.CreateInstance("event:/SelecionarInteração");
+        changeOptionSound = FMODUnity.RuntimeManager.CreateInstance("event:/UI/MudarDeInteração");
+        selectOptionSound = FMODUnity.RuntimeManager.CreateInstance("event:/UI/SelecionarInteração");
     }
     
     

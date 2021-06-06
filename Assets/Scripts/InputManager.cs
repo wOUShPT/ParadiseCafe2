@@ -43,4 +43,16 @@ public class InputManager : MonoBehaviour
     {
         _controls.Disable();
     }
+
+    public void ToggleControls(bool state)
+    {
+        if (state)
+        {
+            _controls.Enable();
+        }
+        else
+        {
+            _controls.Disable();
+        }
+    }
 }

@@ -6,20 +6,22 @@ using FMOD.Studio;
 
 public class PlayerAudioHandler : MonoBehaviour
 {
-    private FMOD.Studio.EventInstance walkSoundExterior;
+    private FMOD.Studio.EventInstance walkExteriorSound;
+    private FMOD.Studio.EventInstance fapSound;
 
     private void Start()
     {
-        walkSoundExterior = FMODUnity.RuntimeManager.CreateInstance("event:/AndarExterior");
-    }
-
-    void Update()
-    {
-        
+        walkExteriorSound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/AndarExterior");
+        fapSound = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Fap");
     }
 
     public void PlayWalkSound()
     {
-        walkSoundExterior.start();
+        walkExteriorSound.start();
+    }
+
+    public void PlayFapSound()
+    {
+        fapSound.start();
     }
 }

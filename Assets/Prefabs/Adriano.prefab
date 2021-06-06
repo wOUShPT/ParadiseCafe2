@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1079908598585137893}
+  - component: {fileID: 854878143}
   m_Layer: 0
   m_Name: Adriano
   m_TagString: Untagged
@@ -34,6 +35,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &854878143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079908598585137892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Musica/AdrianoMusic
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 8.400001
 --- !u!1 &1079908599017670308
 GameObject:
   m_ObjectHideFlags: 0
@@ -50,7 +74,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1079908599017670309
 Transform:
   m_ObjectHideFlags: 0
@@ -159,13 +183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb8dad32568f77448e961310f0517e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePrompt: {fileID: 1079908600055595488}
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   playerTag: Player
-  dialogue: {fileID: 11400000, guid: 1670ff18e580bb2409ac5cac5ad4af14, type: 2}
-  npcStats: {fileID: 11400000, guid: 8a4cac0655789e14cbd8f4e7e5cf492b, type: 2}
   sphereCastOrigin: {fileID: 1079908599744021370}
   dialogueMinDistance: 0
   dialogueMaxDistance: 1.5
@@ -471,6 +492,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6928055462018942870, guid: a32da4ef084509c4abe1b2c7dac1086e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c038cc679677ad4fb5c63464e1f1eb6, type: 2}
+    - target: {fileID: -6928055462018942870, guid: a32da4ef084509c4abe1b2c7dac1086e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3a0f52faf9143245bbb0d88b85a9d8a, type: 2}
+    - target: {fileID: 18108647818847267, guid: a32da4ef084509c4abe1b2c7dac1086e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ec747bf414dc4ae4398643b8ed3babc5, type: 2}
     - target: {fileID: 919132149155446097, guid: a32da4ef084509c4abe1b2c7dac1086e, type: 3}
       propertyPath: m_Name
       value: Mesh
