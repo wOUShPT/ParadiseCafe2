@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{bfb87779-5319-49bc-96e4-87fdc2b20c7e}</destination>
 		</relationship>
+		<relationship name="parameters">
+			<destination>{1bc94954-04cb-40dd-82e1-721cd7717c50}</destination>
+		</relationship>
 		<relationship name="banks">
 			<destination>{7044fbf8-806d-4e5c-a19d-b1471d64a7c0}</destination>
 		</relationship>
@@ -41,6 +44,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{17f33e22-642d-4092-a2af-c551093e0b87}">
+		<relationship name="modules">
+			<destination>{49ed1be1-a51b-43b0-b885-d7c4779dab0f}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{71942da5-8e33-45be-ba62-d2440a5801ce}</destination>
 		</relationship>
@@ -63,7 +69,16 @@
 			<destination>{6d604225-cc2d-4fcf-ba93-af5b56b308a0}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{bfb87779-5319-49bc-96e4-87fdc2b20c7e}" />
+	<object class="Timeline" id="{bfb87779-5319-49bc-96e4-87fdc2b20c7e}">
+		<property name="isProxyEnabled">
+			<value>false</value>
+		</property>
+	</object>
+	<object class="ActionSheet" id="{1bc94954-04cb-40dd-82e1-721cd7717c50}">
+		<relationship name="modules">
+			<destination>{49ed1be1-a51b-43b0-b885-d7c4779dab0f}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{71942da5-8e33-45be-ba62-d2440a5801ce}">
 		<relationship name="effectChain">
 			<destination>{37aa6718-4e7a-4e37-b0da-f1dce27d8b3b}</destination>
@@ -75,6 +90,7 @@
 			<destination>{a3eb1a5a-99e9-4612-b5fa-796c12e74ddb}</destination>
 		</relationship>
 	</object>
+	<object class="MultiSound" id="{49ed1be1-a51b-43b0-b885-d7c4779dab0f}" />
 	<object class="MixerBusEffectChain" id="{29f8052b-c6fc-483d-87b8-1889ed0982af}">
 		<relationship name="effects">
 			<destination>{203ba53d-0874-49fe-aaca-17f2d0333b9b}</destination>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="Snapshot" id="{074e946e-a4cb-4ccf-8571-3338f5a7bb7b}">
+		<property name="name">
+			<value>InteriorBordel</value>
+		</property>
+		<relationship name="mixer">
+			<destination>{109e9dd2-bb82-43ca-9213-47df7699d41a}</destination>
+		</relationship>
+		<relationship name="automatableProperties">
+			<destination>{3b41baa3-69ea-4445-85ee-13def065a025}</destination>
+		</relationship>
+		<relationship name="markerTracks">
+			<destination>{1637139a-5a4d-4e60-a6f3-aa4bdc32e7e7}</destination>
+		</relationship>
+		<relationship name="timeline">
+			<destination>{3adcfd27-98e8-475d-83c0-c7261bab2aaa}</destination>
+		</relationship>
+		<relationship name="snapshotMasterTrack">
+			<destination>{59e7ed50-20e0-4d96-a85d-01a7dab9b14b}</destination>
+		</relationship>
+	</object>
+	<object class="EventAutomatableProperties" id="{3b41baa3-69ea-4445-85ee-13def065a025}" />
+	<object class="MarkerTrack" id="{1637139a-5a4d-4e60-a6f3-aa4bdc32e7e7}" />
+	<object class="Timeline" id="{3adcfd27-98e8-475d-83c0-c7261bab2aaa}" />
+	<object class="SnapshotMasterTrack" id="{59e7ed50-20e0-4d96-a85d-01a7dab9b14b}" />
+</objects>

@@ -5,7 +5,7 @@
 			<value>PerderDinheiro</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d8dc201c-1a1a-4fdc-9ad4-c3c0f6a2f5ac}</destination>
@@ -90,7 +90,11 @@
 			<destination>{060b9c26-0252-4ba5-b905-75c70cd3183c}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{0bf22c79-4a12-4677-8c47-477ea09ae3bb}" />
+	<object class="MultiSound" id="{0bf22c79-4a12-4677-8c47-477ea09ae3bb}">
+		<relationship name="sounds">
+			<destination>{ce27b71b-9ef5-4a67-87d7-50547ecad088}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{ea1d7f31-7c07-4b3d-b042-2b3de17ae3d3}">
 		<relationship name="effects">
 			<destination>{ac0453e2-803c-4199-b2fe-95b92f5cd095}</destination>
@@ -117,6 +121,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5ca04c24-622f-4ae0-a3b9-5d49bd2f0342}" />
+	<object class="SingleSound" id="{ce27b71b-9ef5-4a67-87d7-50547ecad088}">
+		<relationship name="audioFile">
+			<destination>{a4e7935b-c3d1-4a26-a7e7-b3e43cdf705f}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{ac0453e2-803c-4199-b2fe-95b92f5cd095}" />
 	<object class="MixerBusEffectChain" id="{8a4e7edd-704a-4c80-a87c-59dcc9423eb6}">
 		<relationship name="effects">

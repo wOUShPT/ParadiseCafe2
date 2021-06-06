@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{91cf249a-b747-45f0-8855-9973c7107748}">
+		<property name="assetPath">
+			<value>Amanhecer.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.2851875000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7d400f99-92d1-4484-9605-b14f8c24c6a7}</destination>
+		</relationship>
+	</object>
+</objects>

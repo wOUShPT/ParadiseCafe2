@@ -5,7 +5,7 @@
 			<value>Amanhecer</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d8dc201c-1a1a-4fdc-9ad4-c3c0f6a2f5ac}</destination>
@@ -90,7 +90,11 @@
 			<destination>{cfe177ae-a4bf-4b9a-b926-772605121e37}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{880a205f-2608-4b53-a8e0-d07ea1db9e6c}" />
+	<object class="MultiSound" id="{880a205f-2608-4b53-a8e0-d07ea1db9e6c}">
+		<relationship name="sounds">
+			<destination>{edd7ec7e-15ca-473c-a699-cd0c3e7586d1}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{60f70f55-aed1-471c-8020-f3940348437a}">
 		<relationship name="effects">
 			<destination>{049a05e6-b155-44cf-815e-64dc6de840d5}</destination>
@@ -117,6 +121,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9d5356c0-1c60-4e3e-84c7-a195df320143}" />
+	<object class="SingleSound" id="{edd7ec7e-15ca-473c-a699-cd0c3e7586d1}">
+		<relationship name="audioFile">
+			<destination>{91cf249a-b747-45f0-8855-9973c7107748}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{049a05e6-b155-44cf-815e-64dc6de840d5}" />
 	<object class="MixerBusEffectChain" id="{af69857d-cfec-458e-a873-5ee766f9c0d0}">
 		<relationship name="effects">

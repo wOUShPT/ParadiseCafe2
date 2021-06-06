@@ -132,9 +132,6 @@
 		<property name="looping">
 			<value>true</value>
 		</property>
-		<property name="playlistMode">
-			<value>1</value>
-		</property>
 		<relationship name="sounds">
 			<destination>{ed68d718-04af-48a6-810c-222549f1c001}</destination>
 			<destination>{dbe6ad51-4412-4b01-b464-16106cad3083}</destination>
