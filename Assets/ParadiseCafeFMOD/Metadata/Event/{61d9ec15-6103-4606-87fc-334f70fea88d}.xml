@@ -5,7 +5,7 @@
 			<value>Grilos</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5ddf885e-2714-417b-8418-36ed64cb939d}</destination>
@@ -70,6 +70,9 @@
 		<relationship name="modules">
 			<destination>{2599a4b7-122d-49b8-9f93-237d1eed0074}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{ee94da11-5bca-4241-9fe4-c9ef17d50827}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{4f5b868b-b5e2-49d6-9cf2-5970ab466bb8}">
 		<relationship name="effectChain">
@@ -110,10 +113,23 @@
 			<destination>{4f5b868b-b5e2-49d6-9cf2-5970ab466bb8}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{ee94da11-5bca-4241-9fe4-c9ef17d50827}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>2</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{96cc4872-92fb-4cf3-ba19-6589aaad0202}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{292013a3-d438-4a5b-a5ac-9506c4589572}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{78962f19-148a-4167-9869-451884659f0c}">
 		<relationship name="effects">
 			<destination>{b60d8f6e-ead8-421f-8f76-77dea720e399}</destination>
-			<destination>{86a49782-a379-4d22-ae59-f50faf643750}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ed156b49-d1b4-46d1-95b1-30c1f14d9b55}" />
@@ -131,7 +147,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{2367dc20-650e-4655-8637-f4d99fcbb768}" />
 	<object class="MixerBusFader" id="{b60d8f6e-ead8-421f-8f76-77dea720e399}" />
-	<object class="SpatialiserEffect" id="{86a49782-a379-4d22-ae59-f50faf643750}" />
 	<object class="SingleSound" id="{224dd8b0-099b-404b-8191-d37ae5565455}">
 		<relationship name="audioFile">
 			<destination>{5b820892-e85c-4435-863f-bbf30aafe08b}</destination>

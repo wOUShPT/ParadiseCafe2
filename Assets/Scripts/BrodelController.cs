@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class BrodelController : MonoBehaviour
 {
     public PlayerStats _playerStats;
+    private DialogueManager _dialogueManager;
+    private LevelManager _levelManager;
     public Animator sexAnimator;
     public NPCDialogueReferences npcDialogueReferences;
     public SexDialogueTrigger sexDialogueTrigger;
@@ -19,6 +22,8 @@ public class BrodelController : MonoBehaviour
     private Animator _sceneTransitionAnimator;
     void Start()
     {
+        _dialogueManager = FindObjectOfType<DialogueManager>();
+        _levelManager = FindObjectOfType<LevelManager>();
         _charactersTransform = sexAnimator.transform;
         _sceneTransitionAnimator = GameObject.FindGameObjectWithTag("SceneTransition").GetComponent<Animator>();
         GameActions gameActions = FindObjectOfType<GameActions>();
@@ -95,6 +100,7 @@ public class BrodelController : MonoBehaviour
             npcDialogueReferences.dialogue = brodelNoMoneyBranch;
             sexAnimator.SetTrigger("PayNoMoney");
             sexDialogueTrigger.TriggerDialogue();
+            _dialogueManager.endedDialogue.AddListener(() => StartCoroutine(Reginaldo()));
         }
         else
         {
@@ -102,9 +108,17 @@ public class BrodelController : MonoBehaviour
             _playerStats.moneyAmount -= 100;
             sexAnimator.SetTrigger("PayMoney");
             sexDialogueTrigger.TriggerDialogue();
+            
         }
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
+    }
+
+    IEnumerator Reginaldo()
+    {
+        sexAnimator.SetTrigger("Reginaldo");
+        yield return new WaitForSeconds(20f);
+        
     }
 
 }

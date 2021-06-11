@@ -23,13 +23,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4c6e0d-73b5-4f46-949d-e05e640a1ad5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DayStateStingerSounds.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DayStateStingerSounds.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Bordel/Bico.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Bordel/Bico.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Cu_Cu.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Cu_Cu.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{0288f221-d1dd-4716-a909-024ab22584eb}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{0288f221-d1dd-4716-a909-024ab22584eb}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{1190da11-35a5-4968-90dc-60b843cd1afb}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{1190da11-35a5-4968-90dc-60b843cd1afb}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{151ba408-805f-43bb-8a84-60dc86ef2b4a}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{151ba408-805f-43bb-8a84-60dc86ef2b4a}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{201fb0e7-ccbb-407d-ac8e-9d98d15d6c13}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{201fb0e7-ccbb-407d-ac8e-9d98d15d6c13}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{27aef951-769a-4fda-be0f-f2764412785a}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{27aef951-769a-4fda-be0f-f2764412785a}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{43cdf62b-829d-4e42-9888-cb3d31124550}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{43cdf62b-829d-4e42-9888-cb3d31124550}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{5174ea62-fc32-4944-8986-b066e9b58508}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{5174ea62-fc32-4944-8986-b066e9b58508}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{58daada5-7b5d-4ee7-b0ed-e6ded5c33de6}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{58daada5-7b5d-4ee7-b0ed-e6ded5c33de6}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{5b820892-e85c-4435-863f-bbf30aafe08b}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{5b820892-e85c-4435-863f-bbf30aafe08b}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{5ed2f6ff-be50-4ded-9e8b-481a5de9ddb2}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{5ed2f6ff-be50-4ded-9e8b-481a5de9ddb2}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{715d0853-529f-4b83-b75d-f4d942cf9c1e}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{715d0853-529f-4b83-b75d-f4d942cf9c1e}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{798feff9-6561-412c-a302-0f5d6ef577f6}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{798feff9-6561-412c-a302-0f5d6ef577f6}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{862b65a9-d7d6-42aa-9453-07ce5a5c67bd}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{862b65a9-d7d6-42aa-9453-07ce5a5c67bd}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{9c9f8b56-0f3a-414d-9209-07c0e758f5de}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{9c9f8b56-0f3a-414d-9209-07c0e758f5de}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{a07a4442-ae60-4870-ab7e-596f5cb2ba3f}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{a07a4442-ae60-4870-ab7e-596f5cb2ba3f}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{bd67a97c-536c-4e5f-9d21-3b4145eaa218}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{bd67a97c-536c-4e5f-9d21-3b4145eaa218}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{bdd38a2e-1b78-471f-b38d-02420df5791a}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{bdd38a2e-1b78-471f-b38d-02420df5791a}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{c25cba0d-b49c-4faf-a74a-e309a2c76ab7}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{c25cba0d-b49c-4faf-a74a-e309a2c76ab7}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{c8c1c06e-0efa-4f21-8821-5b418e5b95eb}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{c8c1c06e-0efa-4f21-8821-5b418e5b95eb}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{cbea4173-4d98-4215-85a0-158321c63167}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{cbea4173-4d98-4215-85a0-158321c63167}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{d6d7a8f9-2bba-47ea-8ce6-31c05d0a0676}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/.cache/{d6d7a8f9-2bba-47ea-8ce6-31c05d0a0676}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{61d9ec15-6103-4606-87fc-334f70fea88d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{61d9ec15-6103-4606-87fc-334f70fea88d}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{67d62ab3-0eb9-45d0-b63f-eb23166b4a04}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{67d62ab3-0eb9-45d0-b63f-eb23166b4a04}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{9e2a8f06-8808-4663-a3c0-0b689c15d178}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{9e2a8f06-8808-4663-a3c0-0b689c15d178}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Group/{1d7de6b8-c3ea-4f0c-bcf1-beaba57bbec2}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Group/{1d7de6b8-c3ea-4f0c-bcf1-beaba57bbec2}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Group/{7b151f95-c5b4-45ad-8a9d-a170f4ea85f1}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Group/{7b151f95-c5b4-45ad-8a9d-a170f4ea85f1}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{2add8263-ece3-4f04-84c0-52055301083a}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{2add8263-ece3-4f04-84c0-52055301083a}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BrodelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BrodelController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +95,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/NpcAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/SexDialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,12 +106,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetPlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Bofia/BofiaAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DDOL.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BrodelController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BrodelController.cs" />
       </list>
     </option>
   </component>
@@ -232,6 +270,7 @@
       <workItem from="1623359764399" duration="6000" />
       <workItem from="1623419748970" duration="466000" />
       <workItem from="1623420267531" duration="527000" />
+      <workItem from="1623421057122" duration="6003000" />
     </task>
     <servers />
   </component>

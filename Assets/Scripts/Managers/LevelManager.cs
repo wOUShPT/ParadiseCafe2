@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour
     private ThirdPersonController playerController;
     private Transform playerHoldPoint;
     private Transform casaDaVelhaExterior;
+    private Transform playerOutBrodelSpawn;
     private Animator _sceneTransitionAnimator;
     private Transform _currentSpawnLocation;
     private DoorController _currentDoorController;
@@ -39,6 +40,7 @@ public class LevelManager : MonoBehaviour
         _cameraManager = GetComponent<CameraManager>();
         _inputManager = GetComponent<InputManager>();
         casaDaVelhaExterior = GameObject.FindGameObjectWithTag("VelhaGate").transform;
+        playerOutBrodelSpawn = GameObject.FindGameObjectWithTag("PlayerOutBrodelSpawn").transform;
         playerHoldPoint = GameObject.FindGameObjectWithTag("PlayerHoldPoint").transform;
         playerController = FindObjectOfType<ThirdPersonController>();
         _sceneTransitionAnimator = GameObject.FindGameObjectWithTag("SceneTransition").GetComponent<Animator>();
@@ -152,8 +154,15 @@ public class LevelManager : MonoBehaviour
         _inputManager.ToggleControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
-        playerController.transform.position = casaDaVelhaExterior.transform.position;
-        playerController.transform.rotation = casaDaVelhaExterior.transform.rotation;
+        if (currentLevel == "Rape")
+        {
+            SpawnOnLocation(casaDaVelhaExterior);
+        }
+
+        if (currentLevel == "Brodel")
+        {
+            SpawnOnLocation(playerOutBrodelSpawn);
+        }
         previousLevel = currentLevel;
         currentLevel = "Exterior";
         SwitchFMODSnapshot();

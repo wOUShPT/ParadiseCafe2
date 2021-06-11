@@ -5,7 +5,7 @@
 			<value>Pássaros</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5ddf885e-2714-417b-8418-36ed64cb939d}</destination>
@@ -70,6 +70,9 @@
 		<relationship name="modules">
 			<destination>{3dacb024-84c6-48a7-9648-a93c3d12114e}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{5b60a7eb-c7f9-458b-90f4-efa204468f69}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{01160d6b-63f6-4979-992e-0fdea8ef8e63}">
 		<relationship name="effectChain">
@@ -116,10 +119,23 @@
 			<destination>{01160d6b-63f6-4979-992e-0fdea8ef8e63}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{5b60a7eb-c7f9-458b-90f4-efa204468f69}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>6.5</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{9cd45bd2-75a3-48fe-8eb8-ac33fab772f5}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{4469bb43-9d7d-4059-9d1a-1dcab4e96989}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{bcbf05a7-b4fe-4a81-bc36-3b6454f65a88}">
 		<relationship name="effects">
 			<destination>{9a514cf0-a757-4307-9305-0b14c2c5f1aa}</destination>
-			<destination>{949c76ba-37fa-47ea-8894-e41dccb72e07}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{33669245-73e8-4078-97bc-c1de77208e23}" />
@@ -151,7 +167,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{6bde90d9-bb98-450c-a3f0-ad373e1fe6a0}" />
 	<object class="MixerBusFader" id="{9a514cf0-a757-4307-9305-0b14c2c5f1aa}" />
-	<object class="SpatialiserEffect" id="{949c76ba-37fa-47ea-8894-e41dccb72e07}" />
 	<object class="SingleSound" id="{1069a127-ab28-4c42-bd66-d960268caa2f}">
 		<relationship name="audioFile">
 			<destination>{1190da11-35a5-4968-90dc-60b843cd1afb}</destination>
