@@ -45,7 +45,7 @@ public class NPCDialogueTrigger : MonoBehaviour
         _npcDialogueReferences.dialoguePrompt.SetActive(false);
     }
 
-    private void Update()
+    public void Update()
     {
         RaycastHit hit;
         if (Physics.SphereCast(sphereCastOrigin.position, radius, transform.forward, out hit, dialogueMaxDistance+2, layerMask) && hit.transform.CompareTag(playerTag) && (hit.distance < dialogueMaxDistance && hit.distance > dialogueMinDistance))

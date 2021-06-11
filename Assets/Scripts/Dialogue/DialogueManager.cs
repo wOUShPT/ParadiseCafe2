@@ -381,12 +381,32 @@ public class DialogueManager : MonoBehaviour
                 
                 break;
             
-            case Choice.ActionType.Sex:
+            case Choice.ActionType.GoBrodel:
                 
                 _nextDialogue = _currentDialogue.Choices[index].NextDialogue;
-                endedDialogue.AddListener(() => gameActions.Sex.Invoke(_currentNpcStats));
+                endedDialogue.AddListener(() => gameActions.Brodel.Invoke(_currentNpcStats));
                 
                 break;
+            
+            case Choice.ActionType.GetOral:
+                _nextDialogue = _currentDialogue.Choices[index].NextDialogue;
+                endedDialogue.AddListener(() => gameActions.OralSex.Invoke(_currentNpcStats));
+                
+                break;
+            
+            
+            case Choice.ActionType.GetVaginal:
+                _nextDialogue = _currentDialogue.Choices[index].NextDialogue;
+                endedDialogue.AddListener(() => gameActions.VaginalSex.Invoke(_currentNpcStats));
+                
+                break;
+
+            case Choice.ActionType.GetAnal:
+                _nextDialogue = _currentDialogue.Choices[index].NextDialogue;
+                endedDialogue.AddListener(() => gameActions.AnalSex.Invoke(_currentNpcStats));
+                
+                break;
+
 
         }
     }

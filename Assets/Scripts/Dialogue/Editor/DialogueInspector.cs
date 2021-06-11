@@ -203,7 +203,34 @@ public class DialogueEditor : Editor
 
                             break;
                         
-                        case Choice.ActionType.Sex:
+                        case Choice.ActionType.GoBrodel:
+                            
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(nextDialogue, new GUIContent());
+                            
+                            break;
+                        
+                        case Choice.ActionType.GetOral:
+                            
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(nextDialogue, new GUIContent());
+                            
+                            break;
+                        
+                        case Choice.ActionType.GetVaginal:
+                            
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(nextDialogue, new GUIContent());
+                            
+                            break;
+                        
+                        case Choice.ActionType.GetAnal:
                             
                             EditorGUILayout.Space(10);
                             EditorGUILayout.LabelField("Next Dialogue");
