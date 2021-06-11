@@ -22,7 +22,10 @@ public class GameActions : MonoBehaviour
     public CustomActionEvent SellDrugs;
     public CustomActionEvent GetRobbed;
     public CustomActionEvent GameOver;
-    public CustomActionEvent Sex;
+    public CustomActionEvent Brodel;
+    public CustomActionEvent OralSex;
+    public CustomActionEvent VaginalSex;
+    public CustomActionEvent AnalSex;
 
     private void Awake()
     {
@@ -36,7 +39,10 @@ public class GameActions : MonoBehaviour
         BuyDrink = new CustomActionEvent();
         GetRobbed = new CustomActionEvent();
         GameOver = new CustomActionEvent();
-        Sex = new CustomActionEvent();
+        Brodel = new CustomActionEvent();
+        OralSex = new CustomActionEvent();
+        VaginalSex = new CustomActionEvent();
+        AnalSex = new CustomActionEvent();
         Generic.AddListener(DoGeneric);
         Rape.AddListener(DoRape);
         Steal.AddListener(DoSteal);
@@ -46,7 +52,7 @@ public class GameActions : MonoBehaviour
         BuyWeapon.AddListener(DoBuyWeapon);
         GetRobbed.AddListener(DoGetRobbed);
         GameOver.AddListener(DoGameOver);
-        Sex.AddListener(DoBrodel);
+        Brodel.AddListener(DoBrodel);
     }
 
     private void Start()
@@ -133,6 +139,7 @@ public class GameActions : MonoBehaviour
     {
         _levelManager.LoadBrodel();
     }
+    
 
     public void DecreaseWantedLevel(int amount)
     {

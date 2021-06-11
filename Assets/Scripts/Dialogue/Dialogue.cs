@@ -59,7 +59,10 @@ public class Choice
         Rape = 5,
         BuyDrink = 6,
         GetRobbed = 7,
-        Sex = 8
+        GoBrodel = 8,
+        GetOral = 9,
+        GetAnal = 10,
+        GetVaginal = 11
     }
 
     [SerializeField]
