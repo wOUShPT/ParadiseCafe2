@@ -82,7 +82,7 @@ public class TimeController : MonoBehaviour
         if (_hours == 18 && _minutes == 0 && !_dayStateChanged)
         {
             _dayStateChanged = true;
-            Debug.Log("Night");
+            //Debug.Log("Night");
             _state = DayState.Night;
             dayStateChange.Invoke();
         }
@@ -90,7 +90,7 @@ public class TimeController : MonoBehaviour
         if (_hours == 6 && _minutes == 0 && !_dayStateChanged)
         {
             _dayStateChanged = true;
-            Debug.Log("Day");
+            //Debug.Log("Day");
             _state = DayState.Day;
             dayStateChange.Invoke();
         }

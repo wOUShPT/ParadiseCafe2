@@ -23,211 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4c6e0d-73b5-4f46-949d-e05e640a1ad5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Bofia/Walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Bofia/Walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Bordel/Bico.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Bordel/Bico.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Guna/Walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Guna/Walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Velha/Walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Velha/Walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Violação.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Violação/Rape.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Violação/Rape.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Objects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Objects/Ventoinha.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Objects/Ventoinha/Rotation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Objects/Ventoinha/Rotation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Objects/Ventoinha/Ventoinha.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Objects/Ventoinha/Ventoinha.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/Graffity_penis.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/Graffity_penis.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/Graffity_sexo.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/Graffity_sexo.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/PinkShade.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/PinkShade.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/SofaCafe.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/SofaCafe.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/Toldo.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/Toldo.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/graffity_penis.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/graffity_penis.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/graffity_sexo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/graffity_sexo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/paredePastilha 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/paredePastilha 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/paredePastilha.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/paredePastilha.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/pastilha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/pastilha.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bofia/Bofia_Walk.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bofia/Bofia_Walk.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Bico.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Bico.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Chamar_Reginaldo.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Cu_Cu.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Cu_Cu.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Escolha.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Este_não_quer_Pagar.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Este_não_quer_Pagar.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Levar_no_cu.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Levar_no_cu.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Pagar.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Pagar.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Pagar_com_dinheiro.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Pagar_com_dinheiro.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Vaginal.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Vaginal.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_demora_a_escolher.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_demora_a_escolher.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Apontar arma.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Walk.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Walk.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Rogerio_Busted.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Rogerio_Busted.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/SrTono/Sr_Tono_Interacao_entrada.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/SrTono/Sr_Tono_Interacao_entrada.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/SrTono/Sr_Tono_Interacao_loop.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/SrTono/Sr_Tono_Interacao_loop.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/SrTono/Sr_Tono_Interacao_saida.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/SrTono/Sr_Tono_Interacao_saida.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Velha/Velha_Ameacada.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Velha/Velha_Ameacada.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Velha/Velha_Walk.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Velha/Velha_Walk.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Velha/Velha_Walk_saida.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Velha/Velha_Walk_saida.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Violação.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Violação/Velha_Malhacao.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Violação/Velha_Malhacao.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Decoration/Sofá.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Decoration/Sofá.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Decoration/toldo.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Models/Interiors/cafe_interior.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/Bordel01.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/Bordel01.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelOral01.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelOral01.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelOral02.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelOral02.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelStats.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelStats.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelVaginal01.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelVaginal01.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BrodelController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BrodelController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DayStateStingerSounds.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DayStateStingerSounds.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/SexDialogueTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/SexDialogueTrigger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmbientSounds.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmbientSounds.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Bofia/Bofia.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Bofia/Bofia.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Guna/Guna.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Guna/Guna.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Velha/Velha.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Velha/Velha.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Azulejo.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Azulejo.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Paradise.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Paradise.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/azulejo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/azulejo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/azulejo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/azulejo.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Idle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Idle.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Interação entrada.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Interação entrada.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Interação saida.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Interação saida.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Interação saida.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Interação saida.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna_Apontar_arma.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna_Apontar_arma.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna Apontar arma.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna_idle.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Guna_idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Escolha.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Test guna.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Guna/Test guna.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Decoration/toldo.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Afagar.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Afagar.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Afagar.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Afagar.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Holster_weapon.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Holster_weapon.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Holster_weapon.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Holster_weapon.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Idle_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Idle_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Idle_Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Idle_Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Point_Weapon.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Point_Weapon.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Point_Weapon.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Point_Weapon.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Walk.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Player/Walk.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Walk.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Exteriors/mapa.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Exteriors/mapa.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Interiors/cafeInterior.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Interiors/cafeInterior.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Chamar_Reginaldo.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/nata.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Decoration/nata.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/nata.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Decoration/nata.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/prato.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Decoration/prato.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/prato.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Decoration/prato.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/testcafeinterior.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/testcafeinterior.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Interiors/cafe_interior.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Stats/PlayerStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Stats/PlayerStats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NPCDialogueReferences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueReferences.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NPCDialogueReferences.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueReferences.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NpcAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NpcAnimationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NpcAnimationController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NpcAnimationController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/Amanhecer.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/Amanhecer.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/Anoitecer.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/Anoitecer.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/EntrarSair.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/EntrarSair.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/PerderDinheiro.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/PerderDinheiro.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/SaltarFala.ogg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Assets/SaltarFala.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{3992574b-0109-4d54-9ea3-19ea0afd80af}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{3992574b-0109-4d54-9ea3-19ea0afd80af}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{91cf249a-b747-45f0-8855-9973c7107748}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{91cf249a-b747-45f0-8855-9973c7107748}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{a4e7935b-c3d1-4a26-a7e7-b3e43cdf705f}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{a4e7935b-c3d1-4a26-a7e7-b3e43cdf705f}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{b7436f7e-f55d-4de1-83fa-ea274cb1147a}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{b7436f7e-f55d-4de1-83fa-ea274cb1147a}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{c7197505-c619-42ee-a08c-33c2bd9a0f70}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/AudioFile/{c7197505-c619-42ee-a08c-33c2bd9a0f70}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{03b6d5c7-ef9f-443e-a59b-792d0db0d84d}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{03b6d5c7-ef9f-443e-a59b-792d0db0d84d}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{9080962a-2f88-4fea-91b0-b217634317c8}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Event/{9080962a-2f88-4fea-91b0-b217634317c8}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Group/{b39371e8-8313-4ac3-bb1b-813044be0cac}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Group/{b39371e8-8313-4ac3-bb1b-813044be0cac}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/apicommands-0000.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/apicommands-0000.txt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/capture-0000.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/capture-0000.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/capture-0001.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/capture-0001.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/session.graphdata.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/session.graphdata.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/{8b06f9b9-c003-4d52-92cc-5debfca42044}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/ProfilerSession/{8b06f9b9-c003-4d52-92cc-5debfca42044}/{8b06f9b9-c003-4d52-92cc-5debfca42044}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/SandboxScene/{d6c0cb22-4eea-46a1-8496-41701c5ec8ff}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/SandboxScene/{d6c0cb22-4eea-46a1-8496-41701c5ec8ff}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{01e30a67-3648-4693-8a71-6542423176c0}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{01e30a67-3648-4693-8a71-6542423176c0}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{074e946e-a4cb-4ccf-8571-3338f5a7bb7b}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{074e946e-a4cb-4ccf-8571-3338f5a7bb7b}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{2add8263-ece3-4f04-84c0-52055301083a}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{2add8263-ece3-4f04-84c0-52055301083a}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{7ffa3879-e896-4fe4-b0cb-4975e44f5ae2}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{7ffa3879-e896-4fe4-b0cb-4975e44f5ae2}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{fbe03058-eb8d-4c18-8f8d-f05fa3994113}.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParadiseCafeFMOD/Metadata/Snapshot/{fbe03058-eb8d-4c18-8f8d-f05fa3994113}.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerAudioHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAudioHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerAudioHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAudioHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Guna.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Guna.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueInspector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueTrackerVelha.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueTrackerVelha.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueTrackerVelha.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueTrackerVelha.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameActions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEvents.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Bordel.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEventHub.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEventHub.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEventListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEventListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEvents/GaneEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEvents/GaneEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StingerSounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DayStateStingerSounds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StingerSounds.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DayStateStingerSounds.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VelhaCasaAudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VelhaCasaAudioController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VelhaCasaAudioController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VelhaCasaAudioController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DayStateStingerSounds.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DayStateStingerSounds.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -247,55 +49,36 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Bofia/BofiaAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DayCycleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DailyIncome.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetPlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUDReferences.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/SexDialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DDOL.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCInteractionsTracker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/NpcAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/ChoiceHighlighter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AlignNPCToPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Dom/DomAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/NpcAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/SexDialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AlignNPCToPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DayStateStingerSounds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUDReferences.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetPlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Bofia/BofiaAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DDOL.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/CameraManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/NPCDIalogueReferences.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DialogueTrackerVelha.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialoguesTracker.cs" />
-      <option value="$PROJECT_DIR$/Assets/NPCDialogueReferences.cs" />
-      <option value="$PROJECT_DIR$/Assets/PlayerAudioHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/StingerSounds.cs" />
-      <option value="$PROJECT_DIR$/Assets/VelhaCasaAudioController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" />
-      <option value="$PROJECT_DIR$/Assets/DayStateStingerSounds.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/SexDialogueTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/NpcAnimationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/NpcAnimationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameActions.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueInspector.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BrodelController.cs" />
-    </changedPaths>
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1pU6uQclUHI28WyBvQg2toUKpSL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -327,30 +110,24 @@
       <option name="WORKING_DIRECTORY" value="E:\Users\Gustavo\Desktop\Paradiso" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -453,11 +230,13 @@
       <workItem from="1623343205585" duration="1732000" />
       <workItem from="1623345800352" duration="5106000" />
       <workItem from="1623359764399" duration="6000" />
+      <workItem from="1623419748970" duration="466000" />
+      <workItem from="1623420267531" duration="527000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
