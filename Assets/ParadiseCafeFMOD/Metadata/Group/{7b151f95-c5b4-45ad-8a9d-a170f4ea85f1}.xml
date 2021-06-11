@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{7b151f95-c5b4-45ad-8a9d-a170f4ea85f1}">
+		<property name="name">
+			<value>DiaNoiteStingers</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{c6d1d99d-ad1a-4621-b121-ce2115d9c6e4}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{d244b30f-c555-480f-ad32-709f4cf35713}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{8fa47152-9764-43e5-b56e-626a0800767b}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{c6d1d99d-ad1a-4621-b121-ce2115d9c6e4}">
+		<relationship name="effects">
+			<destination>{d2f0abd7-5b09-4417-ab89-a161584f62f5}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{d244b30f-c555-480f-ad32-709f4cf35713}" />
+	<object class="MixerBusFader" id="{d2f0abd7-5b09-4417-ab89-a161584f62f5}" />
+</objects>

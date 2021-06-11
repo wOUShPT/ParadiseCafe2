@@ -9,7 +9,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001A7B2964F78 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001B1A8F8A828 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -19,63 +19,42 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001A82F5D8C68
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001A82F5D8C68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001B1A0FC1708
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001B1A0FC1708
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 43969248
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 50208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000058149CF278
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF871F07B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF871F07AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF871F07BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF871F07CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001A7AF025268
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Rendimento', format=5, channels=2, frequency=48000, lengthbytes=10912, lengthpcm=87941, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.935913.
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          : Machadinha (000001A7A8705548)
-[LOG] SoundI::release                          :     Machadinha (000001A838B1A5D8)
-[LOG] SoundI::release                          :     Machadinha (000001A82F5D85A8)
-[LOG] SoundI::release                          : Guna4 (000001A7A86FEE58)
-[LOG] SoundI::release                          :     Guna4 (000001A838B20758)
-[LOG] SoundI::release                          :     Guna4 (000001A82F5D8C68)
-[LOG] SoundI::release                          : Mozart2 (000001A7A8701888)
-[LOG] SoundI::release                          :     Mozart2 (000001A838B1FF38)
-[LOG] SoundI::release                          :     Mozart2 (000001A82F5D8E18)
-[LOG] SoundI::release                          :  (000001A838CA74E8)
-[LOG] SoundI::release                          :     Rendimento (000001A7A88584A8)
-[LOG] SoundI::release                          :  (000001A83C46E648)
-[LOG] SoundI::release                          :     ReceberDinheiro (000001A838B1DD18)
-[LOG] SoundI::release                          :  (000001A83C46EA98)
-[LOG] SoundI::release                          :     Amanhecer (000001A838B1EA18)
-[LOG] SoundI::release                          :  (000001A83C46F058)
-[LOG] SoundI::release                          :     Fap (000001A838B1C7F8)
-[LOG] SoundI::release                          :  (000001A83C46E7B8)
-[LOG] SoundI::release                          :     InteraçãoOld (000001A838B1D9D8)
-[LOG] SoundI::release                          :  (000001A83C46EEE8)
-[LOG] SoundI::release                          :     SelecionarInteração (000001A838B1C4B8)
-[LOG] SoundI::release                          :  (000001A83C46E4D8)
-[LOG] SoundI::release                          :     MudarDeInteração (000001A838B1A778)
-[LOG] SoundI::release                          :  (000001A83C46EC08)
-[LOG] SoundI::release                          :     PerderDinheiro (000001A838B19598)
-[LOG] SoundI::release                          :  (000001A83C46E928)
-[LOG] SoundI::release                          :     stepsound (000001A838B1E6D8)
-[LOG] SoundI::release                          :  (000001A83C46F1C8)
-[LOG] SoundI::release                          :     Step1 (000001A838B1D358)
-[LOG] SoundI::release                          :  (000001A80CEB1C48)
-[LOG] SoundI::release                          :     Step2 (000001A838B1ED58)
-[LOG] SoundI::release                          :  (000001A83C46ED78)
-[LOG] SoundI::release                          :     Step3 (000001A838B1D838)
-[LOG] SoundI::release                          :  (000001A83BEA4CD8)
-[LOG] SoundI::release                          :     Anoitecer (000001A838B193F8)
+[LOG] SoundI::release                          : Machadinha (000001B1A0FBE108)
+[LOG] SoundI::release                          :     Machadinha (000001AF24B09A68)
+[LOG] SoundI::release                          :     Machadinha (000001B1A0FBAE68)
+[LOG] SoundI::release                          : Guna2 (000001B1A0FBE2B8)
+[LOG] SoundI::release                          :     Guna2 (000001AF20DE81F8)
+[LOG] SoundI::release                          :     Guna2 (000001B1A0FC1708)
+[LOG] SoundI::release                          : StraussII (000001B1A0FBA958)
+[LOG] SoundI::release                          :     StraussII (000001AF20DEB2B8)
+[LOG] SoundI::release                          :     StraussII (000001B1A0FBFDB8)
+[LOG] SoundI::release                          :  (000001AF2AF528F8)
+[LOG] SoundI::release                          :     ReceberDinheiro (000001AF20DEA758)
+[LOG] SoundI::release                          :  (000001AF2AF542D8)
+[LOG] SoundI::release                          :     Amanhecer (000001AF20DEA5B8)
+[LOG] SoundI::release                          :  (000001AF2AF51928)
+[LOG] SoundI::release                          :     Fap (000001AF25CE19D8)
+[LOG] SoundI::release                          :  (000001AF2AF51648)
+[LOG] SoundI::release                          :     InteraçãoOld (000001AF20DEC498)
+[LOG] SoundI::release                          :  (000001AF2AF56838)
+[LOG] SoundI::release                          :     SelecionarInteração (000001AF24B09DA8)
+[LOG] SoundI::release                          :  (000001AF2AF511F8)
+[LOG] SoundI::release                          :     MudarDeInteração (000001AF20DEB118)
+[LOG] SoundI::release                          :  (000001AF2AF51A98)
+[LOG] SoundI::release                          :     PerderDinheiro (000001AF20DE8058)
+[LOG] SoundI::release                          :  (000001AF2AF52338)
+[LOG] SoundI::release                          :     stepsound (000001AF24217658)
+[LOG] SoundI::release                          :  (000001AF2AF53A38)
+[LOG] SoundI::release                          :     Step1 (000001AF20DEC638)
+[LOG] SoundI::release                          :  (000001AF2AF538C8)
+[LOG] SoundI::release                          :     Step2 (000001AF20DE9098)
+[LOG] SoundI::release                          :  (000001AF2AF56278)
+[LOG] SoundI::release                          :     Step3 (000001AF246AC158)
+[LOG] SoundI::release                          :  (000001AF2AF52618)
+[LOG] SoundI::release                          :     Anoitecer (000001AF20DE8EF8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -86,3 +65,10 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
