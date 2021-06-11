@@ -46,29 +46,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-8701395328746398032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/Ambient/P\xE1ssaros"
-  m_EditorClassIdentifier: 
-  Path: "event:/Ambient/P\xE1ssaros"
-  guid: c7d5b6039fef3e44a59b792d0db0d84d
-  Banks:
-  - {fileID: 6546407437052023258}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-8428534962290684242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,29 +171,6 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-7021613473009476045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Exterior
-  m_EditorClassIdentifier: 
-  Path: snapshot:/Exterior
-  guid: 6382dd2ae3ec044f84c052055301083a
-  Banks:
-  - {fileID: 6546407437052023258}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
@@ -514,6 +468,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-5191116977619544095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "snapshot:/InteriorCaf\xE9"
+  m_EditorClassIdentifier: 
+  Path: "snapshot:/InteriorCaf\xE9"
+  guid: 7938fa7f96e8e44fb0cb4975e44f5ae2
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-5091186622577397340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,29 +528,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VelhaMusicInterior
   guid: 208e7bb54e02b5439237a55d4f3c454d
-  Banks:
-  - {fileID: 6546407437052023258}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-4753381368692892826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/SaltarFala
-  m_EditorClassIdentifier: 
-  Path: event:/UI/SaltarFala
-  guid: 2a968090882fea4f91b0b217634317c8
   Banks:
   - {fileID: 6546407437052023258}
   IsStream: 0
@@ -687,7 +641,7 @@ MonoBehaviour:
   Path: Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637585930425605480
+  lastModified: 637586214084376820
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -877,6 +831,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-1772572191495659617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Exterior
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Exterior
+  guid: 6382dd2ae3ec044f84c052055301083a
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1561593674698798993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,29 +946,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-742504819921448996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/InteriorCasaVelha
-  m_EditorClassIdentifier: 
-  Path: snapshot:/InteriorCasaVelha
-  guid: 5830e0fb8deb184c8f8df05fa3994113
-  Banks:
-  - {fileID: 6546407437052023258}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
 --- !u!114 &-516769530255814415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1011,6 +965,29 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-370634801337730776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "snapshot:/InteriorPris\xE3o"
+  m_EditorClassIdentifier: 
+  Path: "snapshot:/InteriorPris\xE3o"
+  guid: 670ae301483693468a716542423176c0
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
@@ -1058,6 +1035,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-160045339830674835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Ambient/P\xE1ssaros"
+  m_EditorClassIdentifier: 
+  Path: "event:/Ambient/P\xE1ssaros"
+  guid: c7d5b6039fef3e44a59b792d0db0d84d
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-102415982145547187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,19 +1175,19 @@ MonoBehaviour:
   - {fileID: -6481838440821105739}
   - {fileID: -6197174404236438416}
   - {fileID: 1314886616278067510}
-  - {fileID: -4753381368692892826}
-  - {fileID: -742504819921448996}
-  - {fileID: -7021613473009476045}
-  - {fileID: 6409866723644612249}
-  - {fileID: 4475203983532319614}
-  - {fileID: 4938817273705681091}
-  - {fileID: -8701395328746398032}
+  - {fileID: 2341469740599716625}
+  - {fileID: 6058547661635086065}
+  - {fileID: -1772572191495659617}
+  - {fileID: -370634801337730776}
+  - {fileID: 4622751183565518787}
+  - {fileID: -5191116977619544095}
+  - {fileID: -160045339830674835}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6546407437052023258}
   StringsBanks:
   - {fileID: -3414285515574207322}
-  stringsBankWriteTime: 637585930425605480
+  stringsBankWriteTime: 637586214084376820
   cacheVersion: 6
 --- !u!114 &107968835105890815
 MonoBehaviour:
@@ -1371,6 +1371,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &2341469740599716625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/SaltarFala
+  m_EditorClassIdentifier: 
+  Path: event:/UI/SaltarFala
+  guid: 2a968090882fea4f91b0b217634317c8
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &2579282608938770315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1503,26 +1526,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &3137320446829693054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Menu/Health
-  m_EditorClassIdentifier: 
-  Name: Health
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
 --- !u!114 &3161190462064515224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1793,7 +1796,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &4475203983532319614
+--- !u!114 &4622751183565518787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1878,29 +1881,6 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &4938817273705681091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "snapshot:/InteriorCaf\xE9"
-  m_EditorClassIdentifier: 
-  Path: "snapshot:/InteriorCaf\xE9"
-  guid: 7938fa7f96e8e44fb0cb4975e44f5ae2
-  Banks:
-  - {fileID: 6546407437052023258}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
@@ -2103,6 +2083,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &6058547661635086065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/InteriorCasaVelha
+  m_EditorClassIdentifier: 
+  Path: snapshot:/InteriorCasaVelha
+  guid: 5830e0fb8deb184c8f8df05fa3994113
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &6259128817524462000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,33 +2126,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 3137320446829693054}
+  - {fileID: 6680481332275259411}
   MinDistance: 0
   MaxDistance: 0
   Length: 88163
---- !u!114 &6409866723644612249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "snapshot:/InteriorPris\xE3o"
-  m_EditorClassIdentifier: 
-  Path: "snapshot:/InteriorPris\xE3o"
-  guid: 670ae301483693468a716542423176c0
-  Banks:
-  - {fileID: 6546407437052023258}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
 --- !u!114 &6546407437052023258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2165,9 +2145,29 @@ MonoBehaviour:
   Path: Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637585930425555477
+  lastModified: 637586214084346898
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &6680481332275259411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &6696066315676617268
 MonoBehaviour:

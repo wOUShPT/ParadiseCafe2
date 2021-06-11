@@ -5,7 +5,7 @@
 			<value>CasaDom</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c98c6525-8bef-4d9e-b32b-5302d54068a8}</destination>
@@ -90,7 +90,11 @@
 			<destination>{a3eb1a5a-99e9-4612-b5fa-796c12e74ddb}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{49ed1be1-a51b-43b0-b885-d7c4779dab0f}" />
+	<object class="MultiSound" id="{49ed1be1-a51b-43b0-b885-d7c4779dab0f}">
+		<relationship name="sounds">
+			<destination>{1f9e567f-a77e-4cc1-953e-9a4504b9f68b}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{29f8052b-c6fc-483d-87b8-1889ed0982af}">
 		<relationship name="effects">
 			<destination>{203ba53d-0874-49fe-aaca-17f2d0333b9b}</destination>
@@ -117,6 +121,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{0c260a35-840a-4c5f-b82f-5cdd4f9b6491}" />
+	<object class="SingleSound" id="{1f9e567f-a77e-4cc1-953e-9a4504b9f68b}">
+		<relationship name="audioFile">
+			<destination>{8df3cb86-0eeb-42b9-95c6-eb1edf43bc49}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{203ba53d-0874-49fe-aaca-17f2d0333b9b}" />
 	<object class="MixerBusEffectChain" id="{1228ffec-d78b-4347-a869-86e152c76a76}">
 		<relationship name="effects">
