@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ADBannerView = UnityEngine.iOS.ADBannerView;
 
 [RequireComponent(typeof(NPCDialogueReferences))]
 public class SexDialogueTrigger : MonoBehaviour

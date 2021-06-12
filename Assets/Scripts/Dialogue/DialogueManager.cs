@@ -381,10 +381,10 @@ public class DialogueManager : MonoBehaviour
                 
                 break;
             
-            case Choice.ActionType.GoBrodel:
+            case Choice.ActionType.GoBrothel:
                 
                 _nextDialogue = _currentDialogue.Choices[index].NextDialogue;
-                endedDialogue.AddListener(() => gameActions.Brodel.Invoke(_currentNpcStats));
+                endedDialogue.AddListener(() => gameActions.Brothel.Invoke(_currentNpcStats));
                 
                 break;
             

@@ -12,11 +12,9 @@ public class NPCDialogueTrigger : MonoBehaviour
     private InputManager _inputManager;
     public LayerMask layerMask;
     public string playerTag;
-    public Transform sphereCastOrigin;
-    public float dialogueMinDistance;
-    public float dialogueMaxDistance;
+    public Transform sphereOverlapOrigin;
+    public float sphereOverlapRadius;
     public DialogueTriggerEvent triggerDialogue;
-    public float radius;
     private Transform playerTransform;
     private FMOD.Studio.EventInstance _dialogueSignStinger;
     private bool canShowPrompt;
@@ -47,25 +45,32 @@ public class NPCDialogueTrigger : MonoBehaviour
 
     public void Update()
     {
-        RaycastHit hit;
-        if (Physics.SphereCast(sphereCastOrigin.position, radius, transform.forward, out hit, dialogueMaxDistance+2, layerMask) && hit.transform.CompareTag(playerTag) && (hit.distance < dialogueMaxDistance && hit.distance > dialogueMinDistance))
+        bool inRange = false;
+        Collider[] hitList = Physics.OverlapSphere(sphereOverlapOrigin.position, sphereOverlapRadius, 1 << 6);
+
+        if (hitList.Length != 0)
         {
-            if (canShowPrompt)
+            Vector2 npcToPlayer2DVector = new Vector2(playerTransform.position.x, playerTransform.position.z) - new Vector2(sphereOverlapOrigin.position.x, sphereOverlapOrigin.position.z);
+            Vector2 npcForward2DVector = new Vector2(sphereOverlapOrigin.forward.x, sphereOverlapOrigin.forward.z);
+            if (Vector2.Angle(npcForward2DVector, npcToPlayer2DVector) < 70)
             {
-                _npcDialogueReferences.dialoguePrompt.SetActive(true);
-                canShowPrompt = false;
-                _dialogueSignStinger.start();
-            }
+                if (canShowPrompt)
+                {
+                    _npcDialogueReferences.dialoguePrompt.SetActive(true);
+                    canShowPrompt = false;
+                    _dialogueSignStinger.start();
+                }
             
-            if (_inputManager.ActionInput == 1)
-            {
-                _npcDialogueReferences.dialoguePrompt.SetActive(false);
-                playerTransform.LookAt(transform.position);
-                playerTransform.rotation = Quaternion.Euler(0, playerTransform.eulerAngles.y, playerTransform.eulerAngles.z);
-                TriggerDialogue();
-                enabled = false;
+                if (_inputManager.ActionInput == 1)
+                {
+                    _npcDialogueReferences.dialoguePrompt.SetActive(false);
+                    playerTransform.LookAt(transform.position);
+                    playerTransform.rotation = Quaternion.Euler(0, playerTransform.eulerAngles.y, playerTransform.eulerAngles.z);
+                    TriggerDialogue();
+                    enabled = false;
+                }
+                return; 
             }
-            return;
         }
 
         canShowPrompt = true;

@@ -13,7 +13,6 @@ public class TimeController : MonoBehaviour
     public float durationOfDayInMinutes;
     private int _hours;
     private int _minutes;
-    private float _time;
     private float _timePercentage;
     public UnityEvent dayStateChange;
     public bool timeFreeze;
@@ -29,7 +28,11 @@ public class TimeController : MonoBehaviour
 
     public DayState dayState => _state;
 
-    public float TimePercentage => _timePercentage;
+    public float TimePercentage
+    {
+        get => _timePercentage;
+        set => _timePercentage = Mathf.Clamp(value, 0, 1f);
+    }
 
     public int hours => _hours;
 

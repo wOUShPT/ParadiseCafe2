@@ -203,7 +203,7 @@ public class DialogueEditor : Editor
 
                             break;
                         
-                        case Choice.ActionType.GoBrodel:
+                        case Choice.ActionType.GoBrothel:
                             
                             EditorGUILayout.Space(10);
                             EditorGUILayout.LabelField("Next Dialogue");

@@ -59,7 +59,7 @@ public class Choice
         Rape = 5,
         BuyDrink = 6,
         GetRobbed = 7,
-        GoBrodel = 8,
+        GoBrothel = 8,
         GetOral = 9,
         GetAnal = 10,
         GetVaginal = 11

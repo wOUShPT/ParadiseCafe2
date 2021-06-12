@@ -14,7 +14,7 @@ TagManager:
   - RapeCamera
   - CholdraCamera
   - PlayerHoldPoint
-  - PlayerOutBrodelSpawn
+  - PlayerOutBrothelSpawn
   layers:
   - Default
   - TransparentFX

@@ -8,6 +8,7 @@ using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using Debug = UnityEngine.Debug;
 
 public class LevelManager : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class LevelManager : MonoBehaviour
     private ThirdPersonController playerController;
     private Transform playerHoldPoint;
     private Transform casaDaVelhaExterior;
-    private Transform playerOutBrodelSpawn;
+    private Transform playerOutBrothelSpawn;
     private Animator _sceneTransitionAnimator;
     private Transform _currentSpawnLocation;
     private DoorController _currentDoorController;
@@ -32,7 +33,7 @@ public class LevelManager : MonoBehaviour
     
     private FMOD.Studio.EventInstance exteriorSnapshot;
     private FMOD.Studio.EventInstance cafeSnapshot;
-    private FMOD.Studio.EventInstance brodelSnapshot;
+    private FMOD.Studio.EventInstance brothelSnapshot;
     private FMOD.Studio.EventInstance rapeSnapshot;
 
     private void Awake()
@@ -40,7 +41,7 @@ public class LevelManager : MonoBehaviour
         _cameraManager = GetComponent<CameraManager>();
         _inputManager = GetComponent<InputManager>();
         casaDaVelhaExterior = GameObject.FindGameObjectWithTag("VelhaGate").transform;
-        playerOutBrodelSpawn = GameObject.FindGameObjectWithTag("PlayerOutBrodelSpawn").transform;
+        playerOutBrothelSpawn = GameObject.FindGameObjectWithTag("PlayerOutBrothelSpawn").transform;
         playerHoldPoint = GameObject.FindGameObjectWithTag("PlayerHoldPoint").transform;
         playerController = FindObjectOfType<ThirdPersonController>();
         _sceneTransitionAnimator = GameObject.FindGameObjectWithTag("SceneTransition").GetComponent<Animator>();
@@ -51,7 +52,7 @@ public class LevelManager : MonoBehaviour
         _sexDialogueTrigger = FindObjectOfType<SexDialogueTrigger>();
 
         cafeSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/InteriorCafé");
-        brodelSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/InteriorBordel");
+        brothelSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/InteriorBordel");
         rapeSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/InteriorCasaVelha");
         exteriorSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Exterior");
         exteriorSnapshot.start();
@@ -64,12 +65,17 @@ public class LevelManager : MonoBehaviour
         _currentDoorController = doorController;
         StartCoroutine(LevelTransition());
     }
+
+    public void LoadExterior()
+    {
+        StartCoroutine(TransitionToExterior());
+    }
     
     
 
-    public void LoadBrodel()
+    public void LoadBrothel()
     {
-        StartCoroutine(TransitionToBrodel());
+        StartCoroutine(TransitionInBrodel());
     }
 
     public void LoadRape()
@@ -106,7 +112,7 @@ public class LevelManager : MonoBehaviour
         _currentSpawnLocation = null;
     }
 
-    IEnumerator TransitionToBrodel()
+    IEnumerator TransitionInBrodel()
     {
         playerController.FreezePlayer(true);
         _inputManager.ToggleControls(false);
@@ -115,7 +121,27 @@ public class LevelManager : MonoBehaviour
         playerController.transform.position = playerHoldPoint.position;
         _hudReferences.HUDPanel.SetActive(false);
         previousLevel = "Exterior";
-        currentLevel = "Brodel";
+        currentLevel = "Brothel";
+        SwitchFMODSnapshot();
+        _cameraManager.SwitchCamera(currentLevel);
+        yield return new WaitForSeconds(1f);
+        _sceneTransitionAnimator.SetTrigger("FadeIn");
+        yield return new WaitForSeconds(1f);
+        _inputManager.ToggleControls(true);
+        _sexDialogueTrigger.TriggerDialogue();
+    }
+    
+    IEnumerator TransitionOutBrothel()
+    {
+        playerController.FreezePlayer(true);
+        _inputManager.ToggleControls(false);
+        _dailyIncomeScript.enabled = false;
+        _sceneTransitionAnimator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1f);
+        SpawnOnLocation(playerHoldPoint);
+        _hudReferences.HUDPanel.SetActive(false);
+        previousLevel = "Exterior";
+        currentLevel = "Brothel";
         SwitchFMODSnapshot();
         _cameraManager.SwitchCamera(currentLevel);
         yield return new WaitForSeconds(1f);
@@ -136,7 +162,7 @@ public class LevelManager : MonoBehaviour
         _inputManager.ToggleControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
-        playerController.transform.position = playerHoldPoint.position;
+        SpawnOnLocation(playerHoldPoint);
         _hudReferences.HUDPanel.SetActive(false);
         previousLevel = "Exterior";
         currentLevel = "Rape";
@@ -156,12 +182,14 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         if (currentLevel == "Rape")
         {
+            _timeController.TimePercentage = 0.7f;
             SpawnOnLocation(casaDaVelhaExterior);
         }
 
-        if (currentLevel == "Brodel")
+        if (currentLevel == "Brothel")
         {
-            SpawnOnLocation(playerOutBrodelSpawn);
+            _timeController.TimePercentage = 0.4f;
+            SpawnOnLocation(playerOutBrothelSpawn);
         }
         previousLevel = currentLevel;
         currentLevel = "Exterior";
@@ -170,17 +198,8 @@ public class LevelManager : MonoBehaviour
         playerController.RecenterCamera();
         yield return new WaitForSeconds(1f);
         _hudReferences.HUDPanel.SetActive(true);
-        _timeController.timeFreeze = false;
-        if (previousLevel == "Brodel")
-        {
-            _timeController.inGameTime = 0.35f;
-        }
-
-        if (previousLevel == "Rape")
-        {
-            _timeController.inGameTime = 0.65f;
-        }
         _dailyIncomeScript.enabled = true;
+        _timeController.timeFreeze = false;
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
         _inputManager.ToggleControls(true);
@@ -194,7 +213,7 @@ public class LevelManager : MonoBehaviour
             case "Exterior":
                 
                 cafeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
-                brodelSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
+                brothelSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 rapeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 exteriorSnapshot.start();
                 
@@ -203,24 +222,24 @@ public class LevelManager : MonoBehaviour
             case "Café":
                 
                 exteriorSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
-                brodelSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
+                brothelSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 rapeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 cafeSnapshot.start();
                 
                 break;
             
-            case "Brodel":
+            case "Brothel":
                 
                 cafeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 exteriorSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 rapeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
-                brodelSnapshot.start();
+                brothelSnapshot.start();
                 
                 break;
             
             case "Rape":
                 
-                brodelSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
+                brothelSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 cafeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 exteriorSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 rapeSnapshot.start();

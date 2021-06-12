@@ -66,7 +66,7 @@ public class CameraManager : MonoBehaviour
                 goodEndingcamera.Priority = 0;
                 break;
             
-            case "Brodel":
+            case "Brothel":
                 
                 playerCamera.Priority = 0;
                 brodelCamera.Priority = 10;

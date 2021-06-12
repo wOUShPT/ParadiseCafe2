@@ -25,14 +25,12 @@ public class AmbientSounds : MonoBehaviour
         {
             _birdsSound.start();
             _cricketsSound.stop(STOP_MODE.ALLOWFADEOUT);
-            Debug.Log ("passaros!!!!!");
         }
 
         if (_timeController.dayState == TimeController.DayState.Night)
         {
             _cricketsSound.start();
-            _birdsSound.stop(STOP_MODE.ALLOWFADEOUT); 
-            Debug.Log ("grilos!!!!!");
+            _birdsSound.stop(STOP_MODE.ALLOWFADEOUT);
         }
             
 
