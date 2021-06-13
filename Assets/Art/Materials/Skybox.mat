@@ -150,7 +150,7 @@ Material:
     - _SkyTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SunColor: {r: 1, g: 0.89014864, b: 0, a: 1}
-    - _SunDirection: {r: 0.05076532, g: -0.9563128, b: -0.28790432, a: 0}
+    - _SunDirection: {r: -0.032170705, g: -0.982689, b: 0.18244885, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &1536151352776119354
 MonoBehaviour:

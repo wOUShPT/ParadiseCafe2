@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{1c19b355-c105-4f4d-8665-e3d1cb207d72}">
+		<property name="name">
+			<value>SexScenes</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{77d04b0a-d553-4603-9766-939b9d4f4e6b}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{44191eb8-9474-4164-8f01-2a9cc50a531a}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{8fa47152-9764-43e5-b56e-626a0800767b}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{77d04b0a-d553-4603-9766-939b9d4f4e6b}">
+		<relationship name="effects">
+			<destination>{b844c370-b074-4a77-97c9-ff0477a40c5a}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{44191eb8-9474-4164-8f01-2a9cc50a531a}" />
+	<object class="MixerBusFader" id="{b844c370-b074-4a77-97c9-ff0477a40c5a}" />
+</objects>
