@@ -74,7 +74,7 @@
 			<value>volume</value>
 		</property>
 		<property name="value">
-			<value>-80</value>
+			<value>0</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{1c19b355-c105-4f4d-8665-e3d1cb207d72}</destination>
