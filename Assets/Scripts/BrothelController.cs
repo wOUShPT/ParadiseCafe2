@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using FMOD.Studio;
 using UnityEngine;
 
 public class BrothelController : MonoBehaviour
@@ -8,25 +9,30 @@ public class BrothelController : MonoBehaviour
     public PlayerStats _playerStats;
     private DialogueManager _dialogueManager;
     private LevelManager _levelManager;
+    private InputManager _inputManager;
     public Animator sexAnimator;
     public NPCDialogueReferences npcDialogueReferences;
     public SexDialogueTrigger sexDialogueTrigger;
     public Dialogue brothelMoneyBranch;
     public Dialogue brothelNoMoneyBranch;
     private Transform _charactersTransform;
+    public Animator doorAnimator;
     public Transform idlePivot;
     public Transform oralPivot;
     public Transform vaginalPivot;
     public Transform analPivot;
     public Transform payPivot;
     private Animator _sceneTransitionAnimator;
+    public BrothelSounds _BrothelSounds;
     void Start()
     {
         _dialogueManager = FindObjectOfType<DialogueManager>();
         _levelManager = FindObjectOfType<LevelManager>();
+        _inputManager = FindObjectOfType<InputManager>();
         _charactersTransform = sexAnimator.transform;
         _sceneTransitionAnimator = GameObject.FindGameObjectWithTag("SceneTransition").GetComponent<Animator>();
         GameActions gameActions = FindObjectOfType<GameActions>();
+       
         gameActions.Brothel.AddListener(Initialize);
         gameActions.OralSex.AddListener(StartOral);
         gameActions.VaginalSex.AddListener(StartVaginal);
@@ -35,21 +41,25 @@ public class BrothelController : MonoBehaviour
 
     void Initialize(NPCStats npcStats)
     {
+        _inputManager.TogglePlayerControls(false);
         _charactersTransform.position = idlePivot.position;
     }
 
     void StartOral(NPCStats npcStats)
     {
+        _inputManager.TogglePlayerControls(false);
         StartCoroutine(OralSex());
     }
 
     void StartVaginal(NPCStats npcStats)
     {
+        _inputManager.TogglePlayerControls(false);
         StartCoroutine(VaginalSex());
     }
 
     void StartAnal(NPCStats npcStats)
     {
+        _inputManager.TogglePlayerControls(false);
         StartCoroutine(AnalSex());
     }
 
@@ -94,6 +104,7 @@ public class BrothelController : MonoBehaviour
     {
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
+        _BrothelSounds.StopSounds();
         _charactersTransform.position = payPivot.position;
         if (_playerStats.moneyAmount < 100)
         {
@@ -117,15 +128,16 @@ public class BrothelController : MonoBehaviour
 
     IEnumerator Reginaldo()
     {
+        _inputManager.TogglePlayerControls(false);
+        doorAnimator.SetTrigger("Open");
         sexAnimator.SetTrigger("CallReginaldo");
-        while (GetCurrentAnimationName(sexAnimator) != "Este_nao_quer_pagar")
+        while (sexAnimator.GetCurrentAnimatorClipInfo(0)[0].clip.name != "Este_nao_quer_pagar")
         {
             yield return null;
         }
 
-        yield return new WaitForSeconds(sexAnimator.GetCurrentAnimatorStateInfo(0).length *
-                                        sexAnimator.GetCurrentAnimatorStateInfo(0).speed);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(sexAnimator.GetCurrentAnimatorStateInfo(0).length * sexAnimator.GetCurrentAnimatorStateInfo(0).speed);
+        yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         sexAnimator.SetTrigger("Reginaldo");
@@ -133,13 +145,9 @@ public class BrothelController : MonoBehaviour
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(16f);
         _levelManager.LoadExterior();
+        yield return new WaitForSeconds(2f);
+        sexAnimator.SetTrigger("Reset");
+        doorAnimator.SetTrigger("Reset");
 
-    }
-
-    private string GetCurrentAnimationName(Animator animator)
-    {
-        AnimatorClipInfo[] animation = animator.GetCurrentAnimatorClipInfo(0);
-
-        return animation[0].clip.name;
     }
 }

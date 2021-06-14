@@ -17,14 +17,14 @@ public class NPCDialogueTrigger : MonoBehaviour
     public DialogueTriggerEvent triggerDialogue;
     private Transform playerTransform;
     private FMOD.Studio.EventInstance _dialogueSignStinger;
-    private bool canShowPrompt;
+    private bool _canShowPrompt;
     
     
     private void Awake()
     {
         _npcDialogueReferences = GetComponent<NPCDialogueReferences>();
         _npcDialogueReferences.dialoguePrompt.SetActive(false);
-        canShowPrompt = true;
+        _canShowPrompt = true;
         _dialogueSignStinger = FMODUnity.RuntimeManager.CreateInstance("event:/Stingers/OpçãoInteração");
         _inputManager = FindObjectOfType<InputManager>();
         triggerDialogue = new DialogueTriggerEvent();
@@ -45,7 +45,6 @@ public class NPCDialogueTrigger : MonoBehaviour
 
     public void Update()
     {
-        bool inRange = false;
         Collider[] hitList = Physics.OverlapSphere(sphereOverlapOrigin.position, sphereOverlapRadius, 1 << 6);
 
         if (hitList.Length != 0)
@@ -54,10 +53,10 @@ public class NPCDialogueTrigger : MonoBehaviour
             Vector2 npcForward2DVector = new Vector2(sphereOverlapOrigin.forward.x, sphereOverlapOrigin.forward.z);
             if (Vector2.Angle(npcForward2DVector, npcToPlayer2DVector) < 70)
             {
-                if (canShowPrompt)
+                if (_canShowPrompt)
                 {
                     _npcDialogueReferences.dialoguePrompt.SetActive(true);
-                    canShowPrompt = false;
+                    _canShowPrompt = false;
                     _dialogueSignStinger.start();
                 }
             
@@ -73,7 +72,7 @@ public class NPCDialogueTrigger : MonoBehaviour
             }
         }
 
-        canShowPrompt = true;
+        _canShowPrompt = true;
         _npcDialogueReferences.dialoguePrompt.SetActive(false);
     }
 }

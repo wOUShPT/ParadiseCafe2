@@ -13,7 +13,7 @@ public class HUD: MonoBehaviour
     void Update()
     {
         moneyText.SetText(playerStats.moneyAmount + " €");
-        wantedLevel.SetText("Nível " + playerStats.wantedLevel + " de procurado");
+        wantedLevel.SetText("Nível de procurado: " + playerStats.wantedLevel);
         if (playerStats.hasWeapon)
         {
             hasWeapon.text = "Tens uma arma";

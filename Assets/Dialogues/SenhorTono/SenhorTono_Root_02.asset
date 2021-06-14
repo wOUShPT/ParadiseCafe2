@@ -29,13 +29,13 @@ MonoBehaviour:
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
-  - choiceText: "Pedir informa\xE7\xE3o"
-    action: 0
-    successDialogue01: {fileID: 0}
+  - choiceText: Comprar o jogo (200 euros)
+    action: 13
+    successDialogue01: {fileID: 11400000, guid: aad66639b7b931241bba2aa0b97a8f8c, type: 2}
     successDialogue02: {fileID: 0}
     failedDialogue: {fileID: 0}
     failedNoDrugsDialogue: {fileID: 0}
-    failedNoMoneyDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 11400000, guid: 3e449f15f7cdb1c40b42ba3e27f6ce8a, type: 2}
     failedNoWeaponDialogue: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: e995989aff222264ab8ef7acaa2ce691, type: 2}
     triggerEvent:

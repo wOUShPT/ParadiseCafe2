@@ -231,7 +231,7 @@ public class DialogueManager : MonoBehaviour
                     if (playerStats.wantedLevel == 3)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
-                        endedDialogue.AddListener(() => gameActions.GameOver.Invoke(_currentNpcStats));
+                        endedDialogue.AddListener(() => gameActions.GetBustedVelha.Invoke(_currentNpcStats));
                         return;
                     }
                     
@@ -273,7 +273,7 @@ public class DialogueManager : MonoBehaviour
                     if (playerStats.wantedLevel == 3)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
-                        endedDialogue.AddListener(() => gameActions.GameOver.Invoke(_currentNpcStats));
+                        endedDialogue.AddListener(() => gameActions.GetBustedVelha.Invoke(_currentNpcStats));
                         return;
                     }
                     
@@ -336,6 +336,23 @@ public class DialogueManager : MonoBehaviour
                 if (playerStats.moneyAmount >= _currentNpcStats.tradePrices.buyPistol)
                 {
                     endedDialogue.AddListener(() => gameActions.BuyWeapon.Invoke(_currentNpcStats));
+                    _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
+                }
+
+                break;
+            
+            case Choice.ActionType.BuyParadise:
+                
+                
+                if (playerStats.moneyAmount < 200)
+                {
+                    _nextDialogue = _currentDialogue.Choices[index].FailedNoMoneyDialogue;
+                    return;
+                }
+                
+                if (playerStats.moneyAmount >= 200)
+                {
+                    endedDialogue.AddListener(() => gameActions.BuyParadise.Invoke(_currentNpcStats));
                     _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
                 }
 
@@ -406,8 +423,13 @@ public class DialogueManager : MonoBehaviour
                 endedDialogue.AddListener(() => gameActions.AnalSex.Invoke(_currentNpcStats));
                 
                 break;
-
-
+            
+            case Choice.ActionType.GameOver:
+                _nextDialogue = _currentDialogue.Choices[index].NextDialogue;
+                endedDialogue.AddListener(() => gameActions.GameOver.Invoke(_currentNpcStats));
+                
+                break;
+            
         }
     }
 }
