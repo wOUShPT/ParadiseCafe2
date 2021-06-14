@@ -75,7 +75,7 @@ public class LevelManager : MonoBehaviour
 
     public void LoadBrothel()
     {
-        StartCoroutine(TransitionInBrodel());
+        StartCoroutine(TransitionInBrothel());
     }
 
     public void LoadRape()
@@ -94,7 +94,7 @@ public class LevelManager : MonoBehaviour
     {
         _currentDoorController.isEnabled = false;
         playerController.FreezePlayer(true);
-        _inputManager.ToggleControls(false);
+        _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(2f);
         SpawnOnLocation(_currentSpawnLocation);
@@ -106,19 +106,19 @@ public class LevelManager : MonoBehaviour
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(0.5f);
         playerController.FreezePlayer(false);
-        _inputManager.ToggleControls(true);
+        _inputManager.TogglePlayerControls(true);
         _currentDoorController.isEnabled = true;
         _currentDoorController = null;
         _currentSpawnLocation = null;
     }
 
-    IEnumerator TransitionInBrodel()
+    IEnumerator TransitionInBrothel()
     {
         playerController.FreezePlayer(true);
-        _inputManager.ToggleControls(false);
+        _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
-        playerController.transform.position = playerHoldPoint.position;
+        SpawnOnLocation(playerHoldPoint);
         _hudReferences.HUDPanel.SetActive(false);
         previousLevel = "Exterior";
         currentLevel = "Brothel";
@@ -127,14 +127,14 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
-        _inputManager.ToggleControls(true);
+        _inputManager.TogglePlayerControls(true);
         _sexDialogueTrigger.TriggerDialogue();
     }
     
     IEnumerator TransitionOutBrothel()
     {
         playerController.FreezePlayer(true);
-        _inputManager.ToggleControls(false);
+        _inputManager.TogglePlayerControls(false);
         _dailyIncomeScript.enabled = false;
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
@@ -147,7 +147,7 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
-        _inputManager.ToggleControls(true);
+        _inputManager.TogglePlayerControls(true);
         _sexDialogueTrigger.TriggerDialogue();
     }
 
@@ -159,7 +159,7 @@ public class LevelManager : MonoBehaviour
         _timeController.timeFreeze = true;
         _dailyIncomeScript.enabled = false;
         playerController.FreezePlayer(true);
-        _inputManager.ToggleControls(false);
+        _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         SpawnOnLocation(playerHoldPoint);
@@ -177,7 +177,7 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator TransitionToExterior()
     {
-        _inputManager.ToggleControls(false);
+        _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         if (currentLevel == "Rape")
@@ -202,8 +202,18 @@ public class LevelManager : MonoBehaviour
         _timeController.timeFreeze = false;
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
-        _inputManager.ToggleControls(true);
+        _inputManager.TogglePlayerControls(true);
         playerController.FreezePlayer(false);
+    }
+
+    public void LoadGameOVer()
+    {
+        SceneManager.LoadScene("Choldra");
+    }
+
+    public void LoadGoodEnding()
+    {
+        SceneManager.LoadScene("ParadiseEnding");
     }
 
     void SwitchFMODSnapshot()

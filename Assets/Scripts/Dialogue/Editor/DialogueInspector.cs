@@ -239,6 +239,28 @@ public class DialogueEditor : Editor
                             
                             break;
                         
+                        case Choice.ActionType.GameOver:
+                            
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(nextDialogue, new GUIContent());
+                            
+                            break;
+                        
+                        case Choice.ActionType.BuyParadise:
+
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue - Succeed");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(successNextDialogue01, new GUIContent());
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue - No Money Failed");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(failedNoMoneyNextDialogue, new GUIContent());
+
+                            break;
+                        
                     }
 
                     EditorGUILayout.EndFoldoutHeaderGroup();

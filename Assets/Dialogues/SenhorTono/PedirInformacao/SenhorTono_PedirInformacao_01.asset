@@ -15,6 +15,6 @@ MonoBehaviour:
   type: 0
   characterName: Rogerio
   nextDialogue: {fileID: 11400000, guid: 6719edb790c3792448c8650802039195, type: 2}
-  sentence: "C\xE1 pra n\xF3s ouvi dizer que tens um jogo que eu quero a apanhar
-    p\xF3 numa gaveta."
+  sentence: "Por acaso n\xE3o tens um jogo com o nome deste caf\xE9? Ando \xE0 procura
+    dele e tudo indica que ele se encontra aqui."
   choices: []

@@ -30,7 +30,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - choiceText: Insultar
-    action: 0
+    action: 12
     successDialogue01: {fileID: 11400000, guid: 27765c3a9cf319345ad9b34e90ef6b52, type: 2}
     successDialogue02: {fileID: 0}
     failedDialogue: {fileID: 11400000, guid: f50e458547308dd43841026e7a1cea1b, type: 2}

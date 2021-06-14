@@ -10,6 +10,9 @@ using UnityEngine.SceneManagement;
 public class GameActions : MonoBehaviour
 {
     private LevelManager _levelManager;
+    public CutscenesController _velhaCutsceneController;
+    public CutscenesController _bofiaCutsceneController;
+    public CutscenesController _senhorTonoCutsceneController;
     private FMOD.Studio.EventInstance _earnMoney;
     private FMOD.Studio.EventInstance _loseMoney;
     public PlayerStats playerStats;
@@ -18,6 +21,7 @@ public class GameActions : MonoBehaviour
     public CustomActionEvent Steal;
     public CustomActionEvent BuyDrugs;
     public CustomActionEvent BuyDrink;
+    public CustomActionEvent BuyParadise;
     public CustomActionEvent BuyWeapon;
     public CustomActionEvent SellDrugs;
     public CustomActionEvent GetRobbed;
@@ -26,6 +30,8 @@ public class GameActions : MonoBehaviour
     public CustomActionEvent OralSex;
     public CustomActionEvent VaginalSex;
     public CustomActionEvent AnalSex;
+    public CustomActionEvent GetBustedVelha;
+    public CustomActionEvent GetBustedBofia;
 
     private void Awake()
     {
@@ -37,22 +43,28 @@ public class GameActions : MonoBehaviour
         BuyWeapon = new CustomActionEvent();
         SellDrugs = new CustomActionEvent();
         BuyDrink = new CustomActionEvent();
+        BuyParadise = new CustomActionEvent();
         GetRobbed = new CustomActionEvent();
         GameOver = new CustomActionEvent();
         Brothel = new CustomActionEvent();
         OralSex = new CustomActionEvent();
         VaginalSex = new CustomActionEvent();
         AnalSex = new CustomActionEvent();
+        GetBustedVelha = new CustomActionEvent();
+        GetBustedBofia = new CustomActionEvent();
         Generic.AddListener(DoGeneric);
         Rape.AddListener(DoRape);
         Steal.AddListener(DoSteal);
         BuyDrugs.AddListener(DoBuyDrugs);
         SellDrugs.AddListener(DoSellDrugs);
         BuyDrink.AddListener(DoBuyDrink);
+        BuyParadise.AddListener(DoBuyParadise);
         BuyWeapon.AddListener(DoBuyWeapon);
         GetRobbed.AddListener(DoGetRobbed);
         GameOver.AddListener(DoGameOver);
         Brothel.AddListener(DoBrothel);
+        GetBustedVelha.AddListener(DoGetBustedOnVelha);
+        GetBustedBofia.AddListener(DoGetBustedOnBofia);
     }
 
     private void Start()
@@ -96,6 +108,11 @@ public class GameActions : MonoBehaviour
     {
         DecreaseMoney(npcStats.tradePrices.buy);
     }
+
+    public void DoBuyParadise(NPCStats npcStats)
+    {
+        _senhorTonoCutsceneController.StartSenhorTonoCutscene();
+    }
     
     public void DoSellDrugs(NPCStats npcStats)
     {
@@ -122,7 +139,25 @@ public class GameActions : MonoBehaviour
 
     public void DoGameOver(NPCStats npcStats)
     {
-        SceneManager.LoadScene("GameOver");
+        if (npcStats.iD == "Bofia")
+        {
+         GetBustedBofia.Invoke(npcStats);   
+        }
+
+        if (npcStats.iD == "Guna")
+        {
+        
+        }
+    }
+
+    public void DoGetBustedOnBofia(NPCStats npcStats)
+    {
+        _bofiaCutsceneController.StartBofiaCutscene();
+    }
+
+    public void DoGetBustedOnVelha(NPCStats npcStats)
+    {
+        _velhaCutsceneController.StartVelhaCutscene();
     }
 
     public void IncreaseWantedLevel()

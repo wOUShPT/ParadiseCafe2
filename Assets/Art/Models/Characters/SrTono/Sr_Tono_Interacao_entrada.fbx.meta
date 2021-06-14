@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3e2cc951fc543fc4cb60dd7ca7960327
+guid: 29fa55c5135d78b49a8d61a34cf94bf0
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -38,8 +38,8 @@ ModelImporter:
       name: EnterInteraction
       takeName: Take 001
       internalID: 0
-      firstFrame: 220
-      lastFrame: 235
+      firstFrame: 250
+      lastFrame: 265
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

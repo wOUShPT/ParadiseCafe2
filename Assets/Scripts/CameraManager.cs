@@ -13,7 +13,11 @@ public class CameraManager : MonoBehaviour
 
     private CinemachineVirtualCamera prisonEndingCamera;
 
-    private CinemachineVirtualCamera goodEndingcamera;
+    private CinemachineVirtualCamera paradiseEndingcamera;
+
+    private CinemachineVirtualCamera bustedVelhaCamera;
+    
+    private CinemachineVirtualCamera bustedBofiaCamera;
     
     private void Start()
     {
@@ -22,7 +26,12 @@ public class CameraManager : MonoBehaviour
         brodelCamera = GameObject.FindGameObjectWithTag("BordelCamera").GetComponent<CinemachineVirtualCamera>();
 
         rapeCamera = GameObject.FindGameObjectWithTag("RapeCamera").GetComponent<CinemachineVirtualCamera>();
-
+        
+        bustedVelhaCamera = GameObject.FindGameObjectWithTag("BustedVelhaCamera").GetComponent<CinemachineVirtualCamera>();
+        
+        bustedBofiaCamera = GameObject.FindGameObjectWithTag("BustedBofiaCamera").GetComponent<CinemachineVirtualCamera>();
+        
+        paradiseEndingcamera = GameObject.FindGameObjectWithTag("SenhorTonoCamera").GetComponent<CinemachineVirtualCamera>();
     }
 
 
@@ -53,8 +62,8 @@ public class CameraManager : MonoBehaviour
                 playerCamera.Priority = 0;
                 brodelCamera.Priority = 0;
                 rapeCamera.Priority = 0;
-                prisonEndingCamera.Priority = 10;
-                goodEndingcamera.Priority = 0;
+                //prisonEndingCamera.Priority = 10;
+                //goodEndingcamera.Priority = 0;
                 break;
                 
             case "Cafe":
@@ -62,8 +71,8 @@ public class CameraManager : MonoBehaviour
                 playerCamera.Priority = 10;
                 brodelCamera.Priority = 0;
                 rapeCamera.Priority = 0;
-                prisonEndingCamera.Priority = 0;
-                goodEndingcamera.Priority = 0;
+                //prisonEndingCamera.Priority = 0;
+                //goodEndingcamera.Priority = 0;
                 break;
             
             case "Brothel":
@@ -78,10 +87,22 @@ public class CameraManager : MonoBehaviour
             case "ParadiseEnding":
                 
                 playerCamera.Priority = 0;
-                brodelCamera.Priority = 10;
+                brodelCamera.Priority = 0;
                 rapeCamera.Priority = 0;
-                prisonEndingCamera.Priority = 0;
-                goodEndingcamera.Priority = 0;
+                //prisonEndingCamera.Priority = 0;
+                paradiseEndingcamera.Priority = 10;
+                break;
+            
+            case "BustedVelha":
+
+                playerCamera.Priority = 0;
+                bustedVelhaCamera.Priority = 10;
+                break;
+            
+            case "BustedBofia":
+
+                playerCamera.Priority = 0;
+                bustedBofiaCamera.Priority = 10;
                 break;
 
         }
