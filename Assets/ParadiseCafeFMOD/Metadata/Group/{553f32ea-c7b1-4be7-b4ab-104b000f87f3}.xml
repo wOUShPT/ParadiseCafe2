@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{553f32ea-c7b1-4be7-b4ab-104b000f87f3}">
+		<property name="name">
+			<value>MusicaBordel</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{0043607b-8805-48b1-a4ec-89891a9ef06d}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{3f0e3ab6-58fe-442d-a0d1-9321fafe6f78}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{8fa47152-9764-43e5-b56e-626a0800767b}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{0043607b-8805-48b1-a4ec-89891a9ef06d}">
+		<relationship name="effects">
+			<destination>{c8fb06c2-3d4d-434a-b5ce-e8c6042ed71d}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{3f0e3ab6-58fe-442d-a0d1-9321fafe6f78}" />
+	<object class="MixerBusFader" id="{c8fb06c2-3d4d-434a-b5ce-e8c6042ed71d}" />
+</objects>
