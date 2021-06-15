@@ -9,10 +9,11 @@ using UnityEngine.Rendering;
 [RequireComponent(typeof(NpcAIBehaviour))]
 public class VelhaAIBehaviour : MonoBehaviour
 {
-    private NavMeshAgent _agent;
+    public NavMeshAgent _agent;
     private NpcAIBehaviour _npcBehaviour;
     public NPCDialogueTrigger npcDialogueTrigger;
-
+    public Animator _leftGateAnimator;
+    public Animator _rightGateAnimator;
     public Transform outsideWaypoint;
     public string outsideWaypointTag;
 
@@ -22,8 +23,7 @@ public class VelhaAIBehaviour : MonoBehaviour
     private void Start()
     {
         _npcBehaviour = GetComponent<NpcAIBehaviour>();
-        _agent = GetComponent<NavMeshAgent>();
-        
+
         if (outsideWaypoint == null)
         {
             outsideWaypoint = GameObject.FindGameObjectWithTag(outsideWaypointTag).GetComponent<Transform>();
@@ -33,8 +33,6 @@ public class VelhaAIBehaviour : MonoBehaviour
         {
             insideWaypoint = GameObject.FindGameObjectWithTag(insideWaypointTag).GetComponent<Transform>();
         }
-
-        //Setup();
     }
 
     [Task]
@@ -56,14 +54,20 @@ public class VelhaAIBehaviour : MonoBehaviour
     [Task]
     void StartClean()
     {
-        Debug.Log("Cleaning");
+        if (!npcDialogueTrigger.enabled)
+        {
+            npcDialogueTrigger.enabled = true;
+        }
         Task.current.Succeed();
     }
 
     [Task]
     void StopClean()
     {
-        Debug.Log("StopCleaning");
+        if (npcDialogueTrigger.enabled)
+        {
+            npcDialogueTrigger.enabled = false;
+        }
         Task.current.Succeed();
     }
 

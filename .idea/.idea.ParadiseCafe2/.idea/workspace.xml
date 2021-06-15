@@ -24,25 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe4c6e0d-73b5-4f46-949d-e05e640a1ad5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Bordel/Bico.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Bordel/Bico.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/road.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/road.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Anal.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Anal.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bico.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bico.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Stats/PlayerStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Stats/PlayerStats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lamp_post.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lamp_post.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Park_bench.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Park_bench.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BrothelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BrothelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BrothelSounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BrothelSounds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Master.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaAIBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaAIBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +66,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCInteractionsTracker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/NpcAIBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoiceSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VelhaGatesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BrothelSounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AlignNPCToPlayer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,7 +91,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueInspector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameActions.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ParadiseEnding.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BackStory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Disclaimer.cs" />
@@ -116,6 +99,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/BrothelController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaAIBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/VelhaGatesController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pU6uQclUHI28WyBvQg2toUKpSL" />
@@ -295,6 +281,7 @@
       <workItem from="1623628929491" duration="4670000" />
       <workItem from="1623671846954" duration="5562000" />
       <workItem from="1623701590004" duration="8571000" />
+      <workItem from="1623764411323" duration="2408000" />
     </task>
     <servers />
   </component>

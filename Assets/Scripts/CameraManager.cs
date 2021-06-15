@@ -11,8 +11,6 @@ public class CameraManager : MonoBehaviour
 
     private CinemachineVirtualCamera rapeCamera;
 
-    private CinemachineVirtualCamera prisonEndingCamera;
-
     private CinemachineVirtualCamera paradiseEndingcamera;
 
     private CinemachineVirtualCamera bustedVelhaCamera;
@@ -44,8 +42,6 @@ public class CameraManager : MonoBehaviour
                 playerCamera.Priority = 10;
                 brodelCamera.Priority = 0;
                 rapeCamera.Priority = 0;
-                //prisonEndingCamera.Priority = 0;
-                //goodEndingcamera.Priority = 0;
                 break;
 
             case "Rape":
@@ -53,8 +49,6 @@ public class CameraManager : MonoBehaviour
                 playerCamera.Priority = 0;
                 brodelCamera.Priority = 0;
                 rapeCamera.Priority = 10;
-                //prisonEndingCamera.Priority = 0;
-                //goodEndingcamera.Priority = 0;
                 break;
 
             case "CholdraEnding":
@@ -62,8 +56,6 @@ public class CameraManager : MonoBehaviour
                 playerCamera.Priority = 0;
                 brodelCamera.Priority = 0;
                 rapeCamera.Priority = 0;
-                //prisonEndingCamera.Priority = 10;
-                //goodEndingcamera.Priority = 0;
                 break;
                 
             case "Cafe":
@@ -71,8 +63,6 @@ public class CameraManager : MonoBehaviour
                 playerCamera.Priority = 10;
                 brodelCamera.Priority = 0;
                 rapeCamera.Priority = 0;
-                //prisonEndingCamera.Priority = 0;
-                //goodEndingcamera.Priority = 0;
                 break;
             
             case "Brothel":
@@ -80,8 +70,6 @@ public class CameraManager : MonoBehaviour
                 playerCamera.Priority = 0;
                 brodelCamera.Priority = 10;
                 rapeCamera.Priority = 0;
-                //prisonEndingCamera.Priority = 0;
-                //goodEndingcamera.Priority = 0;
                 break;
             
             case "ParadiseEnding":
@@ -89,7 +77,6 @@ public class CameraManager : MonoBehaviour
                 playerCamera.Priority = 0;
                 brodelCamera.Priority = 0;
                 rapeCamera.Priority = 0;
-                //prisonEndingCamera.Priority = 0;
                 paradiseEndingcamera.Priority = 10;
                 break;
             
