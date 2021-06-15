@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour
     private ThirdPersonController playerController;
     private Transform playerHoldPoint;
     private Transform casaDaVelhaExterior;
-    private Transform playerOutBrothelSpawn;
+    public Transform playerOutBrothelSpawn;
     private Animator _sceneTransitionAnimator;
     private Transform _currentSpawnLocation;
     private DoorController _currentDoorController;
@@ -41,7 +41,6 @@ public class LevelManager : MonoBehaviour
         _cameraManager = GetComponent<CameraManager>();
         _inputManager = GetComponent<InputManager>();
         casaDaVelhaExterior = GameObject.FindGameObjectWithTag("VelhaGate").transform;
-        playerOutBrothelSpawn = GameObject.FindGameObjectWithTag("PlayerOutBrothelSpawn").transform;
         playerHoldPoint = GameObject.FindGameObjectWithTag("PlayerHoldPoint").transform;
         playerController = FindObjectOfType<ThirdPersonController>();
         _sceneTransitionAnimator = GameObject.FindGameObjectWithTag("SceneTransition").GetComponent<Animator>();
@@ -66,9 +65,14 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(LevelTransition());
     }
 
-    public void LoadExterior()
+    public void LoadOutRape()
     {
-        StartCoroutine(TransitionToExterior());
+        StartCoroutine(TransitionOutRape());
+    }
+
+    public void LoadOutBrothel()
+    {
+        StartCoroutine(TransitionOutBrothel());
     }
     
     
@@ -118,7 +122,7 @@ public class LevelManager : MonoBehaviour
         _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
-        SpawnOnLocation(playerHoldPoint);
+        SpawnOnLocation(playerOutBrothelSpawn);
         _hudReferences.HUDPanel.SetActive(false);
         previousLevel = "Exterior";
         currentLevel = "Brothel";
@@ -131,26 +135,6 @@ public class LevelManager : MonoBehaviour
         _sexDialogueTrigger.TriggerDialogue();
     }
     
-    IEnumerator TransitionOutBrothel()
-    {
-        playerController.FreezePlayer(true);
-        _inputManager.TogglePlayerControls(false);
-        _dailyIncomeScript.enabled = false;
-        _sceneTransitionAnimator.SetTrigger("FadeOut");
-        yield return new WaitForSeconds(1f);
-        SpawnOnLocation(playerHoldPoint);
-        _hudReferences.HUDPanel.SetActive(false);
-        previousLevel = "Exterior";
-        currentLevel = "Brothel";
-        SwitchFMODSnapshot();
-        _cameraManager.SwitchCamera(currentLevel);
-        yield return new WaitForSeconds(1f);
-        _sceneTransitionAnimator.SetTrigger("FadeIn");
-        yield return new WaitForSeconds(1f);
-        _inputManager.TogglePlayerControls(true);
-        _sexDialogueTrigger.TriggerDialogue();
-    }
-
 
     IEnumerator TransitionToRape()
     {
@@ -162,7 +146,7 @@ public class LevelManager : MonoBehaviour
         _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
-        SpawnOnLocation(playerHoldPoint);
+        SpawnOnLocation(casaDaVelhaExterior);
         _hudReferences.HUDPanel.SetActive(false);
         previousLevel = "Exterior";
         currentLevel = "Rape";
@@ -172,34 +156,45 @@ public class LevelManager : MonoBehaviour
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
         yield return new WaitForSeconds(10f);
-        StartCoroutine(TransitionToExterior());
+        LoadOutRape();
     }
 
-    IEnumerator TransitionToExterior()
+    IEnumerator TransitionOutRape()
     {
         _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
-        yield return new WaitForSeconds(1f);
-        if (currentLevel == "Rape")
-        {
-            _timeController.TimePercentage = 0.7f;
-            SpawnOnLocation(casaDaVelhaExterior);
-        }
-
-        if (currentLevel == "Brothel")
-        {
-            _timeController.TimePercentage = 0.4f;
-            SpawnOnLocation(playerOutBrothelSpawn);
-        }
+        yield return new WaitForSeconds(2f);
+        _timeController.TimePercentage = 0.75f;
         previousLevel = currentLevel;
         currentLevel = "Exterior";
         SwitchFMODSnapshot();
         _cameraManager.SwitchCamera(currentLevel);
-        playerController.RecenterCamera();
-        yield return new WaitForSeconds(1f);
         _hudReferences.HUDPanel.SetActive(true);
         _dailyIncomeScript.enabled = true;
         _timeController.timeFreeze = false;
+        yield return new WaitForSeconds(1f);
+        playerController.RecenterCamera();
+        _sceneTransitionAnimator.SetTrigger("FadeIn");
+        yield return new WaitForSeconds(1f);
+        _inputManager.TogglePlayerControls(true);
+        playerController.FreezePlayer(false);
+    }
+    
+    IEnumerator TransitionOutBrothel()
+    {
+        _inputManager.TogglePlayerControls(false);
+        _sceneTransitionAnimator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(2f);
+        _timeController.TimePercentage = 0.4f;
+        previousLevel = currentLevel;
+        currentLevel = "Exterior";
+        SwitchFMODSnapshot();
+        _cameraManager.SwitchCamera(currentLevel);
+        _hudReferences.HUDPanel.SetActive(true);
+        _dailyIncomeScript.enabled = true;
+        _timeController.timeFreeze = false;
+        yield return new WaitForSeconds(1f);
+        playerController.RecenterCamera();
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
         _inputManager.TogglePlayerControls(true);

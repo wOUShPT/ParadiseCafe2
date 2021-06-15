@@ -19,6 +19,7 @@ TagManager:
   - VelhaCutsceneWaypoint
   - BustedBofiaCamera
   - SenhorTonoCamera
+  - Boundary
   layers:
   - Default
   - TransparentFX

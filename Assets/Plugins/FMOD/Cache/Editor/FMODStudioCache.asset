@@ -218,6 +218,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-7073916637427753092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SexSceneRapeVelha
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SexSceneRapeVelha
+  guid: a25718c046135d418685604a562a80e7
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-7021613473009476045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +330,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-6842280720597757115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SexSceneIdle
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SexSceneIdle
+  guid: ec8483ef80e15e449d3972e7b486cedb
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-6796805135031775273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,13 +411,13 @@ MonoBehaviour:
   guid: d86fdefc45a10a43ba5a35294e231fd4
   Banks:
   - {fileID: 6546407437052023258}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 12768
 --- !u!114 &-6481838440821105739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +533,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-5995773088798970687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-5936568872034493805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +731,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-4599244593927674295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-4494900134106116463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,11 +875,11 @@ MonoBehaviour:
   Path: Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637591956140382780
+  lastModified: 637593058575040703
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2822
+    Value: 2948
   Exists: 1
 --- !u!114 &-3347240092568259647
 MonoBehaviour:
@@ -1159,7 +1245,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 8000
 --- !u!114 &-370634801337730776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1391,12 +1477,15 @@ MonoBehaviour:
   - {fileID: 4475203983532319614}
   - {fileID: 4938817273705681091}
   - {fileID: -8701395328746398032}
+  - {fileID: 6729007386032909159}
+  - {fileID: -6842280720597757115}
+  - {fileID: -7073916637427753092}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6546407437052023258}
   StringsBanks:
   - {fileID: -3414285515574207322}
-  stringsBankWriteTime: 637591956140382780
+  stringsBankWriteTime: 637593058575040703
   cacheVersion: 6
 --- !u!114 &107968835105890815
 MonoBehaviour:
@@ -2308,13 +2397,13 @@ MonoBehaviour:
   guid: df6315fc224df748a509de187f9750a8
   Banks:
   - {fileID: 6546407437052023258}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 11195
 --- !u!114 &5499179237531389076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2441,7 +2530,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8496309969980203443}
+  - {fileID: -5995773088798970687}
   MinDistance: 0
   MaxDistance: 0
   Length: 88163
@@ -2483,7 +2572,7 @@ MonoBehaviour:
   Path: Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637591956140342886
+  lastModified: 637593058575010698
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2529,6 +2618,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &6729007386032909159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SexSceneReginaldo
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SexSceneReginaldo
+  guid: dbe7b9765995964faefc78db7e26a28b
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 11163
 --- !u!114 &6765661678505217405
 MonoBehaviour:
   m_ObjectHideFlags: 0

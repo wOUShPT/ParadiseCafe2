@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent startedDialogue;
     public UnityEvent endedDialogue;
     public GameObject CurrentNPC => _currentNpc;
+    private FMOD.Studio.EventInstance _nextDialogueSound;
 
     private void Awake()
     {
@@ -50,6 +51,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
+        _nextDialogueSound = FMODUnity.RuntimeManager.CreateInstance("event:/UI/SaltarFala");
         dialogueChoiceSelection.ButtonSelect.AddListener(SelectChoice);
         dialogueChoiceSelection.enabled = false;
     }
@@ -171,6 +173,7 @@ public class DialogueManager : MonoBehaviour
                 _currentDialogue = _currentDialogue.NextDialogue;
                 waiting = false; 
                 nextDialogueArrowIndicator.SetActive(false);
+                _nextDialogueSound.start();
                 DisplayNextSentence();
             }
             yield return null;

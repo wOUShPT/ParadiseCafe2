@@ -13,6 +13,7 @@ public class BrothelController : MonoBehaviour
     public Animator sexAnimator;
     public NPCDialogueReferences npcDialogueReferences;
     public SexDialogueTrigger sexDialogueTrigger;
+    public Dialogue firstDialogue;
     public Dialogue brothelMoneyBranch;
     public Dialogue brothelNoMoneyBranch;
     private Transform _charactersTransform;
@@ -68,10 +69,11 @@ public class BrothelController : MonoBehaviour
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         _charactersTransform.position = oralPivot.position;
+        _BrothelSounds.StopSounds();
         sexAnimator.SetTrigger("TriggerOral");
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
-        yield return new WaitForSeconds(16f);
+        yield return new WaitForSeconds(15f);
         StartCoroutine(Pay());
         
     }
@@ -81,10 +83,11 @@ public class BrothelController : MonoBehaviour
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         _charactersTransform.position = vaginalPivot.position;
+        _BrothelSounds.StopSounds();
         sexAnimator.SetTrigger("TriggerVaginal");
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
-        yield return new WaitForSeconds(16f);
+        yield return new WaitForSeconds(15f);
         StartCoroutine(Pay());
     }
 
@@ -93,10 +96,11 @@ public class BrothelController : MonoBehaviour
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         _charactersTransform.position = analPivot.position;
+        _BrothelSounds.StopSounds();
         sexAnimator.SetTrigger("TriggerAnal");
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
-        yield return new WaitForSeconds(16f);
+        yield return new WaitForSeconds(15f);
         StartCoroutine(Pay());
     }
 
@@ -104,7 +108,6 @@ public class BrothelController : MonoBehaviour
     {
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
-        _BrothelSounds.StopSounds();
         _charactersTransform.position = payPivot.position;
         if (_playerStats.moneyAmount < 100)
         {
@@ -119,9 +122,10 @@ public class BrothelController : MonoBehaviour
             _playerStats.moneyAmount -= 100;
             sexAnimator.SetTrigger("PayMoney");
             sexDialogueTrigger.TriggerDialogue();
-            _dialogueManager.endedDialogue.AddListener(_levelManager.LoadExterior);
+            _dialogueManager.endedDialogue.AddListener(_levelManager.LoadOutBrothel);
             
         }
+        _BrothelSounds.StopSounds();
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
     }
@@ -144,10 +148,11 @@ public class BrothelController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(16f);
-        _levelManager.LoadExterior();
-        yield return new WaitForSeconds(2f);
+        _levelManager.LoadOutBrothel();
+        yield return new WaitForSeconds(1f);
         sexAnimator.SetTrigger("Reset");
         doorAnimator.SetTrigger("Reset");
+        npcDialogueReferences.dialogue = firstDialogue;
 
     }
 }
