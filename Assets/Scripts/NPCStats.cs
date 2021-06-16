@@ -10,6 +10,7 @@ public class NPCStats : ScriptableObject
     public int moneyAmount;
     public int aggressiveness;
     public bool hasWeapon;
+    [Space]
     public TradePrices tradePrices;
     
     [System.Serializable]
@@ -19,4 +20,9 @@ public class NPCStats : ScriptableObject
         public int sell;
         public int buyPistol;
     }
+    
+    [Space]
+    public int NumberOfInteractionsMade;
+    public int NumberOfTimesBeenRaped;
+    public int NumberOfTimesBeenRobbed;
 }

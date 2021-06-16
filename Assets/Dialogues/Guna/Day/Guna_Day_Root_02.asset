@@ -45,7 +45,7 @@ MonoBehaviour:
     action: 3
     successDialogue01: {fileID: 11400000, guid: 06f14056688003f4cb8402491656d66d, type: 2}
     successDialogue02: {fileID: 0}
-    failedDialogue: {fileID: 0}
+    failedDialogue: {fileID: 11400000, guid: 0d2b47a0829d35e4ba46388ceadd6a6d, type: 2}
     failedNoDrugsDialogue: {fileID: 0}
     failedNoMoneyDialogue: {fileID: 11400000, guid: c697fb4eb65cae94cb3ea89fd1c73409, type: 2}
     failedNoWeaponDialogue: {fileID: 0}

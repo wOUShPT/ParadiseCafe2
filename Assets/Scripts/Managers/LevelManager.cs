@@ -104,7 +104,7 @@ public class LevelManager : MonoBehaviour
         SpawnOnLocation(_currentSpawnLocation);
         previousLevel = _currentDoorController.currentLevelName;
         currentLevel = _currentDoorController.nextLevelName;
-        SwitchFMODSnapshot();
+        StartCoroutine(SwitchFMODSnapshot());
         playerController.RecenterCamera();
         yield return new WaitForSeconds(1.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
@@ -126,7 +126,7 @@ public class LevelManager : MonoBehaviour
         _hudReferences.HUDPanel.SetActive(false);
         previousLevel = "Exterior";
         currentLevel = "Brothel";
-        SwitchFMODSnapshot();
+        StartCoroutine(SwitchFMODSnapshot());
         _cameraManager.SwitchCamera(currentLevel);
         yield return new WaitForSeconds(1f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
@@ -150,7 +150,7 @@ public class LevelManager : MonoBehaviour
         _hudReferences.HUDPanel.SetActive(false);
         previousLevel = "Exterior";
         currentLevel = "Rape";
-        SwitchFMODSnapshot();
+        StartCoroutine(SwitchFMODSnapshot());
         _cameraManager.SwitchCamera(currentLevel);
         yield return new WaitForSeconds(1f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
@@ -167,7 +167,7 @@ public class LevelManager : MonoBehaviour
         _timeController.TimePercentage = 0.75f;
         previousLevel = currentLevel;
         currentLevel = "Exterior";
-        SwitchFMODSnapshot();
+        StartCoroutine(SwitchFMODSnapshot());
         _cameraManager.SwitchCamera(currentLevel);
         _hudReferences.HUDPanel.SetActive(true);
         _dailyIncomeScript.enabled = true;
@@ -188,7 +188,7 @@ public class LevelManager : MonoBehaviour
         _timeController.TimePercentage = 0.4f;
         previousLevel = currentLevel;
         currentLevel = "Exterior";
-        SwitchFMODSnapshot();
+        StartCoroutine(SwitchFMODSnapshot());
         _cameraManager.SwitchCamera(currentLevel);
         _hudReferences.HUDPanel.SetActive(true);
         _dailyIncomeScript.enabled = true;
@@ -211,44 +211,49 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene("ParadiseEnding");
     }
 
-    void SwitchFMODSnapshot()
+    IEnumerator SwitchFMODSnapshot()
     {
         switch (currentLevel)
         {
             case "Exterior":
                 
+                exteriorSnapshot.start();
+                yield return new WaitForSeconds(0.1f);
                 cafeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 brothelSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 rapeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
-                exteriorSnapshot.start();
+                
                 
                 break;
             
             case "Café":
                 
+                cafeSnapshot.start();
+                yield return new WaitForSeconds(0.1f);
                 exteriorSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 brothelSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 rapeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
-                cafeSnapshot.start();
-                
+
                 break;
             
             case "Brothel":
                 
+                brothelSnapshot.start();
+                yield return new WaitForSeconds(0.1f);
                 cafeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 exteriorSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 rapeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
-                brothelSnapshot.start();
-                
+
                 break;
             
             case "Rape":
                 
+                rapeSnapshot.start();
+                yield return new WaitForSeconds(0.1f);
                 brothelSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 cafeSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
                 exteriorSnapshot.stop(STOP_MODE.ALLOWFADEOUT);
-                rapeSnapshot.start();
-                
+
                 break;
         }
     }

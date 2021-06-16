@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6b8f551b8d4fc48871141a98e9c241, type: 3}
   m_Name: DomStats
   m_EditorClassIdentifier: 
-  iD: 
+  iD: Dom
   moneyAmount: 3000
   aggressiveness: 0
-  timesBeenRaped: 0
-  timesBeenRobbed: 0
   hasWeapon: 0
   tradePrices:
     buy: 0
-    sell: 15
+    sell: 40
     buyPistol: 0
+  NumberOfInteractionsMade: 0
+  NumberOfTimesBeenRaped: 0
+  NumberOfTimesBeenRobbed: 0

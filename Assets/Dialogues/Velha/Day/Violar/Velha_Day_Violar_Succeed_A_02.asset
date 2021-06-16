@@ -15,5 +15,5 @@ MonoBehaviour:
   type: 0
   characterName: Dona Clara
   nextDialogue: {fileID: 11400000, guid: 5b51df73bde1a7e40b312782c4d5a64d, type: 2}
-  sentence: "Mas que pensas que est\xE1s a fazer patife?"
+  sentence: "Mas que pensas que est\xE1s a fazer seu patife?"
   choices: []

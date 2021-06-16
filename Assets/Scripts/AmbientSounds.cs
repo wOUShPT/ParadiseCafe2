@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using FMOD.Studio;
@@ -32,7 +33,11 @@ public class AmbientSounds : MonoBehaviour
             _cricketsSound.start();
             _birdsSound.stop(STOP_MODE.ALLOWFADEOUT);
         }
-            
+    }
 
+    private void OnDisable()
+    {
+        _cricketsSound.stop(STOP_MODE.ALLOWFADEOUT);
+        _birdsSound.stop(STOP_MODE.ALLOWFADEOUT);
     }
 }

@@ -15,5 +15,5 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 1424265968ca0e34cbb906aa9314accc, type: 2}
-  sentence: "Ol\xE1 senhor guarda, tenho aqui algo para melhorar o seu dia"
+  sentence: "Ol\xE1 senhor guarda, tenho aqui algo para melhorar o seu dia."
   choices: []

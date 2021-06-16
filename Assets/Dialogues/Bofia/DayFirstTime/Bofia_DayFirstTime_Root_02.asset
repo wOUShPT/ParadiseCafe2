@@ -15,8 +15,8 @@ MonoBehaviour:
   type: 1
   characterName: Agente Nuninho
   nextDialogue: {fileID: 0}
-  sentence: "Uma nova cara por aqui. J\xE1 muito tempo que n\xE3o via uma cara t\xE3o
-    linda. Se algo te acontecer vem logo ter comigo."
+  sentence: "Uma nova cara por aqui. H\xE1 muito tempo que n\xE3o via uma cara t\xE3o
+    linda. Se estiveres aflito vem ter comigo xuxu."
   choices:
   - choiceText: Cumprimentar
     action: 0

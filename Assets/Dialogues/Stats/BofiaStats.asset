@@ -15,10 +15,8 @@ MonoBehaviour:
   iD: Bofia
   moneyAmount: 0
   aggressiveness: 0
-  timesBeenRaped: 0
-  timesBeenRobbed: 0
   hasWeapon: 1
   tradePrices:
     buy: 0
-    sell: 5
+    sell: 10
     buyPistol: 0

@@ -12,8 +12,6 @@ public class VelhaAIBehaviour : MonoBehaviour
     public NavMeshAgent _agent;
     private NpcAIBehaviour _npcBehaviour;
     public NPCDialogueTrigger npcDialogueTrigger;
-    public Animator _leftGateAnimator;
-    public Animator _rightGateAnimator;
     public Transform outsideWaypoint;
     public string outsideWaypointTag;
 
@@ -56,7 +54,7 @@ public class VelhaAIBehaviour : MonoBehaviour
     {
         if (!npcDialogueTrigger.enabled)
         {
-            npcDialogueTrigger.enabled = true;
+            //npcDialogueTrigger.enabled = true;
         }
         Task.current.Succeed();
     }
@@ -66,7 +64,7 @@ public class VelhaAIBehaviour : MonoBehaviour
     {
         if (npcDialogueTrigger.enabled)
         {
-            npcDialogueTrigger.enabled = false;
+            //npcDialogueTrigger.enabled = false;
         }
         Task.current.Succeed();
     }

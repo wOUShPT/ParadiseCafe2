@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: Velha
   m_EditorClassIdentifier: 
   iD: Velha
-  moneyAmount: 20
+  moneyAmount: 90
   aggressiveness: 0
-  timesBeenRaped: 0
-  timesBeenRobbed: 2
   hasWeapon: 0
   tradePrices:
     buy: 0

@@ -15,6 +15,6 @@ MonoBehaviour:
   type: 0
   characterName: Adriano
   nextDialogue: {fileID: 0}
-  sentence: "A morte n\xE3o \xE9 nada para n\xF3s, pois quanto existimos, n\xE3o
-    existe a morte, e quando existe a morte, n\xE3o existimos mais."
+  sentence: "\"A morte n\xE3o \xE9 nada para n\xF3s, pois quanto existimos, n\xE3o
+    existe a morte, e quando existe a morte, n\xE3o existimos mais.\""
   choices: []

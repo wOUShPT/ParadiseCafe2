@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SenhorTono_PedirInformacao_01
   m_EditorClassIdentifier: 
   type: 0
-  characterName: Rogerio
+  characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 6719edb790c3792448c8650802039195, type: 2}
-  sentence: "Por acaso n\xE3o tens um jogo com o nome deste caf\xE9? Ando \xE0 procura
-    dele e tudo indica que ele se encontra aqui."
+  sentence: "Ol\xE1 sou o Rog\xE9rio! Preciso de uma informa\xE7\xE3o sobre um jogo.
+    Tudo indica que posso encontrar o que preciso aqui."
   choices: []

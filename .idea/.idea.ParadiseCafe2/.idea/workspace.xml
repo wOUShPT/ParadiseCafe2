@@ -24,8 +24,113 @@
   <component name="ChangeListManager">
     <list default="true" id="fe4c6e0d-73b5-4f46-949d-e05e640a1ad5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ParadiseCafe2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Bordel/Bico.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Bordel/Bico.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Skybox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Pagar.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Pagar.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Pagar.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Bordel_Pagar.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Vaginal.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Models/Characters/Bordel/Vaginal.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/Paradise 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/Paradise 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Adriano/AdrianoLinha01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Adriano/AdrianoLinha01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Bofia_Day_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Bofia_Day_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Cumprimentar/Bofia_Day_Cumprimentar_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Cumprimentar/Bofia_Day_Cumprimentar_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Cumprimentar/Bofia_Day_Cumprimentar_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Cumprimentar/Bofia_Day_Cumprimentar_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Insultar/Bofia_Day_Insultar_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Insultar/Bofia_Day_Insultar_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Insultar/Bofia_Day_Insultar_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/Insultar/Bofia_Day_Insultar_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/VenderDroga/Bofia_Day_VenderDroga_Failed_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/VenderDroga/Bofia_Day_VenderDroga_Failed_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/VenderDroga/Bofia_day_VenderDroga_Succeed_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Day/VenderDroga/Bofia_day_VenderDroga_Succeed_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/DayFirstTime/Bofia_DayFirstTime_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/DayFirstTime/Bofia_DayFirstTime_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Night/Bofia_Night_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/Night/Bofia_Night_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bofia/NightFirstTime/Bofia_NightFirstTime_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bofia/NightFirstTime/Bofia_NightFirstTime_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bordel/Bordel01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/Bordel01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelOral01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelOral01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelOral02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelOral02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelVaginal01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Bordel/BordelVaginal01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/ComprarDroga/Dealer_ComprarDroga_NoMoney_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/ComprarDroga/Dealer_ComprarDroga_NoMoney_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/ComprarDroga/Dealer_ComprarDroga_NoMoney_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/ComprarDroga/Dealer_ComprarDroga_NoMoney_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/ComprarDroga/Dealer_ComprarDroga_Succeed_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/ComprarDroga/Dealer_ComprarDroga_Succeed_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/ComprarDroga/Dealer_ComprarDroga_Succeed_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/ComprarDroga/Dealer_ComprarDroga_Succeed_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/Dealer_Day_Root_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/Dealer_Day_Root_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/Dealer_Day_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/Dealer_Day_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/Insultar/Dealer_Insultar_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/Insultar/Dealer_Insultar_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/Insultar/Dealer_Insultar_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Day/Insultar/Dealer_Insultar_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/FirstTime/Dealer_FirstTime_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/FirstTime/Dealer_FirstTime_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Night/Dealer_Night_Root_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Night/Dealer_Night_Root_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Night/Dealer_Night_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dealer/Night/Dealer_Night_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dom/Day/Dom_Day_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dom/Day/Dom_Day_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dom/Day/VenderDroga/Dom_VenderDroga_FailedNoDrugs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dom/Day/VenderDroga/Dom_VenderDroga_FailedNoDrugs.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dom/Day/VenderDroga/Dom_VenderDroga_Succeed_01 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dom/Day/VenderDroga/Dom_VenderDroga_Succeed_01 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dom/Day/VenderDroga/Dom_VenderDroga_Succeed_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dom/Day/VenderDroga/Dom_VenderDroga_Succeed_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dom/FirstTime/Dom_FirstTime_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dom/FirstTime/Dom_FirstTime_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Dom/Night/Dom_Night_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Dom/Night/Dom_Night_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/ComprarArma/Guna_Day_ComprarArma_FailedNoMoney.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/ComprarArma/Guna_Day_ComprarArma_FailedNoMoney.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/ComprarArma/Guna_Day_ComprarArma_Succeed_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/ComprarArma/Guna_Day_ComprarArma_Succeed_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_04.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_04.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_NoDrugs_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_NoDrugs_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_NoDrugs_03.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_NoDrugs_03.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_NoDrugs_04.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Cumprimentar/Guna_Day_Cumprimentar_NoDrugs_04.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Guna_Day_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Guna_Day_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Insultar/Guna_Day_Insultar_03.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Guna/Day/Insultar/Guna_Day_Insultar_03.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/Bebida/SenhorTono_Bebida_FailedNoMoney.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/Bebida/SenhorTono_Bebida_FailedNoMoney.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/Bebida/SenhorTono_Bebida_Succeed.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/Bebida/SenhorTono_Bebida_Succeed.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/ComprarJogo/SenhorTono_ComprarJogo_Succeed_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/ComprarJogo/SenhorTono_ComprarJogo_Succeed_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/PedirInformacao/SenhorTono_PedirInformacao_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/PedirInformacao/SenhorTono_PedirInformacao_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/PedirInformacao/SenhorTono_PedirInformacao_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/PedirInformacao/SenhorTono_PedirInformacao_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/PedirInformacao/SenhorTono_PedirInformacao_03.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/PedirInformacao/SenhorTono_PedirInformacao_03.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/SenhorTono_Root_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/SenhorTono_Root_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/SenhorTono_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/SenhorTono_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/SenhorTono_Root_FirstTime_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/SenhorTono_Root_FirstTime_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/SenhorTono_Root_FirstTime_02 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/SenhorTono/SenhorTono_Root_FirstTime_02 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Stats/BofiaStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Stats/BofiaStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Stats/DealerStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Stats/DealerStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Stats/DomStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Stats/DomStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Stats/GunaStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Stats/GunaStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Stats/SenhorTono.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Stats/SenhorTono.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Stats/Velha.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Stats/Velha.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Velha/Day/Violar/Velha_Day_Violar_FailedNoWeapon.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Velha/Day/Violar/Velha_Day_Violar_FailedNoWeapon.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Velha/Day/Violar/Velha_Day_Violar_Succeed_A_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Velha/Day/Violar/Velha_Day_Violar_Succeed_A_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Velha/Day/Violar/Velha_Day_Violar_Succeed_B_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Velha/Day/Violar/Velha_Day_Violar_Succeed_B_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Velha/Day/Violar/Velha_Day_Violar_Succeed_B_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Velha/Day/Violar/Velha_Day_Violar_Succeed_B_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogues/Velha/FirstTime/Velha_DayFirstTime_Root_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogues/Velha/FirstTime/Velha_DayFirstTime_Root_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SceneTransition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneTransition.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Disclaimer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Disclaimer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Francisco.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Francisco.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ParadiseEnding.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ParadiseEnding.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ricardo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ricardo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tomás.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tomás.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Zé.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Zé.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaAIBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaAIBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BrothelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BrothelController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueTrackerVelha.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueTrackerVelha.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialoguesTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialoguesTracker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueReferences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueReferences.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetPlayerStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SetPlayerStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VelhaCasaAudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VelhaCasaAudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Master.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Nokia SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Nokia SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +151,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/AdrianoDialoguesTracker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/SexDialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DayStateStingerSounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CutscenesController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,29 +185,39 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/LookAt.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/SexDialogueTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BrodelController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BustedController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BustedCutsceneController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueInspector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameActions.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ParadiseEnding.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BackStory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Disclaimer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CutscenesController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BrothelSounds.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BrothelController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaAIBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/VelhaGatesController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AdrianoDialoguesTracker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BrothelController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/VelhaCasaAudioController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Velha/VelhaAIBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/NpcAIBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NPCStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SetPlayerStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameActions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/VelhaDialoguesTracker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialoguesTracker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/AdrianoDialoguesTracker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/NPCDialogueReferences.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AmbientSounds.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueInspector.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pU6uQclUHI28WyBvQg2toUKpSL" />
@@ -281,7 +397,8 @@
       <workItem from="1623628929491" duration="4670000" />
       <workItem from="1623671846954" duration="5562000" />
       <workItem from="1623701590004" duration="8571000" />
-      <workItem from="1623764411323" duration="2408000" />
+      <workItem from="1623764411323" duration="22200000" />
+      <workItem from="1623852737330" duration="2792000" />
     </task>
     <servers />
   </component>

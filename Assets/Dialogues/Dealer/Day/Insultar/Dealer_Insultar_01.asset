@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: dc2357b919d78914dbf189aedd7a0beb, type: 2}
   sentence: "Olha a fada hiperativa dos programas de domingo \xE0 tarde! Mete menos
-    farinha idiota."
+    a\xE7\xFAcar nisso idiota."
   choices:
   - choiceText: 
     action: 0

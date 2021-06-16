@@ -122,8 +122,11 @@ public class BrothelController : MonoBehaviour
             _playerStats.moneyAmount -= 100;
             sexAnimator.SetTrigger("PayMoney");
             sexDialogueTrigger.TriggerDialogue();
-            _dialogueManager.endedDialogue.AddListener(_levelManager.LoadOutBrothel);
-            
+            _dialogueManager.endedDialogue.AddListener(() =>
+            {
+                _levelManager.LoadOutBrothel();
+                StartCoroutine(ResetScene());
+            });
         }
         _BrothelSounds.StopSounds();
         yield return new WaitForSeconds(0.5f);
@@ -132,7 +135,7 @@ public class BrothelController : MonoBehaviour
 
     IEnumerator Reginaldo()
     {
-        _inputManager.TogglePlayerControls(false);
+        //_inputManager.TogglePlayerControls(false);
         doorAnimator.SetTrigger("Open");
         sexAnimator.SetTrigger("CallReginaldo");
         while (sexAnimator.GetCurrentAnimatorClipInfo(0)[0].clip.name != "Este_nao_quer_pagar")
@@ -140,7 +143,8 @@ public class BrothelController : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(sexAnimator.GetCurrentAnimatorStateInfo(0).length * sexAnimator.GetCurrentAnimatorStateInfo(0).speed);
+        yield return new WaitForSeconds(sexAnimator.GetCurrentAnimatorStateInfo(0).length *
+                                            sexAnimator.GetCurrentAnimatorStateInfo(0).speed);
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
@@ -149,10 +153,14 @@ public class BrothelController : MonoBehaviour
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(16f);
         _levelManager.LoadOutBrothel();
+        StartCoroutine(ResetScene());
+    }
+
+    IEnumerator ResetScene()
+    {
         yield return new WaitForSeconds(1f);
         sexAnimator.SetTrigger("Reset");
         doorAnimator.SetTrigger("Reset");
         npcDialogueReferences.dialogue = firstDialogue;
-
     }
 }

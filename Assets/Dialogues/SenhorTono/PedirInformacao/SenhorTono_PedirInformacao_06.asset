@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
+  m_Name: SenhorTono_PedirInformacao_06
+  m_EditorClassIdentifier: 
+  type: 0
+  characterName: Senhor Tono
+  nextDialogue: {fileID: 11400000, guid: be9ea374e22a4f542a6c6fc42e05087f, type: 2}
+  sentence: " O criador dava-se a conhecer pelo nome de \"Damatta\". Era um indiv\xEDduo
+    misterioso! Ap\xF3s tudo por que pass\xE1mos, partiu e deixou apenas a cassete
+    original com uma carta, e assegurou que algu\xE9m apareceria um dia em busca
+    de respostas."
+  choices: []

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
+using FMOD.Studio;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
@@ -10,6 +11,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = System.Random;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -27,8 +29,7 @@ public class DialogueManager : MonoBehaviour
     private InputManager _InputManager;
     private ThirdPersonController _playerController;
     private List<NPCDialogueTrigger> dialogueTriggers;
-    private NPCDialogueTrigger _currentNpcDialogueTrigger;
-    private NPCInteractionsTracker npcInteractionsTracker;
+    private NPCDialogueReferences _currentNpcDialogueReferences;
     private GameObject _currentNpc;
     private NPCStats _currentNpcStats;
     private Dialogue _currentDialogue;
@@ -37,13 +38,14 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent endedDialogue;
     public GameObject CurrentNPC => _currentNpc;
     private FMOD.Studio.EventInstance _nextDialogueSound;
+    private FMOD.Studio.EventInstance playerDialogueSound;
 
     private void Awake()
     {
         startedDialogue = new UnityEvent();
         endedDialogue = new UnityEvent();
         _InputManager = FindObjectOfType<InputManager>();
-        npcInteractionsTracker = FindObjectOfType<NPCInteractionsTracker>();
+        _playerController = FindObjectOfType<ThirdPersonController>();
         _currentNpcStats = null;
         _choiceSelected = false;
         _choiceSelectedIndex = 0;
@@ -52,6 +54,8 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         _nextDialogueSound = FMODUnity.RuntimeManager.CreateInstance("event:/UI/SaltarFala");
+        playerDialogueSound = FMODUnity.RuntimeManager.CreateInstance("event:/Diálogo/Rogério");
+        playerDialogueSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(_playerController.gameObject));
         dialogueChoiceSelection.ButtonSelect.AddListener(SelectChoice);
         dialogueChoiceSelection.enabled = false;
     }
@@ -59,7 +63,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(NPCDialogueReferences npcDialogueReferences)
     {
         _currentNpc = npcDialogueReferences.GetComponentInParent<Transform>().parent.gameObject;
-        _playerController = FindObjectOfType<ThirdPersonController>();
+        _currentNpcDialogueReferences = npcDialogueReferences;
         startedDialogue.AddListener(() => { _playerController.FreezePlayer(true); });
         endedDialogue.AddListener(() => { _playerController.FreezePlayer(false); });
         NpcAIBehaviour _currentNPCAgent = _currentNpc.GetComponent<NpcAIBehaviour>();
@@ -83,7 +87,7 @@ public class DialogueManager : MonoBehaviour
         _currentNpcStats = npcDialogueReferences.npcStats;
         _currentDialogue = npcDialogueReferences.dialogue;
         dialogueBoxAnimator.SetBool("IsOpen", true);
-        Debug.Log("StartingConversation with " + _currentDialogue.CharacterName);
+        //Debug.Log("StartingConversation with " + _currentDialogue.CharacterName);
         nameText.text = _currentDialogue.CharacterName;
         StartCoroutine(DelayNextDialogue(1));
     }
@@ -99,7 +103,7 @@ public class DialogueManager : MonoBehaviour
 
         nameText.text = _currentDialogue.CharacterName;
         StartCoroutine(TypeSentence(_currentDialogue.Sentence));
-        Debug.Log(_currentDialogue.Sentence);
+        //Debug.Log(_currentDialogue.Sentence);
     }
 
     public void EndDialogue()
@@ -110,7 +114,7 @@ public class DialogueManager : MonoBehaviour
         _choiceSelectedIndex = 0;
         StartCoroutine(DialogueTriggerWaitToEnable());
         dialogueBoxAnimator.SetBool("IsOpen", false);
-        Debug.Log("End of conversation");
+        //Debug.Log("End of conversation");
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -120,6 +124,19 @@ public class DialogueManager : MonoBehaviour
         foreach (var letter in _currentDialogue.Sentence.ToCharArray())
         {
             dialogueText.text += letter;
+            if (letter == ' ')
+            {
+                playerDialogueSound.stop(STOP_MODE.IMMEDIATE);
+                //_currentNpcDialogueTrigger._npcDialogueReferences.dialogueSound.stop(STOP_MODE.IMMEDIATE);
+                if (_currentDialogue.CharacterName == "Rogério")
+                {
+                    playerDialogueSound.start();
+                }
+                else if (_currentNpcDialogueReferences.dialogueSound.isValid())
+                {
+                    _currentNpcDialogueReferences.dialogueSound.start();
+                }
+            }
             yield return new WaitForSeconds(typingSpeed);
         }
 
@@ -237,8 +254,8 @@ public class DialogueManager : MonoBehaviour
                         endedDialogue.AddListener(() => gameActions.GetBustedVelha.Invoke(_currentNpcStats));
                         return;
                     }
-                    
-                    if (npcInteractionsTracker.Velha.numberOfRapeInteractions == 0)
+
+                    if (_currentNpcStats.NumberOfTimesBeenRaped == 0)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
                         endedDialogue.AddListener(() => gameActions.Rape.Invoke(_currentNpcStats));
@@ -249,7 +266,7 @@ public class DialogueManager : MonoBehaviour
                         return;
                     }
 
-                    if (npcInteractionsTracker.Velha.numberOfRapeInteractions >= 1)
+                    if (_currentNpcStats.NumberOfTimesBeenRaped >= 1)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue02;
                         endedDialogue.AddListener(() => gameActions.Rape.Invoke(_currentNpcStats));
@@ -280,7 +297,7 @@ public class DialogueManager : MonoBehaviour
                         return;
                     }
                     
-                    if (npcInteractionsTracker.Velha.numberOfStealInteractions == 0)
+                    if (_currentNpcStats.NumberOfTimesBeenRobbed == 0)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
                         endedDialogue.AddListener(() => gameActions.Steal.Invoke(_currentNpcStats));
@@ -291,7 +308,7 @@ public class DialogueManager : MonoBehaviour
                         return;
                     }
 
-                    if (npcInteractionsTracker.Velha.numberOfStealInteractions >= 1)
+                    if (_currentNpcStats.NumberOfTimesBeenRobbed >= 1)
                     {
                         _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue02;
                         endedDialogue.AddListener(() => gameActions.Steal.Invoke(_currentNpcStats));
@@ -330,7 +347,7 @@ public class DialogueManager : MonoBehaviour
                     return;
                 }
                 
-                if (playerStats.moneyAmount == 0)
+                if (playerStats.moneyAmount < _currentNpcStats.tradePrices.buyPistol)
                 {
                     _nextDialogue = _currentDialogue.Choices[index].FailedNoMoneyDialogue;
                     return;
@@ -347,13 +364,13 @@ public class DialogueManager : MonoBehaviour
             case Choice.ActionType.BuyParadise:
                 
                 
-                if (playerStats.moneyAmount < 200)
+                if (playerStats.moneyAmount < 700)
                 {
                     _nextDialogue = _currentDialogue.Choices[index].FailedNoMoneyDialogue;
                     return;
                 }
                 
-                if (playerStats.moneyAmount >= 200)
+                if (playerStats.moneyAmount >= 700)
                 {
                     endedDialogue.AddListener(() => gameActions.BuyParadise.Invoke(_currentNpcStats));
                     _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
@@ -381,9 +398,28 @@ public class DialogueManager : MonoBehaviour
                     _nextDialogue = _currentDialogue.Choices[index].FailedNoDrugsDialogue;
                     return;
                 }
+
+                if (_currentNpcDialogueReferences.npcStats.iD == "Bofia")
+                {
+                    float probability = UnityEngine.Random.Range(0f, 100f);
+
+                    if (probability < 90)
+                    {
+                        endedDialogue.AddListener(() => gameActions.SellDrugs.Invoke(_currentNpcStats));
+                        _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
+                    }
+                    else
+                    {
+                        endedDialogue.AddListener(() => gameActions.GetBustedBofia.Invoke(_currentNpcStats));
+                        _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                    }
+                }
+                else
+                {
+                    endedDialogue.AddListener(() => gameActions.SellDrugs.Invoke(_currentNpcStats));
+                    _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
+                }
                 
-                endedDialogue.AddListener(() => gameActions.SellDrugs.Invoke(_currentNpcStats));
-                _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
 
                 break;
             

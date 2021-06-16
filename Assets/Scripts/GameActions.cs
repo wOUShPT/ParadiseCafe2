@@ -81,15 +81,15 @@ public class GameActions : MonoBehaviour
     public void DoRape(NPCStats npcStats)
     {
         playerStats.wantedLevel++;
-        FindObjectOfType<DialogueTrackerVelha>().UpdateNumberOfRapeInteractions();
+        npcStats.NumberOfTimesBeenRaped++;
         _levelManager.LoadRape();
     }
 
     public void DoSteal(NPCStats npcStats)
     {
         IncreaseMoney(npcStats.moneyAmount);
+        npcStats.NumberOfTimesBeenRobbed++;
         IncreaseWantedLevel();
-        FindObjectOfType<DialogueTrackerVelha>().UpdateNumberOfStealInteractions();
     }
 
     public void DoBuyDrugs(NPCStats npcStats)
@@ -142,11 +142,6 @@ public class GameActions : MonoBehaviour
         if (npcStats.iD == "Bofia")
         {
          GetBustedBofia.Invoke(npcStats);   
-        }
-
-        if (npcStats.iD == "Guna")
-        {
-        
         }
     }
 

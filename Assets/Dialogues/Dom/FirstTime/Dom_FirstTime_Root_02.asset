@@ -32,9 +32,9 @@ MonoBehaviour:
         m_Calls: []
   - choiceText: Vender droga
     action: 2
-    successDialogue01: {fileID: 11400000, guid: 8984698fb1e0c154aa9d2e3d85bf23d3, type: 2}
+    successDialogue01: {fileID: 11400000, guid: 5fdedf76bbb816845a0f710b755931ef, type: 2}
     successDialogue02: {fileID: 0}
-    failedDialogue: {fileID: 11400000, guid: 97775b6ee50f5ae488dd1dff43d07d8e, type: 2}
+    failedDialogue: {fileID: 0}
     failedNoDrugsDialogue: {fileID: 11400000, guid: cede63de9cc84464c982fa2523ee272d, type: 2}
     failedNoMoneyDialogue: {fileID: 0}
     failedNoWeaponDialogue: {fileID: 0}
@@ -50,7 +50,7 @@ MonoBehaviour:
     failedNoDrugsDialogue: {fileID: 0}
     failedNoMoneyDialogue: {fileID: 0}
     failedNoWeaponDialogue: {fileID: 0}
-    nextDialogue: {fileID: 11400000, guid: 4af40ef5df140884a98714c015f214cc, type: 2}
+    nextDialogue: {fileID: 0}
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []

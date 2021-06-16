@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BordelOral02
   m_EditorClassIdentifier: 
   type: 0
-  characterName: "Rog\xE9rio"
+  characterName: "Let\xEDcia"
   nextDialogue: {fileID: 0}
   sentence: "Est\xE1 caladinho que quem manda aqui sou eu."
   choices:

@@ -37,7 +37,7 @@ MonoBehaviour:
     failedNoDrugsDialogue: {fileID: 0}
     failedNoMoneyDialogue: {fileID: 0}
     failedNoWeaponDialogue: {fileID: 0}
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: f227d8f9b4785854a8a3e5cbd7ef953a, type: 2}
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -49,7 +49,7 @@ MonoBehaviour:
     failedNoDrugsDialogue: {fileID: 0}
     failedNoMoneyDialogue: {fileID: 0}
     failedNoWeaponDialogue: {fileID: 0}
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: bc41607c6ef4c4541b38dff22415224e, type: 2}
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []

@@ -15,9 +15,8 @@ MonoBehaviour:
   type: 1
   characterName: Dona Clara
   nextDialogue: {fileID: 0}
-  sentence: "Ol\xE1 meu filho \xE9s o novo residente da rua certo? Fico muito feliz
-    por teres vindo para aqui. Se precisares de alguma coisa que eu possa ajudar
-    fala comigo.\n\n"
+  sentence: "Ol\xE1 meu filho, \xE9s novo por aqui? Fico muito feliz por ver juventude.
+    Se precisares de alguma coisa que eu possa ajudar fala comigo."
   choices:
   - choiceText: Roubar a cota
     action: 4

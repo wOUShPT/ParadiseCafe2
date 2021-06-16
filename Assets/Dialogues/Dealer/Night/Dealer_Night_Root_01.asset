@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 20148d148c63e5042829842dee9b60e0, type: 2}
-  sentence: Ei!
+  sentence: Ei Tio!
   choices:
   - choiceText: 
     action: 0

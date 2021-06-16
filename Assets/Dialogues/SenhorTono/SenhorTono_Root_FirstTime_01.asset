@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 47c96a3e09bd09a47bb6208b36296e5f, type: 2}
-  sentence: Bom dia.
+  sentence: "Ol\xE1!"
   choices:
   - choiceText: 
     action: 0

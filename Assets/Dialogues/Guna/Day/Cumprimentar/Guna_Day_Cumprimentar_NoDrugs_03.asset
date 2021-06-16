@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: b69b1090551d6464aa37d822ec9d7ab6, type: 2}
-  sentence: "Desculpa p\xE1 n\xE3o tenho nada comigo."
+  sentence: "Desculpa p\xE1, n\xE3o tenho nada comigo."
   choices:
   - choiceText: 
     action: 0

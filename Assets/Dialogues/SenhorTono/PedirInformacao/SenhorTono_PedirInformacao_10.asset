@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
-  m_Name: SenhorTono_Bebida_Succeed
+  m_Name: SenhorTono_PedirInformacao_10
   m_EditorClassIdentifier: 
   type: 0
-  characterName: Rogerio
+  characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 0}
-  sentence: "Toma l\xE1 esta pinga da boa."
+  sentence: "Est\xE1 bem, n\xE3o h\xE1 muito que possa fazer. Vou pensar no assunto
+    e depois digo alguma coisa."
   choices: []

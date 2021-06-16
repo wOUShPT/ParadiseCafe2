@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Dealer_ComprarDroga_NoMoney_02
   m_EditorClassIdentifier: 
   type: 0
-  characterName: Dr Carlos
+  characterName: Tio Carlos
   nextDialogue: {fileID: 0}
-  sentence: "10 paus. Perdoa-me se pe\xE7o demais, mas este \xE9 o pre\xE7o que eu
-    fa\xE7o desculpa. Anda a\xED um moina rabicholas que faz a vida negra diariamente."
+  sentence: "20 paus. Perdoa-me se pe\xE7o demais, mas este \xE9 o pre\xE7o que eu
+    fa\xE7o desculpa. Anda a\xED um moina rabicholas que me faz a vida negra todos
+    os dias."
   choices:
   - choiceText: 
     action: 0

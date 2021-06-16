@@ -12,6 +12,7 @@ public class SetPlayerStats : MonoBehaviour
     public bool hasWeapon;
     [Range(0,3)]
     public int wantedLevel;
+    public List<NPCStats> NPCStats;
 
     private void Awake()
     {
@@ -24,5 +25,11 @@ public class SetPlayerStats : MonoBehaviour
         playerStats.drugsAmount = drugsAmount;
         playerStats.hasWeapon = hasWeapon;
         playerStats.wantedLevel = wantedLevel;
+        foreach (var stats in NPCStats)
+        {
+            stats.NumberOfInteractionsMade = 0;
+            stats.NumberOfTimesBeenRaped = 0;
+            stats.NumberOfTimesBeenRobbed = 0;
+        }
     }
 }

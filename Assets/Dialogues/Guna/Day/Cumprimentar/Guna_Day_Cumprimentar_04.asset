@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: Guna
   nextDialogue: {fileID: 0}
-  sentence: Posh! Partilha ai a sopinha meu meninu.
+  sentence: Posh! Bota ai a supinha meu meninu.
   choices:
   - choiceText: 
     action: 0

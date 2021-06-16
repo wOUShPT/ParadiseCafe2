@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: cafc4ce89e6068d42860e9fe1e55e76c, type: 2}
-  sentence: Bom dia senhor guarda. Tudo bem?
+  sentence: "Est\xE1 tudo bem senhor guarda?"
   choices:
   - choiceText: 
     action: 0

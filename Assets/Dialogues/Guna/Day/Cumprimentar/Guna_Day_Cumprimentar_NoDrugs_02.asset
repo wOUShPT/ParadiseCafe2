@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: Guna
   nextDialogue: {fileID: 11400000, guid: 55584f2762b30a2439c5fe3daf04483b, type: 2}
-  sentence: Ei tropinha! Orienta -me ai um masso.
+  sentence: Ei tropinha! Orienta ai um masso.
   choices:
   - choiceText: 
     action: 0

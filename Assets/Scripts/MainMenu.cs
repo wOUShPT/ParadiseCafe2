@@ -15,6 +15,8 @@ public class MainMenu : MonoBehaviour
     public void Start()
     {
         AudioManager.Instance.PlayMusicWithFade(Muska);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
     public void click()
     {

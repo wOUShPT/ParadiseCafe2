@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 661d93c5cbdff4140a95461b9c2388a2, type: 2}
-  sentence: "Arranja-me 10 paus de verde patr\xE3o."
+  sentence: "Arranja-me 20 paus dessa do\xE7ura Tio."
   choices:
   - choiceText: 
     action: 0

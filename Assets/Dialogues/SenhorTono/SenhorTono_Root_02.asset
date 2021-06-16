@@ -15,11 +15,11 @@ MonoBehaviour:
   type: 1
   characterName: Senhor Tono
   nextDialogue: {fileID: 0}
-  sentence: "Ent\xE3o o que vai ser?"
+  sentence: "Ent\xE3o j\xE1 mudaste de ideias? O que vai ser meu caro?"
   choices:
   - choiceText: Pedir whiskey (5 euros)
     action: 6
-    successDialogue01: {fileID: 11400000, guid: c613a5f0c40e799419ffbe0f77ae56cc, type: 2}
+    successDialogue01: {fileID: 11400000, guid: eaabc9238f247294fb372f4231562a59, type: 2}
     successDialogue02: {fileID: 0}
     failedDialogue: {fileID: 11400000, guid: 77feafc10dd3127409dc04826edcffc0, type: 2}
     failedNoDrugsDialogue: {fileID: 0}
@@ -29,7 +29,7 @@ MonoBehaviour:
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
-  - choiceText: Comprar o jogo (200 euros)
+  - choiceText: Comprar o jogo (700 euros)
     action: 13
     successDialogue01: {fileID: 11400000, guid: aad66639b7b931241bba2aa0b97a8f8c, type: 2}
     successDialogue02: {fileID: 0}

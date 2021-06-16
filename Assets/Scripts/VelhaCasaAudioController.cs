@@ -7,15 +7,17 @@ using UnityEngine;
 public class VelhaCasaAudioController : MonoBehaviour
 {
     private TimeController _timeController;
-    public GameObject velhaMusicExteriorTrigger;
+    private FMOD.Studio.EventInstance _velhaMusic;
     void Start()
     {
         _timeController = FindObjectOfType<TimeController>();
-        _timeController.dayStateChange.AddListener(PlayVelhaMusicExterior);
+        _velhaMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Musica/VelhaMusicExterior");
+        _velhaMusic.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         if (_timeController.dayState == TimeController.DayState.Day)
         {
-            velhaMusicExteriorTrigger.SetActive(true);
+            _velhaMusic.start();
         }
+        _timeController.dayStateChange.AddListener(PlayVelhaMusicExterior);
     }
     
 
@@ -23,12 +25,12 @@ public class VelhaCasaAudioController : MonoBehaviour
     {
         if (_timeController.dayState == TimeController.DayState.Day)
         {
-            velhaMusicExteriorTrigger.SetActive(true);
+            _velhaMusic.start();
         }
         
         if(_timeController.dayState == TimeController.DayState.Night)
         {
-            velhaMusicExteriorTrigger.SetActive(false);
+            _velhaMusic.stop(STOP_MODE.ALLOWFADEOUT);
         }
     }
 }

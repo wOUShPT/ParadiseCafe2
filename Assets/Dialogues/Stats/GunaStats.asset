@@ -19,4 +19,4 @@ MonoBehaviour:
   tradePrices:
     buy: 0
     sell: 0
-    buyPistol: 50
+    buyPistol: 200

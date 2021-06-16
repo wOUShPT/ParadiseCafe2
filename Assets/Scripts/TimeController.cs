@@ -53,7 +53,7 @@ public class TimeController : MonoBehaviour
 
         if (_hours >= 19)
         {
-            Debug.Log("Night");
+            //Debug.Log("Night");
             _state = DayState.Night;
             dayStateChange.Invoke();
             return;
@@ -61,13 +61,13 @@ public class TimeController : MonoBehaviour
 
         if (_hours < 6)
         {
-            Debug.Log("Night");
+            //Debug.Log("Night");
             _state = DayState.Night;
             dayStateChange.Invoke();
         }
         else
         {
-            Debug.Log("Day");
+            //Debug.Log("Day");
             _state = DayState.Day;
             dayStateChange.Invoke();
         }

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Dealer_Day_Root_02
   m_EditorClassIdentifier: 
   type: 1
-  characterName: Dr Carlos
+  characterName: Tio Carlos
   nextDialogue: {fileID: 0}
-  sentence: "Ent\xE3o muito bom dia meu caro companheiro. Que lhe posso fornecer
+  sentence: "Ent\xE3o muito bom dia meu caro \"sobrinho\". Em que te posso ajudar
     hoje?"
   choices:
   - choiceText: Comprar droga

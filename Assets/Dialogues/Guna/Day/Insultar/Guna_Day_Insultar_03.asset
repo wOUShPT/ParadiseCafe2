@@ -15,8 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: Guna
   nextDialogue: {fileID: 0}
-  sentence: "E k\xEA prima\xE7o? Ke dixes da minha cota? Daqi naum sais xem levare
-    bala."
+  sentence: "E k\xEA prima\xE7o? Ke dices da minha cota? Vai aber estrilho!"
   choices:
   - choiceText: 
     action: 0

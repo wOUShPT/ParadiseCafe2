@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: Guna
   nextDialogue: {fileID: 0}
-  sentence: "Ei \xF3 irmaum, taz tolo. Posh! ke ganda pre\xE7o \xF3 s\xF3cio! Toma
+  sentence: "Ei \xF3 irmaum, taz tolo. Posh! ke ganda pre\xE7u \xF3 s\xF3cio! Toma
     l\xE1 a menina, mete bala nisso."
   choices:
   - choiceText: 

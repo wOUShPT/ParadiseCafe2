@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: Dona Clara
   nextDialogue: {fileID: 0}
-  sentence: "N\xE3o preocupes cota. Vou ser muito meigo."
+  sentence: "Ai Jesus que l\xE1 vou eu!"
   choices:
   - choiceText: 
     action: 0

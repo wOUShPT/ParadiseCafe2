@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: Guna
   nextDialogue: {fileID: 0}
-  sentence: "E k\xEA tropa? Eu xei benhe ke tems algo pa minhe. Paxa maz\xE9 pa c\xE1
+  sentence: "E k\xEA tropa? Eu xei bem ke tems algo pra minhe. Paxa maz\xE9 pa c\xE1
     tudo."
   choices:
   - choiceText: 

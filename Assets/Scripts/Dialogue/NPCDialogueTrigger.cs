@@ -7,7 +7,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(NPCDialogueReferences))]
 public class NPCDialogueTrigger : MonoBehaviour
 {
-    private NPCDialogueReferences _npcDialogueReferences;
+    public NPCDialogueReferences _npcDialogueReferences;
     private DialogueManager _dialogueManager;
     private InputManager _inputManager;
     public LayerMask layerMask;

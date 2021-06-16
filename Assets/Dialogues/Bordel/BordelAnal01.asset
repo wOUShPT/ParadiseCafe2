@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
+  m_Name: BordelAnal01
+  m_EditorClassIdentifier: 
+  type: 0
+  characterName: "Let\xEDcia"
+  nextDialogue: {fileID: 11400000, guid: 0d5f4c900bca64d45ac8517a3d266bc6, type: 2}
+  sentence: Deixa-me comer-te o cu!
+  choices:
+  - choiceText: 
+    action: 0
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: 
+    action: 0
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: 
+    action: 0
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: 
+    action: 0
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []

@@ -15,10 +15,11 @@ MonoBehaviour:
   iD: Dealer
   moneyAmount: 4000
   aggressiveness: 0
-  timesBeenRaped: 0
-  timesBeenRobbed: 0
   hasWeapon: 1
   tradePrices:
-    buy: 10
+    buy: 20
     sell: 0
     buyPistol: 0
+  NumberOfInteractionsMade: 0
+  NumberOfTimesBeenRaped: 0
+  NumberOfTimesBeenRobbed: 0

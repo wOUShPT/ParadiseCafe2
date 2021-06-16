@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SenhorTono_Bebida_FailedNoMoney
   m_EditorClassIdentifier: 
   type: 0
-  characterName: Senhor Tono
+  characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: b9cea413a4ce6504b9f178081e87d054, type: 2}
   sentence: "N\xE3o tenho dinheiro suficiente..."
   choices: []

@@ -15,8 +15,8 @@ MonoBehaviour:
   type: 1
   characterName: "Let\xEDcia"
   nextDialogue: {fileID: 0}
-  sentence: "Ent\xE3o meu querido, n\xE3o queres entrar? \xC9 perigoso andar a esta
-    hora na rua, assim ainda nos divertimos."
+  sentence: "Ent\xE3o meu querido, n\xE3o queres entrar? \xC9 perigoso andar na rua
+    a esta hora."
   choices:
   - choiceText: Entrar
     action: 8
@@ -50,7 +50,7 @@ MonoBehaviour:
     failedNoDrugsDialogue: {fileID: 0}
     failedNoMoneyDialogue: {fileID: 0}
     failedNoWeaponDialogue: {fileID: 0}
-    nextDialogue: {fileID: 11400000, guid: 4af40ef5df140884a98714c015f214cc, type: 2}
+    nextDialogue: {fileID: 0}
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []

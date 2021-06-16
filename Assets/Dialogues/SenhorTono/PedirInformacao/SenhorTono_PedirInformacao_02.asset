@@ -15,7 +15,6 @@ MonoBehaviour:
   type: 0
   characterName: Senhor Tono
   nextDialogue: {fileID: 11400000, guid: 2c62fb2091c04b94fbc908845b005046, type: 2}
-  sentence: "Eu sabia que este dia iria chegar. Tenho o jogo, mas n\xE3o penses que
-    o levas de borla. Manter este caf\xE9 fica caro, por isso vais ter que pagar
-    bem para o levar. 200 euros pelo jogo!"
+  sentence: "Tono! Eu sei o que procuras. Deves estar a falar do jogo \"Paradise
+    Caf\xE9\". Sim, tem o mesmo nome que este estabelecimento."
   choices: []

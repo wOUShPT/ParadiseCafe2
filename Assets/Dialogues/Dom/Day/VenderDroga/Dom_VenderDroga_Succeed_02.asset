@@ -15,8 +15,8 @@ MonoBehaviour:
   type: 0
   characterName: "Let\xEDcia"
   nextDialogue: {fileID: 0}
-  sentence: "J\xE1 larguei isso mas n\xE3o consigo resistir ao teu charme. Vou comprar
-    e usar a tua dica."
+  sentence: "J\xE1 me deixei desse v\xEDcio mas uma linha ao pequeno-almo\xE7o n\xE3o
+    faz mal a ningu\xE9m."
   choices:
   - choiceText: 
     action: 0

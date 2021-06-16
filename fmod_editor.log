@@ -2,123 +2,22 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20107 (113487), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=8, nSamplesPerSec=48000, nAvgBytesPerSec=1536000, nBlockAlign=32, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x0000063F, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] DownMix::init                            : dspbuffersize: 1024  rate: 48000. output speaker mode: 7, input speaker mode 3
-[LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001E321C74CF8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000024D96317BF8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E5D0C43D38
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E5D0C43D38
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E5D0C3BCF8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E5D0C3BCF8
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          :  (000001E4FB601618)
-[LOG] SoundI::release                          :     ReceberDinheiro (000001E4F95689D8)
-[LOG] SoundI::release                          :  (000001E4FB603168)
-[LOG] SoundI::release                          :     Grilos1 (000001E4F9567CD8)
-[LOG] SoundI::release                          :  (000001E52339B8B8)
-[LOG] SoundI::release                          :     Grilos2 (000001E4F9563218)
-[LOG] SoundI::release                          : Guna1 (000001E5D0C419C8)
-[LOG] SoundI::release                          :     Guna1 (000001E4F4F96248)
-[LOG] SoundI::release                          :     Guna1 (000001E5D0C43D38)
-[LOG] SoundI::release                          : Café2 (000001E5D0C3B488)
-[LOG] SoundI::release                          :     Café2 (000001E4F4F960A8)
-[LOG] SoundI::release                          :     Café2 (000001E5D0C43EE8)
-[LOG] SoundI::release                          : Oliveirinha (000001E5D0C3CC28)
-[LOG] SoundI::release                          :     Oliveirinha (000001E4F9568698)
-[LOG] SoundI::release                          :     Oliveirinha (000001E5D0C3BCF8)
-[LOG] SoundI::release                          : Beethoven2 (000001E5D0C41B78)
-[LOG] SoundI::release                          :     Beethoven2 (000001E4F4F963E8)
-[LOG] SoundI::release                          :     Beethoven2 (000001E5D0C445A8)
-[LOG] SoundI::release                          :  (000001E4FB602FF8)
-[LOG] SoundI::release                          :     Amanhecer (000001E4F95681B8)
-[LOG] SoundI::release                          :  (000001E4FB602BA8)
-[LOG] SoundI::release                          :     SexOralTest2Update (000001E4F9568EB8)
-[LOG] SoundI::release                          :  (000001E52339BFE8)
-[LOG] SoundI::release                          :     Fap (000001E4F9563D78)
-[LOG] SoundI::release                          :  (000001E4F4F3C488)
-[LOG] SoundI::release                          :     SexIdleTest1 (000001E4F9564598)
-[LOG] SoundI::release                          :  (000001E52339A1B8)
-[LOG] SoundI::release                          :     SelecionarInteração (000001E4F9563558)
-[LOG] SoundI::release                          :  (000001E4F4F3CD28)
-[LOG] SoundI::release                          :     PerderDinheiro (000001E4F95640B8)
-[LOG] SoundI::release                          :  (000001E52339BB98)
-[LOG] SoundI::release                          :     stepsound (000001E4F9563BD8)
-[LOG] SoundI::release                          :  (000001E4FB601788)
-[LOG] SoundI::release                          :     Step1 (000001E4F95677F8)
-[LOG] SoundI::release                          :  (000001E4FB602478)
-[LOG] SoundI::release                          :     Step2 (000001E4F9567B38)
-[LOG] SoundI::release                          :  (000001E52339A608)
-[LOG] SoundI::release                          :     Step3 (000001E4F9563898)
-[LOG] SoundI::release                          :  (000001E4F4F3B908)
-[LOG] SoundI::release                          :     Anoitecer (000001E4F9568B78)
-[LOG] SoundI::release                          :  (000001E4F4F3C318)
-[LOG] SoundI::release                          :     SaltarFala (000001E4F95667B8)
-[LOG] SoundI::release                          :  (000001E52339A498)
-[LOG] SoundI::release                          :     Gaivotas (000001E4F9568838)
-[LOG] SoundI::release                          :  (000001E4F4F3C1A8)
-[LOG] SoundI::release                          :     Pássaro2 (000001E4F9566FD8)
-[LOG] SoundI::release                          :  (000001E4F4F3CE98)
-[LOG] SoundI::release                          :     Pássaro3 (000001E4F9566618)
-[LOG] SoundI::release                          :  (000001E52339BA28)
-[LOG] SoundI::release                          :     Pássaro4 (000001E4F9563A38)
-[LOG] SoundI::release                          :  (000001E52339BE78)
-[LOG] SoundI::release                          :     Pássaro5 (000001E4F95662D8)
-[LOG] SoundI::release                          :  (000001E52339B748)
-[LOG] SoundI::release                          :     Pássaro6 (000001E4F9566138)
-[LOG] SoundI::release                          :  (000001E4FB602D18)
-[LOG] SoundI::release                          :     Pássaro7 (000001E4F9566E38)
-[LOG] SoundI::release                          :  (000001E4F4F3B628)
-[LOG] SoundI::release                          :     Pássaro8 (000001E4F9567658)
-[LOG] SoundI::release                          :  (000001E4FB6032D8)
-[LOG] SoundI::release                          :     Pássaro9 (000001E4F956ECF8)
-[LOG] SoundI::release                          :  (000001E4FB602E88)
-[LOG] SoundI::release                          :     Pássaro10 (000001E4F9567178)
-[LOG] SoundI::release                          :  (000001E4F4F3BEC8)
-[LOG] SoundI::release                          :     Pássaro11 (000001E4F9563F18)
-[LOG] SoundI::release                          :  (000001E4FB6018F8)
-[LOG] SoundI::release                          :     Pássaro12 (000001E4F956ABF8)
-[LOG] SoundI::release                          :  (000001E52339A8E8)
-[LOG] SoundI::release                          :     Pássaro1 (000001E4F9566478)
-[LOG] SoundI::release                          :  (000001E4FB602308)
-[LOG] SoundI::release                          :     InteraçãoOld (000001E4F9567998)
-[LOG] SoundI::release                          :  (000001E4FB601A68)
-[LOG] SoundI::release                          :     MudarDeInteração (000001E4F9566C98)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3

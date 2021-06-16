@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: Agente Nuninho
   nextDialogue: {fileID: 0}
-  sentence: Bom dia. Tudo em ordem meu querido. A tua camisa! Adorooooo...
+  sentence: Oi xuxu. Tudo em ordem meu querido. A tua camisa! Adorooooo...
   choices:
   - choiceText: 
     action: 0

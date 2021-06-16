@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Dealer_FirstTime_Root_02
   m_EditorClassIdentifier: 
   type: 1
-  characterName: Dr Carlos
+  characterName: Tio Carlos
   nextDialogue: {fileID: 0}
-  sentence: "Ol\xE1. Vejo que \xE9s novo por aqui, eu sou o dealer da zona, se precisares
-    de algo podes falar aqui com o tio."
+  sentence: "Ol\xE1. Vejo que \xE9s novo por aqui. O Tio tem a\xE7\xFAcar refinado
+    \xE0 escolha do fregu\xEAs."
   choices:
   - choiceText: Comprar droga
     action: 1

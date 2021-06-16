@@ -140,6 +140,10 @@ public class DialogueEditor : Editor
                             EditorGUILayout.LabelField("Next Dialogue - No Money Failed");
                             EditorGUILayout.Space();
                             EditorGUILayout.PropertyField(failedNoMoneyNextDialogue, new GUIContent());
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue - Failed Already Had A Weapon");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(failedNextDialogue, new GUIContent());
 
                             break;
 

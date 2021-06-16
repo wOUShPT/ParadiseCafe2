@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 2701fcade08eda84f800fa9fc4c26037, type: 2}
-  sentence: "N\xE3o tenho guita suficiente pra comprar uma arma a este gajo. "
+  sentence: "N\xE3o tenho guita suficiente para comprar uma arma a este gajo. "
   choices:
   - choiceText: 
     action: 0

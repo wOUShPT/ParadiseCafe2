@@ -15,7 +15,8 @@ MonoBehaviour:
   type: 0
   characterName: Senhor Tono
   nextDialogue: {fileID: 0}
-  sentence: Com certeza! Um segundo!
+  sentence: "Ainda bem que finalmente me livrei disto. J\xE1 estava a ganhar p\xF3
+    na prateleira."
   choices:
   - choiceText: 
     action: 0

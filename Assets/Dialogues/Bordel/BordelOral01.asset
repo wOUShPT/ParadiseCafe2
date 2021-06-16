@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BordelOral01
   m_EditorClassIdentifier: 
   type: 0
-  characterName: "Let\xEDcia"
+  characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 0b9bf5f672124a4448d90a3dc7ec5675, type: 2}
   sentence: Chupa Teresa
   choices:

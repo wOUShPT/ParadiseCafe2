@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 1
   characterName: Agente Nuninho
   nextDialogue: {fileID: 0}
-  sentence: "Ol\xE1 bom dia seu fofooooo."
+  sentence: "Ol\xE1 bom dia meu xuxu."
   choices:
   - choiceText: Cumprimentar
     action: 0

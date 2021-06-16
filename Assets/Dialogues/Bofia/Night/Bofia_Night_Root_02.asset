@@ -16,7 +16,7 @@ MonoBehaviour:
   characterName: Agente Nuninho
   nextDialogue: {fileID: 0}
   sentence: "Ol\xE1 boa noite fofo, cuidado que a esta hora ainda te fazem mal. N\xE3o
-    querer perder esses teus lindos olhos."
+    quero perder o meu xuxu."
   choices:
   - choiceText: Cumprimentar
     action: 0

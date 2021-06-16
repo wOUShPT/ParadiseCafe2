@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Dealer_ComprarDroga_Succeed_02
   m_EditorClassIdentifier: 
   type: 0
-  characterName: Dr Carlos
+  characterName: Tio Carlos
   nextDialogue: {fileID: 0}
-  sentence: "\xC9 um prazer fazer neg\xF3cio contigo, aqui tens. Sempre que precisares
-    vem falar aqui com o tio Carlos."
+  sentence: "\xC9 um prazer fazer neg\xF3cio \"sobrinho\". Aqui tens! Se quiseres
+    mais vem falar com o Tio Carlos."
   choices:
   - choiceText: 
     action: 0

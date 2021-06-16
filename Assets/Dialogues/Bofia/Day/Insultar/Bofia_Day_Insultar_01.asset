@@ -15,5 +15,5 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 46bc1528f368dd94b854d4c32d3d8b35, type: 2}
-  sentence: "Mas est\xE1s a chamar fofo a quem \xF3 paneleirote?"
+  sentence: "Mas est\xE1s a chamar fofo a quem \xF3 paneleiro?"
   choices: []

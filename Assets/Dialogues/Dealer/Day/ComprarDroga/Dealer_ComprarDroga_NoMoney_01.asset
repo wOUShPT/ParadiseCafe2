@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 1dd44e546e7f7b9458a2d9e272731d65, type: 2}
-  sentence: "Fazes a quanto patr\xE3o?"
+  sentence: Fazes a quanto Tio?
   choices:
   - choiceText: 
     action: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
+  m_Name: AdrianoLinhaAjuda
+  m_EditorClassIdentifier: 
+  type: 0
+  characterName: Adriano
+  nextDialogue: {fileID: 0}
+  sentence: "Bem vindo ao Paradise Caf\xE9: A Renascen\xE7a. Ao comprar e vender
+    drogas, roubar e violar idosas, enriqueces a pouco e pouco, mas cuidado por onde
+    andas, que a b\xF3fia n\xE3o est\xE1 para tangas, e h\xE1 quem goste do espeto
+    no porco. Boa sorte Rog\xE9rio."
+  choices: []
