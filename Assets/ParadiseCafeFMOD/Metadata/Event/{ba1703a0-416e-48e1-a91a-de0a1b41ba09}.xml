@@ -124,7 +124,7 @@
 	<object class="MixerBusPanner" id="{f0f98fab-df58-457a-85b3-58f49e9fe463}" />
 	<object class="MultiSound" id="{b6db5c9c-9180-4ff7-8561-8b882f9478be}">
 		<property name="volume">
-			<value>-13.5</value>
+			<value>-12</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -149,7 +149,7 @@
 			<value>0</value>
 		</property>
 		<property name="maximumDistance">
-			<value>35</value>
+			<value>25</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{a29c8e65-884f-4261-97bd-35da10409b8e}">

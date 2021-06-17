@@ -125,6 +125,9 @@
 		<property name="name">
 			<value>OpçãoInteração</value>
 		</property>
+		<property name="volume">
+			<value>-14</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{08576cb7-1a72-4b94-b381-548a38eec044}</destination>
 		</relationship>

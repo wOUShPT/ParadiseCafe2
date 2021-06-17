@@ -150,9 +150,6 @@
 		<property name="minimumDistance">
 			<value>0</value>
 		</property>
-		<property name="maximumDistance">
-			<value>30</value>
-		</property>
 	</object>
 	<object class="SingleSound" id="{ed68d718-04af-48a6-810c-222549f1c001}">
 		<relationship name="audioFile">

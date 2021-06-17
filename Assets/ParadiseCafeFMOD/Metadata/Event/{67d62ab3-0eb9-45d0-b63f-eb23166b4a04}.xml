@@ -105,7 +105,7 @@
 	<object class="MixerBusPanner" id="{d6f362c0-faa7-4f0f-b5f4-a2461efd6c8b}" />
 	<object class="MultiSound" id="{2666ee19-f9c3-4af8-accc-892d698c7db6}">
 		<property name="volume">
-			<value>-10</value>
+			<value>-13</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -124,9 +124,6 @@
 	<object class="SpatialiserEffect" id="{a38cf207-6460-414f-a06b-5b97fc1b1927}">
 		<property name="minimumDistance">
 			<value>0</value>
-		</property>
-		<property name="maximumDistance">
-			<value>35</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{3c2d1be2-1611-440b-bb20-1d2a5937f758}">
