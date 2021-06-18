@@ -7,11 +7,10 @@ using UnityEngine.SceneManagement;
 public class Disclaimer : MonoBehaviour
 {
     public float waitTime;
-    // Start is called before the first frame update
+
     void Start()
     {
         StartCoroutine(WaitToLoad());
-        
     }
 
     IEnumerator WaitToLoad()

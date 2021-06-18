@@ -180,37 +180,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "O nosso Rog\xE9rio, foi uma crian\xE7a que cresceu sem pai viveu com a
-    sua m\xE3e num bairro, com pouco dinheiro e a sua m\xE3e sem poder trabalhar
-    Rog\xE9rio passava maior parte do seu tempo na rua a tentar arranjar maneira
-    de ter dinheiro para cuidar da sua m\xE3e, durante esta fase da sua vida Rog\xE9rio
-    fez coisas que nenhum rapaz da sua idade deveria ter feito, como manusear armas,
-    consumir \xE1lcool e drogas.\r\n\nDurante este tempo ele n\xE3o possu\xEDa muito
-    dinheiro para gastar ent\xE3o tinha uma consola antiga uma ZX Spectrum, ele encontrou
-    um jogo numa feira \u201CParadise Caf\xE9\u201D, Rog\xE9rio queria muito comprar
-    aquele jogo e tinha o dinheiro para isso, no qual a sua m\xE3e o proibiu de imediato
-    de comprar o jogo arrastando o dali, obviamente que Rog\xE9rio comprou o jogo
-    \xE0s escondidas da sua m\xE3e, ele adorou o jogo passava todo o tempo livre
-    que tinha a jogar o jogo, escondido da sua m\xE3e, ele adorou o jogo e tentava
-    sempre superar o seu highscore, ele nunca percebeu o porqu\xEA da sua m\xE3e
-    o proibiu de jogar este jogo, n\xE3o era nada que ele j\xE1 n\xE3o tivesse habituado
-    por isso n\xE3o via raz\xF5es para n\xE3o poder jogar o jogo, nunca falou muito
-    sobre o assunto com a m\xE3e pois ele viu a maneira que ele ficou quando encontram
-    o jogo e n\xE3o queria  piorar a sa\xFAde da m\xE3e, Rog\xE9rio gostou tanto
-    do jogo e tamb\xE9m com a \xE2nsia de descobrir o que este jogo tinha de t\xE3o
-    importante ele pesquisava sobre o jogo, mas poucas informa\xE7\xF5es encontrava,
-    as que encontrava eram obviamente falsas, outras muito duvidosas, a \xFAnica
-    informa\xE7\xE3o que ele conseguiu apurar eram que o local era real, e que o
-    criador do jogo desapareceu, mas n\xE3o existia nenhuma morada nem informa\xE7\xE3o
-    de quem o teria criado.\r\n\nA sa\xFAde da sua m\xE3e piorou cada vez mais at\xE9
-    que morreu, no seu leito de morte Rog\xE9rio esteve com ela, no qual ela lhe
-    entregou uma carta com uma morada, e um texto que dizia que gostava imenso dele,
-    pedia-lhe desculpa por n\xE3o ter podido ser melhor m\xE3e, e que se quisesse
-    saber o passado dele teria de seguir a morada, no fim s\xF3 tinha escrito \u201CParadise
-    Caf\xE9\u201D, a m\xE3e tamb\xE9m deixou-lhe algum dinheiro para ele conseguir
-    sair dali.\r\n\nFoi ent\xE3o que Rog\xE9rio decidiu procurar a morada, alugou
-    uma tenda e l\xE1 ficou a morar e descobrir o que aquele s\xEDtio teria a ver
-    com o seu passado.\r\n"
+  m_text: "Rog\xE9rio, foi uma crian\xE7a que cresceu junta da sua m\xE3e, uma senhora
+    doente e sem qualquer maneira de cuidar do filho.\n\nRog\xE9rio viu se obrigado
+    a passar o seu tempo nas ruas para tentar arranjar dinheiro para a sua m\xE3e,
+    fazendo com que desde novo tivesse contacto com armas, \xE1lcool e drogas.\n\nNeste
+    tempo dif\xEDcil, onde n\xE3o poderia gastar muito dinheiro, Rog\xE9rio s\xF3
+    tinha em sua posse uma antiga ZX Spectrum. Um dia ao encontrar numa feira o jogo
+    \u201CParadise Caf\xE9\u201D, decidiu-o comprar com os trocos que tinha. A sua
+    m\xE3e proibiu-o logo de comprar e mandou-o ficar longe daquele jogo, pois aquilo
+    s\xF3 iria trazer ru\xEDna para ele.\n\nObviamente que o Rog\xE9rio n\xE3o ouviu
+    a sua m\xE3e e \xE0s escondidas comprou o jogo. Ap\xF3s jog\xE1-lo n\xE3o entendia
+    o porqu\xEA de tanto alarido por parte desta, pois apesar do jogo retratar temas
+    adultos n\xE3o tinha nada que pudesse arruinar a sua vida.\n\nEle tentou procurar
+    mais informa\xE7\xF5es sobre o jogo, mas nenhuma informa\xE7\xE3o que ele encontrava
+    dava pista alguma.\n\nEnt\xE3o a trag\xE9dia chegou \xE1 vida de Rog\xE9rio,
+    a sua m\xE3e n\xE3o resistiu \xE0 doen\xE7a que tinha e acabou por morrer, deixando-lhe
+    ent\xE3o uma morada. As \xFAltimas palavras desta foram  \u201CVai e descobre
+    a verdade\u201D.\n\nRog\xE9rio parte ent\xE3o pela descoberta da verdade. O fen\xF3meno
+    \"Paradise Caf\xE9\".\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}
   m_sharedMaterial: {fileID: -6599218658625429098, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}
@@ -420,6 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522ecbb9c926a4b49aaad2390b30ee48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: Exterior
 --- !u!1 &1566780072
 GameObject:
   m_ObjectHideFlags: 0

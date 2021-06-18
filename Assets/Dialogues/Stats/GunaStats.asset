@@ -20,3 +20,6 @@ MonoBehaviour:
     buy: 0
     sell: 0
     buyPistol: 200
+  NumberOfInteractionsMade: 0
+  NumberOfTimesBeenRaped: 0
+  NumberOfTimesBeenRobbed: 0

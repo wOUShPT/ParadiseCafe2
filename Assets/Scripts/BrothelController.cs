@@ -23,8 +23,11 @@ public class BrothelController : MonoBehaviour
     public Transform vaginalPivot;
     public Transform analPivot;
     public Transform payPivot;
+    public int oralPrice;
+    public int vaginalPrice;
+    public int analPrice;
     private Animator _sceneTransitionAnimator;
-    public BrothelSounds _BrothelSounds;
+    public BrothelSounds _brothelSounds;
     void Start()
     {
         _dialogueManager = FindObjectOfType<DialogueManager>();
@@ -49,62 +52,62 @@ public class BrothelController : MonoBehaviour
     void StartOral(NPCStats npcStats)
     {
         _inputManager.TogglePlayerControls(false);
-        StartCoroutine(OralSex());
+        StartCoroutine(Oral());
     }
 
     void StartVaginal(NPCStats npcStats)
     {
         _inputManager.TogglePlayerControls(false);
-        StartCoroutine(VaginalSex());
+        StartCoroutine(Vaginal());
     }
 
     void StartAnal(NPCStats npcStats)
     {
         _inputManager.TogglePlayerControls(false);
-        StartCoroutine(AnalSex());
+        StartCoroutine(Anal());
     }
 
-    IEnumerator OralSex()
+    IEnumerator Oral()
     {
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         _charactersTransform.position = oralPivot.position;
-        _BrothelSounds.StopSounds();
+        _brothelSounds.StopSounds(STOP_MODE.IMMEDIATE);
         sexAnimator.SetTrigger("TriggerOral");
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(15f);
-        StartCoroutine(Pay());
+        StartCoroutine(Pay(1));
         
     }
 
-    IEnumerator VaginalSex()
+    IEnumerator Vaginal()
     {
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         _charactersTransform.position = vaginalPivot.position;
-        _BrothelSounds.StopSounds();
+        _brothelSounds.StopSounds(STOP_MODE.IMMEDIATE);
         sexAnimator.SetTrigger("TriggerVaginal");
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(15f);
-        StartCoroutine(Pay());
+        StartCoroutine(Pay(2));
     }
 
-    IEnumerator AnalSex()
+    IEnumerator Anal()
     {
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         _charactersTransform.position = analPivot.position;
-        _BrothelSounds.StopSounds();
+        _brothelSounds.StopSounds(STOP_MODE.IMMEDIATE);
         sexAnimator.SetTrigger("TriggerAnal");
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(15f);
-        StartCoroutine(Pay());
+        StartCoroutine(Pay(3));
     }
 
-    IEnumerator Pay()
+    IEnumerator Pay(int mode)
     {
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
@@ -128,7 +131,7 @@ public class BrothelController : MonoBehaviour
                 StartCoroutine(ResetScene());
             });
         }
-        _BrothelSounds.StopSounds();
+        _brothelSounds.StopSounds(STOP_MODE.IMMEDIATE);
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
     }
@@ -144,23 +147,25 @@ public class BrothelController : MonoBehaviour
         }
 
         yield return new WaitForSeconds(sexAnimator.GetCurrentAnimatorStateInfo(0).length *
-                                            sexAnimator.GetCurrentAnimatorStateInfo(0).speed);
+                                        sexAnimator.GetCurrentAnimatorStateInfo(0).speed);
         yield return new WaitForSeconds(0.5f);
+        sexDialogueTrigger.TriggerDialogue();
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         sexAnimator.SetTrigger("Reginaldo");
         yield return new WaitForSeconds(0.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
-        yield return new WaitForSeconds(16f);
+        yield return new WaitForSeconds(17.5f);
         _levelManager.LoadOutBrothel();
+        _brothelSounds.StopSounds(STOP_MODE.ALLOWFADEOUT);
         StartCoroutine(ResetScene());
     }
 
     IEnumerator ResetScene()
     {
-        yield return new WaitForSeconds(1f);
-        sexAnimator.SetTrigger("Reset");
-        doorAnimator.SetTrigger("Reset");
+        yield return new WaitForSeconds(0.5f);
+        sexAnimator.Rebind();
+        sexAnimator.Update(0f);
         npcDialogueReferences.dialogue = firstDialogue;
     }
 }

@@ -238,6 +238,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-7143854398432580102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-7073916637427753092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +814,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-4429149754567389850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Stingers/EasterEgg
+  m_EditorClassIdentifier: 
+  Path: event:/Stingers/EasterEgg
+  guid: cb869fc96b769b47b051918b1f5fe5ca
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-4014737016901074316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,11 +938,11 @@ MonoBehaviour:
   Path: Assets/ParadiseCafeFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637593672121019838
+  lastModified: 637596423700286495
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3148
+    Value: 3262
   Exists: 1
 --- !u!114 &-3347240092568259647
 MonoBehaviour:
@@ -924,6 +967,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-3057781950921995082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-3049195703544587046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1395,6 +1458,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-17995612913417553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Di\xE1logo/Guna"
+  m_EditorClassIdentifier: 
+  Path: "event:/Di\xE1logo/Guna"
+  guid: b215a6530f604843bfe0f151296d1ecf
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2793246839859444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,12 +1586,15 @@ MonoBehaviour:
   - {fileID: 6729007386032909159}
   - {fileID: -6842280720597757115}
   - {fileID: -7073916637427753092}
+  - {fileID: 9088125778661034181}
+  - {fileID: -17995612913417553}
+  - {fileID: -4429149754567389850}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6546407437052023258}
   StringsBanks:
   - {fileID: -3414285515574207322}
-  stringsBankWriteTime: 637593672121019838
+  stringsBankWriteTime: 637596423700286495
   cacheVersion: 6
 --- !u!114 &107968835105890815
 MonoBehaviour:
@@ -1681,7 +1770,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
-  MaxDistance: 35
+  MaxDistance: 25
   Length: 0
 --- !u!114 &1598127219647658352
 MonoBehaviour:
@@ -1818,6 +1907,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &2701695472734128426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &2793614920924218380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1877,6 +1986,28 @@ MonoBehaviour:
   guid: de83e667a2503b4ba6684b1adc6f1a0b
   Banks:
   - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3081794726361812185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Stingers/TT
+  m_EditorClassIdentifier: 
+  Path: event:/Stingers/TT
+  guid: cb869fc96b769b47b051918b1f5fe5ca
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2057,7 +2188,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
-  MaxDistance: 30
+  MaxDistance: 20
   Length: 0
 --- !u!114 &3876856855989966049
 MonoBehaviour:
@@ -2095,7 +2226,7 @@ MonoBehaviour:
   m_Name: event:/Ambient/Grilos
   m_EditorClassIdentifier: 
   Path: event:/Ambient/Grilos
-  guid: 15ecd9610361064687fc334f70fea88d
+  guid: 17aa070adc4ab54286ccf2a9cd5c2a5f
   Banks:
   - {fileID: 6546407437052023258}
   IsStream: 0
@@ -2103,8 +2234,8 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
+  MaxDistance: 35
+  Length: 14000
 --- !u!114 &4079160642575759398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2570,10 +2701,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 5290933434837607456}
+  - {fileID: 2701695472734128426}
   MinDistance: 0
   MaxDistance: 0
-  Length: 88163
+  Length: 76786
 --- !u!114 &6409866723644612249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2612,7 +2743,7 @@ MonoBehaviour:
   Path: Assets/ParadiseCafeFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637593672120969977
+  lastModified: 637596423699846384
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2816,6 +2947,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &7925276682665586032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &7943275661412981275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2883,7 +3034,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
-  MaxDistance: 35
+  MaxDistance: 20
   Length: 0
 --- !u!114 &8320415377540763257
 MonoBehaviour:
@@ -2942,6 +3093,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Reginaldo
   guid: c305ad4626ff424698c619beab76eef9
+  Banks:
+  - {fileID: 6546407437052023258}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &9088125778661034181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Stingers/InicioZX
+  m_EditorClassIdentifier: 
+  Path: event:/Stingers/InicioZX
+  guid: 9c8ea42fe7510b4fb5a1f0c3903bb3f5
   Banks:
   - {fileID: 6546407437052023258}
   IsStream: 0

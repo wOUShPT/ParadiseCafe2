@@ -18,6 +18,7 @@ public class DoorController : MonoBehaviour
     private LevelManager _levelManager;
     private StringEvent _doorTriggered;
     public bool isEnabled;
+    private FMOD.Studio.EventInstance _doorOpenSound;
     void Start()
     {
         _trigger = GetComponent<BoxCollider>();
@@ -27,6 +28,7 @@ public class DoorController : MonoBehaviour
         _inputManager = FindObjectOfType<InputManager>();
         _trigger.enabled = true;
         isEnabled = true;
+        _doorOpenSound = FMODUnity.RuntimeManager.CreateInstance("event:/Stingers/OpçãoEntrarSair");
     }
 
     private void OnEnable()
@@ -46,6 +48,7 @@ public class DoorController : MonoBehaviour
                 _promptText.SetActive(true);
                 if (_inputManager.ActionInput == 1)
                 {
+                    _doorOpenSound.start();
                     _doorTriggered.Invoke(this, destinationSpawnLocation);
                     _promptText.SetActive(false);
                     isEnabled = false;

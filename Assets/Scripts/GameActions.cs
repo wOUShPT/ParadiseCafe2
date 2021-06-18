@@ -193,8 +193,8 @@ public class GameActions : MonoBehaviour
         {
             return;
         }
-        
         playerStats.moneyAmount -= amount;
+        _loseMoney.start();
     }
 
     public void IncreaseDrugsAmount(int amount)

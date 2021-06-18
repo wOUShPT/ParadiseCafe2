@@ -32,5 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ParadiseEnding.unity
     guid: d5eaccf463c79434f9cf52e4ed488aab
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 52841d1f0b006894384652445aa8dc46
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ff1250402d9c4744d876d3095ada31db, type: 2}

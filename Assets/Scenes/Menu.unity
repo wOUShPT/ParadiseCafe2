@@ -3103,6 +3103,7 @@ GameObject:
   - component: {fileID: 1456734562}
   - component: {fileID: 1456734561}
   - component: {fileID: 1456734565}
+  - component: {fileID: 1456734566}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -3210,9 +3211,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickes: {fileID: 8300000, guid: 7581cf8a3c4343e479bf83a0696325f0, type: 3}
   Muska: {fileID: 0}
-  scene1: Exterior
+  scene1: BackStory
   scene2: 
   scene3: 
+--- !u!114 &1456734566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456734560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Musica/Menu
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &1517237542
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,27 +15,27 @@ MonoBehaviour:
   type: 1
   characterName: Guna
   nextDialogue: {fileID: 0}
-  sentence: Taz a olhare pa onde primaxo?
+  sentence: "Ei oh primaxo, n keres uma arma? 200 balas e \xE9 tua s\xF3cio."
   choices:
   - choiceText: Cumprimentar
     action: 7
     successDialogue01: {fileID: 0}
     successDialogue02: {fileID: 0}
     failedDialogue: {fileID: 0}
-    failedNoDrugsDialogue: {fileID: 11400000, guid: 211a43fb4469c124d9ad0ed782850f3b, type: 2}
+    failedNoDrugsDialogue: {fileID: 11400000, guid: 3e2a4ca59853d9149a4f0b124ff81ab9, type: 2}
     failedNoMoneyDialogue: {fileID: 0}
     failedNoWeaponDialogue: {fileID: 0}
-    nextDialogue: {fileID: 11400000, guid: fffafe49c84d77e468c86344c03db020, type: 2}
+    nextDialogue: {fileID: 11400000, guid: fa53feae8e00ba64fae2cf771be6bb48, type: 2}
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
-  - choiceText: Insultar
-    action: 0
-    successDialogue01: {fileID: 0}
+  - choiceText: Comprar arma
+    action: 3
+    successDialogue01: {fileID: 11400000, guid: 06f14056688003f4cb8402491656d66d, type: 2}
     successDialogue02: {fileID: 0}
-    failedDialogue: {fileID: 0}
+    failedDialogue: {fileID: 11400000, guid: 0d2b47a0829d35e4ba46388ceadd6a6d, type: 2}
     failedNoDrugsDialogue: {fileID: 0}
-    failedNoMoneyDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 11400000, guid: c697fb4eb65cae94cb3ea89fd1c73409, type: 2}
     failedNoWeaponDialogue: {fileID: 0}
     nextDialogue: {fileID: 11400000, guid: 9f8c00cc4fb5acd42a92a2586f6a07f0, type: 2}
     triggerEvent:

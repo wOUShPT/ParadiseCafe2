@@ -17,7 +17,7 @@ MonoBehaviour:
   aggressiveness: 0
   hasWeapon: 0
   tradePrices:
-    buy: 10
+    buy: 5
     sell: 0
     buyPistol: 0
   NumberOfInteractionsMade: 0

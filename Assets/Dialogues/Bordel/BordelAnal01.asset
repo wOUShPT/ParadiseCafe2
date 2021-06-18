@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BordelAnal01
   m_EditorClassIdentifier: 
   type: 0
-  characterName: "Let\xEDcia"
+  characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 0d5f4c900bca64d45ac8517a3d266bc6, type: 2}
   sentence: Deixa-me comer-te o cu!
   choices:

@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 84774206}
   - component: {fileID: 84774205}
   - component: {fileID: 84774204}
+  - component: {fileID: 84774209}
+  - component: {fileID: 84774210}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: SceneTransition
@@ -244,6 +246,42 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &84774209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84774203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Stingers/InicioZX
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &84774210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84774203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e5015edcac84f47b31cfd234f08208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitTime: 15
 --- !u!1 &222013813
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +662,7 @@ GameObject:
   - component: {fileID: 1231507235}
   - component: {fileID: 1231507238}
   - component: {fileID: 1231507239}
+  - component: {fileID: 1231507240}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -740,7 +779,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e5015edcac84f47b31cfd234f08208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 12
+  waitTime: 15
+--- !u!114 &1231507240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231507234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1001 &1234118123
 PrefabInstance:
   m_ObjectHideFlags: 0

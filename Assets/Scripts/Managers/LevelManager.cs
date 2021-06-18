@@ -99,6 +99,8 @@ public class LevelManager : MonoBehaviour
         _currentDoorController.isEnabled = false;
         playerController.FreezePlayer(true);
         _inputManager.TogglePlayerControls(false);
+        _timeController.timeFreeze = true;
+        _dailyIncomeScript.enabled = false;
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(2f);
         SpawnOnLocation(_currentSpawnLocation);
@@ -109,6 +111,8 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         _sceneTransitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(0.5f);
+        _timeController.timeFreeze = false;
+        _dailyIncomeScript.enabled = false;
         playerController.FreezePlayer(false);
         _inputManager.TogglePlayerControls(true);
         _currentDoorController.isEnabled = true;
@@ -123,6 +127,8 @@ public class LevelManager : MonoBehaviour
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         SpawnOnLocation(playerOutBrothelSpawn);
+        _dailyIncomeScript.enabled = false;
+        _timeController.timeFreeze = true;
         _hudReferences.HUDPanel.SetActive(false);
         previousLevel = "Exterior";
         currentLevel = "Brothel";
@@ -138,15 +144,13 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator TransitionToRape()
     {
-        _timeController.timeFreeze = true;
-        _dailyIncomeScript.enabled = false;
-        _timeController.timeFreeze = true;
-        _dailyIncomeScript.enabled = false;
         playerController.FreezePlayer(true);
         _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         SpawnOnLocation(casaDaVelhaExterior);
+        _timeController.timeFreeze = true;
+        _dailyIncomeScript.enabled = false;
         _hudReferences.HUDPanel.SetActive(false);
         previousLevel = "Exterior";
         currentLevel = "Rape";

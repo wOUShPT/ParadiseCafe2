@@ -24,9 +24,9 @@ public class BrothelSounds : MonoBehaviour
         _idleSound.start();
     }
     
-    public void StopIdleSound()
+    public void StopIdleSound(STOP_MODE mode)
     {
-        _idleSound.stop(STOP_MODE.IMMEDIATE);
+        _idleSound.stop(mode);
     }
     
     public void PlayOralSound()
@@ -34,9 +34,9 @@ public class BrothelSounds : MonoBehaviour
         _oralSound.start();
     }
 
-    public void StopOralSound()
+    public void StopOralSound(STOP_MODE mode)
     {
-        _oralSound.stop(STOP_MODE.IMMEDIATE);
+        _oralSound.stop(mode);
     }
 
     public void PlayVaginalSound()
@@ -44,9 +44,9 @@ public class BrothelSounds : MonoBehaviour
         _vaginalSound.start();
     }
 
-    public void StopVaginalSound()
+    public void StopVaginalSound(STOP_MODE mode)
     {
-        _vaginalSound.stop(STOP_MODE.IMMEDIATE);
+        _vaginalSound.stop(mode);
     }
 
     public void PlayAnalSound()
@@ -54,9 +54,9 @@ public class BrothelSounds : MonoBehaviour
         _analSound.start();
     }
 
-    public void StopAnalSound()
+    public void StopAnalSound(STOP_MODE mode)
     {
-        _analSound.stop(STOP_MODE.IMMEDIATE);
+        _analSound.stop(mode);
     }
 
     public void PlayReginaldoSound()
@@ -64,17 +64,17 @@ public class BrothelSounds : MonoBehaviour
         _reginaldoSound.start();
     }
 
-    public void StopReginaldoSound()
+    public void StopReginaldoSound(STOP_MODE mode)
     {
-        _reginaldoSound.stop(STOP_MODE.IMMEDIATE);
+        _reginaldoSound.stop(mode);
     }
 
-    public void StopSounds()
+    public void StopSounds(STOP_MODE mode)
     {
-        _idleSound.stop(STOP_MODE.IMMEDIATE);
-        _oralSound.stop(STOP_MODE.IMMEDIATE);
-        _vaginalSound.stop(STOP_MODE.IMMEDIATE);
-        _analSound.stop(STOP_MODE.IMMEDIATE);
-        _reginaldoSound.stop(STOP_MODE.IMMEDIATE);
+        _idleSound.stop(mode);
+        _oralSound.stop(mode);
+        _vaginalSound.stop(mode);
+        _analSound.stop(mode);
+        _reginaldoSound.stop(mode);
     }
 }

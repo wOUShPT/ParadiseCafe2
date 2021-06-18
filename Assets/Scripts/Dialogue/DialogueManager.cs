@@ -121,13 +121,11 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueText.text = "";
 
-        foreach (var letter in _currentDialogue.Sentence.ToCharArray())
+        for(int i = 0; i < sentence.Length; i++)
         {
-            dialogueText.text += letter;
-            if (letter == ' ')
+            dialogueText.text += sentence[i];
+            if (i-1 != -1 && sentence[i-1] == ' ')
             {
-                playerDialogueSound.stop(STOP_MODE.IMMEDIATE);
-                //_currentNpcDialogueTrigger._npcDialogueReferences.dialogueSound.stop(STOP_MODE.IMMEDIATE);
                 if (_currentDialogue.CharacterName == "Rogério")
                 {
                     playerDialogueSound.start();

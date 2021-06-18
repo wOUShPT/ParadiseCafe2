@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   characterName: "Let\xEDcia"
-  nextDialogue: {fileID: 11400000, guid: 8751f1c897f03aa4e8f713d6f4023649, type: 2}
+  nextDialogue: {fileID: 0}
   sentence: Vamos ver quem come quem!
   choices:
   - choiceText: 
