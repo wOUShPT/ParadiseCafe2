@@ -149,7 +149,6 @@ public class BrothelController : MonoBehaviour
         yield return new WaitForSeconds(sexAnimator.GetCurrentAnimatorStateInfo(0).length *
                                         sexAnimator.GetCurrentAnimatorStateInfo(0).speed);
         yield return new WaitForSeconds(0.5f);
-        sexDialogueTrigger.TriggerDialogue();
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         sexAnimator.SetTrigger("Reginaldo");
