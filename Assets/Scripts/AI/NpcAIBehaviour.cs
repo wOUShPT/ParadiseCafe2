@@ -27,7 +27,11 @@ public class NpcAIBehaviour : MonoBehaviour
 
     private DialogueManager dialogueManager;
 
-    private bool inDialogue;
+    [Task]
+    public bool inDialogue;
+
+    [Task]
+    public bool hasArrived;
 
     private Quaternion _currentNpcOrientation;
     
@@ -37,6 +41,7 @@ public class NpcAIBehaviour : MonoBehaviour
 
         isDay = false;
         isNight = false;
+        inDialogue = false;
         
         timeController = FindObjectOfType<TimeController>();
         timeController.dayStateChange.AddListener(ChangeGoal);
@@ -64,6 +69,7 @@ public class NpcAIBehaviour : MonoBehaviour
     [Task]
     void GoToDestination()
     {
+        _agent.isStopped = false;
         _agent.SetDestination(_currentTarget.position);
         
         Task.current.Succeed();
@@ -76,6 +82,7 @@ public class NpcAIBehaviour : MonoBehaviour
 
         if (distanceToTarget < 0.1f)
         {
+            hasArrived = true;
             Task.current.Succeed();
         }
     }
@@ -84,48 +91,41 @@ public class NpcAIBehaviour : MonoBehaviour
     {
         if (timeController.dayState == TimeController.DayState.Day)
         {
+            hasArrived = false;
             isDay = true;
             isNight = false;
         }
 
         if (timeController.dayState == TimeController.DayState.Night)
         {
+            hasArrived = false;
             isDay = false;
             isNight = true;
         }
     }
     
+    [Task]
     public void StopMovement()
     {
-        if (dialogueManager.CurrentNPC == gameObject)
-        {
-            inDialogue = true;
-            StartCoroutine(ForceStop());
-            Transform playerTransform = FindObjectOfType<ThirdPersonController>().transform;
-            _currentNpcOrientation = transform.rotation;
-            transform.LookAt(playerTransform);
-            transform.rotation = Quaternion.Euler(new Vector3(0, transform.rotation.y, 0));
-        }
+        _agent.isStopped = true;
+        Task.current.Succeed();
     }
 
+    [Task]
     public void ResumeMovement()
     {
-        if (dialogueManager.CurrentNPC == gameObject)
-        {
-            inDialogue = false;
-        }
-    }
-
-    IEnumerator ForceStop()
-    {
-        while (inDialogue)
-        {
-            _agent.isStopped = true;
-            yield return null;
-        }
-        
         _agent.isStopped = false;
-        transform.rotation = _currentNpcOrientation;
+        Task.current.Succeed();
+    }
+    
+
+    [Task]
+    public void TurnToPlayer()
+    {
+        Transform playerTransform = FindObjectOfType<ThirdPersonController>().transform;
+        _currentNpcOrientation = transform.rotation;
+        Vector3 playerDirection = playerTransform.position - transform.position;
+        transform.LookAt(playerTransform, Vector3.up);
     }
 
     [Task]

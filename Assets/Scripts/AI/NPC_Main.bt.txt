@@ -1,4 +1,16 @@
 tree("Root")
-    fallback
-        tree("Day")
-        tree("Night")
+    parallel
+        tree("Destination")
+        fallback
+            tree("Dialogue")
+            tree("Day")
+            tree("Night")
+
+tree("Dialogue")
+    sequence
+        while
+            inDialogue
+            sequence
+                StopMovement
+                TurnToPlayer
+        ResumeMovement

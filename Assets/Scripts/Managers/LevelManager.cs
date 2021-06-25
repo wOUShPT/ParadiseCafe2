@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
     private List<DoorController> _doorTriggers;
     private SexDialogueTrigger _sexDialogueTrigger;
     private ThirdPersonController playerController;
+    private VelhaAIBehaviour _velhaAIBehaviour;
     private Transform playerHoldPoint;
     private Transform casaDaVelhaExterior;
     public Transform playerOutBrothelSpawn;
@@ -40,7 +41,7 @@ public class LevelManager : MonoBehaviour
     {
         _cameraManager = GetComponent<CameraManager>();
         _inputManager = GetComponent<InputManager>();
-        casaDaVelhaExterior = GameObject.FindGameObjectWithTag("VelhaGate").transform;
+        casaDaVelhaExterior = GameObject.FindGameObjectWithTag("PlayerOutRapeSpawn").transform;
         playerHoldPoint = GameObject.FindGameObjectWithTag("PlayerHoldPoint").transform;
         playerController = FindObjectOfType<ThirdPersonController>();
         _sceneTransitionAnimator = GameObject.FindGameObjectWithTag("SceneTransition").GetComponent<Animator>();
@@ -49,6 +50,7 @@ public class LevelManager : MonoBehaviour
         _timeController = FindObjectOfType<TimeController>();
         _dailyIncomeScript = FindObjectOfType<DailyIncome>();
         _sexDialogueTrigger = FindObjectOfType<SexDialogueTrigger>();
+        _velhaAIBehaviour = FindObjectOfType<VelhaAIBehaviour>();
 
         cafeSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/InteriorCafé");
         brothelSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/InteriorBordel");
@@ -168,7 +170,9 @@ public class LevelManager : MonoBehaviour
         _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(2f);
-        _timeController.TimePercentage = 0.75f;
+        //_timeController.TimePercentage = 0.75f;
+        _velhaAIBehaviour.SetPosition(TimeController.DayState.Night);
+        _velhaAIBehaviour.hasBeenRaped = true;
         previousLevel = currentLevel;
         currentLevel = "Exterior";
         StartCoroutine(SwitchFMODSnapshot());
@@ -189,7 +193,6 @@ public class LevelManager : MonoBehaviour
         _inputManager.TogglePlayerControls(false);
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(2f);
-        _timeController.TimePercentage = 0.4f;
         previousLevel = currentLevel;
         currentLevel = "Exterior";
         StartCoroutine(SwitchFMODSnapshot());

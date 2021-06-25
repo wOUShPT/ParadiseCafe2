@@ -1,9 +1,12 @@
 tree("Day")
-    while isDay
-        sequence
-            SetWaypoints
-            GoToDestination
-            CheckArrival
-            SetRotation
-            ResetTimer
-            RunTimer
+    while
+        not inDialogue
+        while 
+            isDay
+            sequence
+                SetWaypoints
+                GoToDestination
+                CheckArrival
+                SetRotation
+                ResetTimer
+                RunTimer

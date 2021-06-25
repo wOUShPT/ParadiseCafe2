@@ -67,10 +67,10 @@ public class DialogueManager : MonoBehaviour
         startedDialogue.AddListener(() => { _playerController.FreezePlayer(true); });
         endedDialogue.AddListener(() => { _playerController.FreezePlayer(false); });
         NpcAIBehaviour _currentNPCAgent = _currentNpc.GetComponent<NpcAIBehaviour>();
-        if (_currentNPCAgent != null)
-        {
-            startedDialogue.AddListener(_currentNPCAgent.StopMovement);
-            endedDialogue.AddListener(_currentNPCAgent.ResumeMovement);
+       if (_currentNPCAgent != null)
+       {
+           startedDialogue.AddListener(() => _currentNPCAgent.inDialogue = true);
+            endedDialogue.AddListener(() => _currentNPCAgent.inDialogue = false);
         }
         NpcAnimationController _currentNPCAnimationController = _currentNpc.GetComponentInChildren<NpcAnimationController>();
         if (_currentNPCAnimationController != null)

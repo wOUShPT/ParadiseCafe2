@@ -1,5 +1,8 @@
 tree("Night")
-	while isNight
+    while 
+        not inDialogue
+        while
+            isNight
             sequence
                 SetWaypoints
                 GoToDestination

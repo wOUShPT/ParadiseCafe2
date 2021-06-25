@@ -1,9 +1,15 @@
 tree("Night")
-    while 
-        isNight
+    while
+        not inDialogue
         sequence
-            StopClean
-            SetDestination
-            GoToDestination
-            SetRotation
-            CheckArrival
+            while
+                sequence 
+                    isNight
+                    not hasArrived
+                sequence
+                    OpenGate
+                    StopClean
+                    GoToDestination
+                    SetRotation
+                    CheckArrival
+            Succeed

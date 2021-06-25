@@ -7,15 +7,20 @@ public class VelhaGatesController : MonoBehaviour
 {
     public Animator leftGateAnimator;
     public Animator rightGateAnimator;
-    private TimeController _timeController;
+    private VelhaAIBehaviour _velhaAIBehaviour;
 
     private void Start()
     {
-        _timeController = FindObjectOfType<TimeController>();
-        _timeController.dayStateChange.AddListener(() => StartCoroutine(OpenGate()));
+        _velhaAIBehaviour = FindObjectOfType<VelhaAIBehaviour>();
+        _velhaAIBehaviour.OpenGateEvent.AddListener(OpenGate);
     }
 
-    IEnumerator OpenGate()
+    public void OpenGate()
+    {
+        StartCoroutine(OpenGateAnimation());
+    }
+
+    IEnumerator OpenGateAnimation()
     {
         leftGateAnimator.SetTrigger("Open");
         rightGateAnimator.SetTrigger("Open");

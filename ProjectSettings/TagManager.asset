@@ -20,6 +20,7 @@ TagManager:
   - BustedBofiaCamera
   - SenhorTonoCamera
   - Boundary
+  - PlayerOutRapeSpawn
   layers:
   - Default
   - TransparentFX

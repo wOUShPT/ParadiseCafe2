@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 11400000, guid: 449be5dd70412d84a8e095fa66f1702a, type: 2}
-  sentence: Tens aqui 60 paus por essa beleza.
+  sentence: Tens aqui 200 paus por essa beleza.
   choices:
   - choiceText: 
     action: 0

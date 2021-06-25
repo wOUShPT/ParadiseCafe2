@@ -129,7 +129,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _StarDensity: 7
-    - _StarsOpacity: 0
+    - _StarsOpacity: 1
     - _SunDisk: 2
     - _SunMaskSize: 0
     - _SunSize: 0
@@ -144,13 +144,13 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FogColor: {r: 0.81761, g: 1, b: 0.9779874, a: 1}
     - _GroundColor: {r: 0.36899996, g: 0.34899998, b: 0.34099993, a: 1}
-    - _HorizonColor: {r: 0, g: 1, b: 0.8745099, a: 1}
+    - _HorizonColor: {r: 0, g: 0, b: 0, a: 1}
     - _MoonColor: {r: 1, g: 1, b: 1, a: 0}
-    - _SkyColor: {r: 0, g: 1, b: 0.8745099, a: 1}
+    - _SkyColor: {r: 0, g: 0, b: 0, a: 1}
     - _SkyTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SunColor: {r: 1, g: 0.89014864, b: 0, a: 1}
-    - _SunDirection: {r: 0.015027836, g: -0.99624825, b: -0.085227065, a: 0}
+    - _SunDirection: {r: 0.11986965, g: 0.72352207, b: -0.6798143, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &1536151352776119354
 MonoBehaviour:
