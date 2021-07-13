@@ -17,6 +17,7 @@ public class NPCStats : ScriptableObject
     public struct TradePrices
     {
         public int buy;
+        public int buy2;
         public int sell;
         public int buyPistol;
     }

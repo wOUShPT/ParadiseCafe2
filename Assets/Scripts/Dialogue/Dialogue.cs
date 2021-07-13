@@ -64,7 +64,8 @@ public class Choice
         GetAnal = 10,
         GetVaginal = 11,
         GameOver = 12,
-        BuyParadise = 13
+        BuyParadise = 13,
+        BuyRaspadinha = 14
     }
 
     [SerializeField]

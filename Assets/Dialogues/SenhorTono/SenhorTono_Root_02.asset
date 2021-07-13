@@ -41,6 +41,18 @@ MonoBehaviour:
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
+  - choiceText: Comprar raspadinha (15 euros)
+    action: 14
+    successDialogue01: {fileID: 11400000, guid: c831189223f92c04db88b615b51b371d, type: 2}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 11400000, guid: cea9253946ef8184cae464a6712cf822, type: 2}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - choiceText: Dar o bazo
     action: 0
     successDialogue01: {fileID: 0}

@@ -265,6 +265,18 @@ public class DialogueEditor : Editor
 
                             break;
                         
+                        case Choice.ActionType.BuyRaspadinha:
+                            
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue - Succeed");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(successNextDialogue01, new GUIContent());
+                            EditorGUILayout.Space(10);
+                            EditorGUILayout.LabelField("Next Dialogue - No Money Failed");
+                            EditorGUILayout.Space();
+                            EditorGUILayout.PropertyField(failedNoMoneyNextDialogue, new GUIContent());
+
+                            break;
                     }
 
                     EditorGUILayout.EndFoldoutHeaderGroup();

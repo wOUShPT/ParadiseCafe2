@@ -10,26 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
-  m_Name: SenhorTono_Root_FirstTime_02
+  m_Name: SenhorTono_Raspadinha_03
   m_EditorClassIdentifier: 
-  type: 1
-  characterName: Senhor Tono
+  type: 0
+  characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 0}
-  sentence: "Ent\xE3o o que vai ser?"
+  sentence: Obrigado!
   choices:
-  - choiceText: Pedir whiskey (10 euros)
-    action: 6
-    successDialogue01: {fileID: 11400000, guid: eaabc9238f247294fb372f4231562a59, type: 2}
-    successDialogue02: {fileID: 0}
-    failedDialogue: {fileID: 11400000, guid: 77feafc10dd3127409dc04826edcffc0, type: 2}
-    failedNoDrugsDialogue: {fileID: 0}
-    failedNoMoneyDialogue: {fileID: 11400000, guid: 77feafc10dd3127409dc04826edcffc0, type: 2}
-    failedNoWeaponDialogue: {fileID: 0}
-    nextDialogue: {fileID: 0}
-    triggerEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - choiceText: "Pedir informa\xE7\xE3o"
+  - choiceText: 
     action: 0
     successDialogue01: {fileID: 0}
     successDialogue02: {fileID: 0}
@@ -37,23 +25,35 @@ MonoBehaviour:
     failedNoDrugsDialogue: {fileID: 0}
     failedNoMoneyDialogue: {fileID: 0}
     failedNoWeaponDialogue: {fileID: 0}
-    nextDialogue: {fileID: 11400000, guid: e995989aff222264ab8ef7acaa2ce691, type: 2}
+    nextDialogue: {fileID: 0}
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
-  - choiceText: Comprar raspadinha (15 euros)
-    action: 14
-    successDialogue01: {fileID: 11400000, guid: c831189223f92c04db88b615b51b371d, type: 2}
+  - choiceText: 
+    action: 0
+    successDialogue01: {fileID: 0}
     successDialogue02: {fileID: 0}
     failedDialogue: {fileID: 0}
     failedNoDrugsDialogue: {fileID: 0}
-    failedNoMoneyDialogue: {fileID: 11400000, guid: cea9253946ef8184cae464a6712cf822, type: 2}
+    failedNoMoneyDialogue: {fileID: 0}
     failedNoWeaponDialogue: {fileID: 0}
     nextDialogue: {fileID: 0}
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
-  - choiceText: Dar o bazo
+  - choiceText: 
+    action: 0
+    successDialogue01: {fileID: 0}
+    successDialogue02: {fileID: 0}
+    failedDialogue: {fileID: 0}
+    failedNoDrugsDialogue: {fileID: 0}
+    failedNoMoneyDialogue: {fileID: 0}
+    failedNoWeaponDialogue: {fileID: 0}
+    nextDialogue: {fileID: 0}
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - choiceText: 
     action: 0
     successDialogue01: {fileID: 0}
     successDialogue02: {fileID: 0}

@@ -389,6 +389,19 @@ public class DialogueManager : MonoBehaviour
                 
                 break;
             
+            case Choice.ActionType.BuyRaspadinha:
+                
+                if (playerStats.moneyAmount >= _currentNpcStats.tradePrices.buy2)
+                {
+                    endedDialogue.AddListener(() => gameActions.BuyRaspadinha.Invoke(_currentNpcStats));
+                    _nextDialogue = _currentDialogue.Choices[index].SuccessDialogue01;
+                    return;
+                }
+                
+                _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                
+                break;
+            
             case Choice.ActionType.SellDrugs:
                 
                 if (playerStats.drugsAmount == 0)

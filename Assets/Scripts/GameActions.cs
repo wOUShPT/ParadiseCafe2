@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class GameActions : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class GameActions : MonoBehaviour
     public CustomActionEvent Steal;
     public CustomActionEvent BuyDrugs;
     public CustomActionEvent BuyDrink;
+    public CustomActionEvent BuyRaspadinha;
     public CustomActionEvent BuyParadise;
     public CustomActionEvent BuyWeapon;
     public CustomActionEvent SellDrugs;
@@ -43,6 +45,7 @@ public class GameActions : MonoBehaviour
         BuyWeapon = new CustomActionEvent();
         SellDrugs = new CustomActionEvent();
         BuyDrink = new CustomActionEvent();
+        BuyRaspadinha = new CustomActionEvent();
         BuyParadise = new CustomActionEvent();
         GetRobbed = new CustomActionEvent();
         GameOver = new CustomActionEvent();
@@ -58,6 +61,7 @@ public class GameActions : MonoBehaviour
         BuyDrugs.AddListener(DoBuyDrugs);
         SellDrugs.AddListener(DoSellDrugs);
         BuyDrink.AddListener(DoBuyDrink);
+        BuyRaspadinha.AddListener(DoBuyRaspadinha);
         BuyParadise.AddListener(DoBuyParadise);
         BuyWeapon.AddListener(DoBuyWeapon);
         GetRobbed.AddListener(DoGetRobbed);
@@ -210,6 +214,16 @@ public class GameActions : MonoBehaviour
         }
         
         playerStats.drugsAmount -= amount;
+    }
+
+    public void DoBuyRaspadinha(NPCStats _npcStats)
+    {
+        DecreaseMoney(_npcStats.tradePrices.buy2);
+        float randomProbability = UnityEngine.Random.Range(0f, 100f);
+        if (randomProbability < 33f)
+        {
+            IncreaseMoney(30);
+        }
     }
     
     
