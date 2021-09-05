@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BordelPagarSemDinheiro02
   m_EditorClassIdentifier: 
   type: 0
-  characterName: "Rog\xE9rio"
-  nextDialogue: {fileID: 11400000, guid: 2f0442184bd434040a332f3129bcb6f0, type: 2}
-  sentence: "Mmmmh, n\xE3o tenho suficiente comigo."
+  characterName: "Let\xEDcia"
+  nextDialogue: {fileID: 11400000, guid: 6cd9b3e8552265a40b88eb414108f42c, type: 2}
+  sentence: "OH REGINALDO! ESTE N\xC3O QUER PAGAR!"
   choices:
   - choiceText: 
     action: 0

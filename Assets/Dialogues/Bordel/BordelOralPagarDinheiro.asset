@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
-  m_Name: BordelPagarSemDinheiro04
+  m_Name: BordelOralPagarDinheiro
   m_EditorClassIdentifier: 
   type: 0
-  characterName: ...
-  nextDialogue: {fileID: 0}
-  sentence: ...
+  characterName: "Let\xEDcia"
+  nextDialogue: {fileID: 11400000, guid: dae348faa40974e4fb7582045b7d3b1b, type: 2}
+  sentence: "Ora... s\xE3o 80 euros da mamada."
   choices:
   - choiceText: 
     action: 0

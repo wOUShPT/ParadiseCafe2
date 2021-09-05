@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BordelPagarDinheiro02
   m_EditorClassIdentifier: 
   type: 0
-  characterName: "Rog\xE9rio"
-  nextDialogue: {fileID: 11400000, guid: ea4345439153a5445922a03d3bda8e67, type: 2}
-  sentence: "Ficas cara. Toma l\xE1 a guita."
+  characterName: "Let\xEDcia"
+  nextDialogue: {fileID: 0}
+  sentence: Obrigada e volta sempre!
   choices:
   - choiceText: 
     action: 0

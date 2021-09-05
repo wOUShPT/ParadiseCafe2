@@ -60,8 +60,8 @@ public class NpcAIBehaviour : MonoBehaviour
 
         dialogueManager = FindObjectOfType<DialogueManager>();
         
-        dialogueManager.startedDialogue.AddListener(StopMovement);
-        dialogueManager.endedDialogue.AddListener(ResumeMovement);
+        //dialogueManager.startedDialogue.AddListener(StopMovement);
+        //dialogueManager.endedDialogue.AddListener(ResumeMovement);
 
 
     }
@@ -105,14 +105,14 @@ public class NpcAIBehaviour : MonoBehaviour
     }
     
     [Task]
-    public void StopMovement()
+    private void StopMovement()
     {
         _agent.isStopped = true;
         Task.current.Succeed();
     }
 
     [Task]
-    public void ResumeMovement()
+    private void ResumeMovement()
     {
         _agent.isStopped = false;
         Task.current.Succeed();

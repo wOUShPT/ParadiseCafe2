@@ -159,6 +159,21 @@ public class GameActions : MonoBehaviour
         _velhaCutsceneController.StartVelhaCutscene();
     }
 
+    public void DoVaginalSex(NPCStats npcStats)
+    {
+        DecreaseMoney(100);
+    }
+
+    public void DoOralSex(NPCStats npcStats)
+    {
+        DecreaseMoney(80);
+    }
+
+    public void DoAnalSex(NPCStats npcStats)
+    {
+        DecreaseMoney(120);
+    }
+
     public void IncreaseWantedLevel()
     {
         if (playerStats.wantedLevel == 3)
@@ -219,9 +234,21 @@ public class GameActions : MonoBehaviour
     public void DoBuyRaspadinha(NPCStats _npcStats)
     {
         DecreaseMoney(_npcStats.tradePrices.buy2);
-        float randomProbability = UnityEngine.Random.Range(0f, 100f);
-        if (randomProbability < 33f)
+        float randomProbability = UnityEngine.Random.Range(0f, 1f);
+        if (randomProbability <= 0.30f)
         {
+            randomProbability = Random.Range(0f, 1f);
+            if (randomProbability <= 0.30f)
+            {
+                randomProbability = Random.Range(0f, 1f);
+                if (randomProbability <= 0.30f)
+                {
+                    IncreaseMoney(200);
+                    return;
+                }
+                IncreaseMoney(100);
+                return;
+            }
             IncreaseMoney(30);
         }
     }

@@ -398,7 +398,7 @@ public class DialogueManager : MonoBehaviour
                     return;
                 }
                 
-                _nextDialogue = _currentDialogue.Choices[index].FailedDialogue;
+                _nextDialogue = _currentDialogue.Choices[index].FailedNoMoneyDialogue;
                 
                 break;
             

@@ -16,5 +16,5 @@ MonoBehaviour:
   characterName: "Rog\xE9rio"
   nextDialogue: {fileID: 0}
   sentence: "Passa mas \xE9 para c\xE1 a guita sem grandes estrilhos, sen\xE3o tenho
-    de ter magoar!"
+    de te magoar!"
   choices: []

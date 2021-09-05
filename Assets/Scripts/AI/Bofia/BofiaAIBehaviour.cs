@@ -11,9 +11,7 @@ using Random = UnityEngine.Random;
 public class BofiaAIBehaviour : MonoBehaviour
 {
     public List<Transform> waypointsList;
-    
-    //public float moveRadius;
-    
+
     private NavMeshAgent _agent;
 
     private NpcAIBehaviour _npcBehaviour;
@@ -49,21 +47,6 @@ public class BofiaAIBehaviour : MonoBehaviour
         }
         Task.current.Succeed();
     }
-
-    
-/*
-    [Task]
-    void GenerateWaypoint()
-    {
-        Vector3 randomDirection = Random.insideUnitSphere * moveRadius;
-        randomDirection += transform.position;
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomDirection, out hit, moveRadius, 8))
-        {
-            _npcBehaviour._currentTarget.position = hit.position;
-            Task.current.Succeed();
-        }
-    }*/
 
     [Task]
     void ResetTimer()

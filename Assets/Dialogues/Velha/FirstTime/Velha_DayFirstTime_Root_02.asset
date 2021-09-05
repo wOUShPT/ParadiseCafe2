@@ -30,7 +30,7 @@ MonoBehaviour:
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
-  - choiceText: Violar a cota
+  - choiceText: Montar a cota
     action: 5
     successDialogue01: {fileID: 11400000, guid: 5652480e1a1711b4fb37a50640d144dc, type: 2}
     successDialogue02: {fileID: 11400000, guid: 4296c5d51d7dc154f93542011e22cfed, type: 2}

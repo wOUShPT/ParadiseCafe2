@@ -566,13 +566,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este jogo contem par\xF3dias e s\xE1tiras criadas com o entretenimento
-    como o \xFAnico intuito. Toda e qualquer semelhan\xE7a com eventos e indiv\xEDduos
-    reais n\xE3o \xE9 mera coincid\xEAncia.\r\nCont\xE9m tamb\xE9m linguagem de baixo
-    cal\xE3o e conte\xFAdo adulto expl\xEDcito.\r\nO jogo \xE9 direcionado para indiv\xEDduos
-    com 18 anos ou mais e todos aqueles que n\xE3o cumprirem este requisito devem
-    encerrar imediatamente a aplica\xE7\xE3o (ou n\xE3o, n\xE3o somos vossos pais).\r\n\r\nAtenciosamente,
-    5 homens brancos privilegiados\r\n"
+  m_text: "Este jogo \xE9 uma obra de fic\xE7\xE3o, onde a hist\xF3ria, nomes, personagens
+    e eventos retratados foram criados exclusivamente para fins de s\xE1tira e entretenimento.\n\nQualquer
+    semelhan\xE7a com a realidade \xE9 mera coincid\xEAncia.\n\nS\xE3o apresentados
+    conte\xFAdos com viol\xEAncia, m\xE1 linguagem, uso de drogas e sexo.\n\nA equipa
+    n\xE3o apoia nem aprova qualquer ato cometido no jogo."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}
   m_sharedMaterial: {fileID: -6599218658625429098, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}

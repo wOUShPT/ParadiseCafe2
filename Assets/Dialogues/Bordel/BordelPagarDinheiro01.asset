@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BordelPagarDinheiro01
   m_EditorClassIdentifier: 
   type: 0
-  characterName: "Let\xEDcia"
-  nextDialogue: {fileID: 11400000, guid: dae348faa40974e4fb7582045b7d3b1b, type: 2}
-  sentence: "S\xE3o 100 balas pelo servi\xE7o."
+  characterName: "Rog\xE9rio"
+  nextDialogue: {fileID: 11400000, guid: ea4345439153a5445922a03d3bda8e67, type: 2}
+  sentence: "Ficas cara. Toma l\xE1 a guita."
   choices:
   - choiceText: 
     action: 0

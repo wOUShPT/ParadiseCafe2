@@ -1,9 +1,12 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 public class BlitRenderPassFeature : ScriptableRendererFeature
 {
+    public static bool onEditorCameraRenderFeature;
+    
     class CustomRenderPass : ScriptableRenderPass
     {
         public RenderTargetIdentifier source;
@@ -68,7 +71,7 @@ public class BlitRenderPassFeature : ScriptableRendererFeature
     // This method is called when setting up the renderer once per-camera.
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
-        if (Application.isEditor && (renderingData.cameraData.camera.name == "SceneCamera" || renderingData.cameraData.camera.name == "Preview Scene Camera"))
+        if (Application.isEditor && (renderingData.cameraData.camera.name == "SceneCamera" || renderingData.cameraData.camera.name == "Preview Scene Camera") && !onEditorCameraRenderFeature)
         {
             return;
         }

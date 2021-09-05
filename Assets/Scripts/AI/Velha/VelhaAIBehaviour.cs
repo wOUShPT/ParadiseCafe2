@@ -87,7 +87,7 @@ public class VelhaAIBehaviour : MonoBehaviour
     void StartClean()
     {
         npcDialogueTrigger.enabled = true;
-        Debug.Log("Start Clean");
+        //Debug.Log("Start Clean");
         Task.current.Succeed();
     }
 
@@ -96,7 +96,7 @@ public class VelhaAIBehaviour : MonoBehaviour
     {
         npcDialogueTrigger.enabled = false;
         npcDialogueTrigger._npcDialogueReferences.dialoguePrompt.SetActive(false);
-        Debug.Log("Stop Clean");
+        //Debug.Log("Stop Clean");
         Task.current.Succeed();
     }
 

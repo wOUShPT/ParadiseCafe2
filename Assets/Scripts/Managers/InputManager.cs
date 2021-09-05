@@ -11,6 +11,7 @@ public class InputManager : MonoBehaviour
     private Vector2 _navigationInputDirection = Vector2.zero;
     private float _confirmButton = 0;
     private float _escapeButton = 0;
+    private float _quitButton = 0;
 
     private void OnEnable()
     {
@@ -29,6 +30,8 @@ public class InputManager : MonoBehaviour
             _controls.Menu.Confirm.canceled += ctx => _confirmButton = 0;
             _controls.Player.Escape.performed += ctx => _escapeButton = ctx.ReadValue<float>();
             _controls.Player.Escape.canceled += ctx => _escapeButton = 0;
+            _controls.Player.Quit.performed += ctx => _quitButton = ctx.ReadValue<float>();
+            _controls.Player.Quit.canceled += ctx => _quitButton = 0;
         }
     }
 
@@ -43,6 +46,8 @@ public class InputManager : MonoBehaviour
     public float ConfirmButton => _confirmButton;
 
     public float EscapeButton => _escapeButton;
+
+    public float QuitButton => _quitButton;
 
     private void OnDisable()
     {

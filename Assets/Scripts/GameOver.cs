@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    private InputManager _inputManager;
     void Start()
     {
-        _inputManager = FindObjectOfType<InputManager>();
         StartCoroutine(ResetGame());
     }
     

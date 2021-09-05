@@ -5,15 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ParadiseEnding : MonoBehaviour
 {
-    void Start()
+    IEnumerator Credits()
     {
-        StartCoroutine(ResetGame());
-    }
-    
-
-    IEnumerator ResetGame()
-    {
-        yield return new WaitForSeconds(8f);
         SceneManager.LoadScene("Credits");
+        yield return null;
     }
 }

@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour
     private SexDialogueTrigger _sexDialogueTrigger;
     private ThirdPersonController playerController;
     private VelhaAIBehaviour _velhaAIBehaviour;
+    private VelhaCasaAudioController _velhaCasaAudioController;
     private Transform playerHoldPoint;
     private Transform casaDaVelhaExterior;
     public Transform playerOutBrothelSpawn;
@@ -51,6 +52,7 @@ public class LevelManager : MonoBehaviour
         _dailyIncomeScript = FindObjectOfType<DailyIncome>();
         _sexDialogueTrigger = FindObjectOfType<SexDialogueTrigger>();
         _velhaAIBehaviour = FindObjectOfType<VelhaAIBehaviour>();
+        _velhaCasaAudioController = FindObjectOfType<VelhaCasaAudioController>();
 
         cafeSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/InteriorCafé");
         brothelSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/InteriorBordel");
@@ -173,6 +175,7 @@ public class LevelManager : MonoBehaviour
         //_timeController.TimePercentage = 0.75f;
         _velhaAIBehaviour.SetPosition(TimeController.DayState.Night);
         _velhaAIBehaviour.hasBeenRaped = true;
+        _velhaCasaAudioController.PlayVelhaMusicExterior();
         previousLevel = currentLevel;
         currentLevel = "Exterior";
         StartCoroutine(SwitchFMODSnapshot());

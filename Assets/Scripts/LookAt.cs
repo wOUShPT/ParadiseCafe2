@@ -28,6 +28,6 @@ public class LookAt : MonoBehaviour
     private void Update()
     {
         transform.LookAt(_targetTransform);
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x * _rotationModifier.x, transform.rotation.eulerAngles.y * _rotationModifier.y, transform.eulerAngles.z * _rotationModifier.z);
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x * _rotationModifier.x, (transform.rotation.eulerAngles.y * _rotationModifier.y) + 180, transform.eulerAngles.z * _rotationModifier.z);
     }
 }

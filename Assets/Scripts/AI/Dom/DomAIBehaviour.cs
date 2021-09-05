@@ -33,7 +33,6 @@ public class DomAIBehaviour : MonoBehaviour
             insideWaypoint = GameObject.FindGameObjectWithTag(insideWaypointTag).GetComponent<Transform>();
         }
         
-        //Setup();
     }
 
     [Task]

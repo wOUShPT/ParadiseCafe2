@@ -8,6 +8,7 @@ public class VelhaCasaAudioController : MonoBehaviour
 {
     private TimeController _timeController;
     private FMOD.Studio.EventInstance _velhaMusic;
+    private VelhaAIBehaviour _velhaAIBehaviour;
     void Start()
     {
         _timeController = FindObjectOfType<TimeController>();
@@ -18,19 +19,27 @@ public class VelhaCasaAudioController : MonoBehaviour
             _velhaMusic.start();
         }
         _timeController.dayStateChange.AddListener(PlayVelhaMusicExterior);
+        _velhaAIBehaviour = FindObjectOfType<VelhaAIBehaviour>();
     }
     
 
-    void PlayVelhaMusicExterior()
+    public void PlayVelhaMusicExterior()
     {
-        if (_timeController.dayState == TimeController.DayState.Day)
-        {
-            _velhaMusic.start();
-        }
-        
-        if(_timeController.dayState == TimeController.DayState.Night)
+        if (_velhaAIBehaviour.hasBeenRaped)
         {
             _velhaMusic.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+        else
+        {
+            if (_timeController.dayState == TimeController.DayState.Day)
+            {
+                _velhaMusic.start(); 
+            }
+        
+            if(_timeController.dayState == TimeController.DayState.Night)
+            {
+                _velhaMusic.stop(STOP_MODE.ALLOWFADEOUT);
+            }
         }
     }
 }

@@ -14,8 +14,12 @@ public class BrothelController : MonoBehaviour
     public NPCDialogueReferences npcDialogueReferences;
     public SexDialogueTrigger sexDialogueTrigger;
     public Dialogue firstDialogue;
-    public Dialogue brothelMoneyBranch;
-    public Dialogue brothelNoMoneyBranch;
+    public Dialogue brothelMoneyOralBranch;
+    public Dialogue brothelMoneyVaginalBranch;
+    public Dialogue brothelMoneyAnalBranch;
+    public Dialogue brothelNoMoneyOralBranch;
+    public Dialogue brothelNoMoneyVaginalBranch;
+    public Dialogue brothelNoMoneyAnalBranch;
     private Transform _charactersTransform;
     public Animator doorAnimator;
     public Transform idlePivot;
@@ -107,29 +111,82 @@ public class BrothelController : MonoBehaviour
         StartCoroutine(Pay(3));
     }
 
-    IEnumerator Pay(int mode)
+    IEnumerator Pay(int sexType)
     {
         _sceneTransitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         _charactersTransform.position = payPivot.position;
-        if (_playerStats.moneyAmount < 100)
+        switch (sexType)
         {
-            npcDialogueReferences.dialogue = brothelNoMoneyBranch;
-            sexAnimator.SetTrigger("PayNoMoney");
-            sexDialogueTrigger.TriggerDialogue();
-            _dialogueManager.endedDialogue.AddListener(() => StartCoroutine(Reginaldo()));
-        }
-        else
-        {
-            npcDialogueReferences.dialogue = brothelMoneyBranch;
-            _playerStats.moneyAmount -= 100;
-            sexAnimator.SetTrigger("PayMoney");
-            sexDialogueTrigger.TriggerDialogue();
-            _dialogueManager.endedDialogue.AddListener(() =>
-            {
-                _levelManager.LoadOutBrothel();
-                StartCoroutine(ResetScene());
-            });
+          case 1:
+              
+              if (_playerStats.moneyAmount >= 80)
+              {
+                  npcDialogueReferences.dialogue = brothelMoneyOralBranch;
+                  _playerStats.moneyAmount -= 80;
+                  sexAnimator.SetTrigger("PayMoney");
+                  sexDialogueTrigger.TriggerDialogue();
+                  _dialogueManager.endedDialogue.AddListener(() =>
+                  {
+                      _levelManager.LoadOutBrothel();
+                      StartCoroutine(ResetScene());
+                  });
+              }
+              else
+              {
+                  npcDialogueReferences.dialogue = brothelNoMoneyOralBranch;
+                  sexAnimator.SetTrigger("PayNoMoney");
+                  sexDialogueTrigger.TriggerDialogue();
+                  _dialogueManager.endedDialogue.AddListener(() => StartCoroutine(Reginaldo()));
+              }
+              break;
+          
+          case 2:
+              
+              if (_playerStats.moneyAmount >= 100)
+              {
+                  npcDialogueReferences.dialogue = brothelMoneyVaginalBranch;
+                  _playerStats.moneyAmount -= 100;
+                  sexAnimator.SetTrigger("PayMoney");
+                  sexDialogueTrigger.TriggerDialogue();
+                  _dialogueManager.endedDialogue.AddListener(() =>
+                  {
+                      _levelManager.LoadOutBrothel();
+                      StartCoroutine(ResetScene());
+                  });
+              }
+              else
+              {
+                  npcDialogueReferences.dialogue = brothelNoMoneyVaginalBranch;
+                  sexAnimator.SetTrigger("PayNoMoney");
+                  sexDialogueTrigger.TriggerDialogue();
+                  _dialogueManager.endedDialogue.AddListener(() => StartCoroutine(Reginaldo()));
+              }
+              break;
+
+          case 3:
+              
+              if (_playerStats.moneyAmount >= 120)
+              {
+                  npcDialogueReferences.dialogue = brothelMoneyAnalBranch;
+                  _playerStats.moneyAmount -= 120;
+                  sexAnimator.SetTrigger("PayMoney");
+                  sexDialogueTrigger.TriggerDialogue();
+                  _dialogueManager.endedDialogue.AddListener(() =>
+                  {
+                      _levelManager.LoadOutBrothel();
+                      StartCoroutine(ResetScene());
+                  });
+              }
+              else
+              {
+                  npcDialogueReferences.dialogue = brothelNoMoneyAnalBranch;
+                  sexAnimator.SetTrigger("PayNoMoney");
+                  sexDialogueTrigger.TriggerDialogue();
+                  _dialogueManager.endedDialogue.AddListener(() => StartCoroutine(Reginaldo()));
+              }
+              break;
+          
         }
         _brothelSounds.StopSounds(STOP_MODE.IMMEDIATE);
         yield return new WaitForSeconds(0.5f);
@@ -163,6 +220,7 @@ public class BrothelController : MonoBehaviour
     IEnumerator ResetScene()
     {
         yield return new WaitForSeconds(0.5f);
+        doorAnimator.Rebind();
         sexAnimator.Rebind();
         sexAnimator.Update(0f);
         npcDialogueReferences.dialogue = firstDialogue;

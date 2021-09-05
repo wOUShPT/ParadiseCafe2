@@ -10,6 +10,8 @@ public class Disclaimer : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         StartCoroutine(WaitToLoad());
     }
 

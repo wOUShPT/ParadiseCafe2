@@ -4,7 +4,7 @@ ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 1827226128182048838
+      74: -6716579818149938421
     second: InteractionLoop
   externalObjects: {}
   materials:
@@ -38,8 +38,8 @@ ModelImporter:
       name: InteractionLoop
       takeName: Take 001
       internalID: 0
-      firstFrame: 240
-      lastFrame: 270
+      firstFrame: 170
+      lastFrame: 220
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

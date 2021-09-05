@@ -180,24 +180,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Rog\xE9rio, foi uma crian\xE7a que cresceu junta da sua m\xE3e, uma senhora
-    doente e sem qualquer maneira de cuidar do filho.\n\nRog\xE9rio viu se obrigado
-    a passar o seu tempo nas ruas para tentar arranjar dinheiro para a sua m\xE3e,
-    fazendo com que desde novo tivesse contacto com armas, \xE1lcool e drogas.\n\nNeste
-    tempo dif\xEDcil, onde n\xE3o poderia gastar muito dinheiro, Rog\xE9rio s\xF3
-    tinha em sua posse uma antiga ZX Spectrum. Um dia ao encontrar numa feira o jogo
-    \u201CParadise Caf\xE9\u201D, decidiu-o comprar com os trocos que tinha. A sua
-    m\xE3e proibiu-o logo de comprar e mandou-o ficar longe daquele jogo, pois aquilo
-    s\xF3 iria trazer ru\xEDna para ele.\n\nObviamente que o Rog\xE9rio n\xE3o ouviu
-    a sua m\xE3e e \xE0s escondidas comprou o jogo. Ap\xF3s jog\xE1-lo n\xE3o entendia
-    o porqu\xEA de tanto alarido por parte desta, pois apesar do jogo retratar temas
-    adultos n\xE3o tinha nada que pudesse arruinar a sua vida.\n\nEle tentou procurar
-    mais informa\xE7\xF5es sobre o jogo, mas nenhuma informa\xE7\xE3o que ele encontrava
-    dava pista alguma.\n\nEnt\xE3o a trag\xE9dia chegou \xE1 vida de Rog\xE9rio,
-    a sua m\xE3e n\xE3o resistiu \xE0 doen\xE7a que tinha e acabou por morrer, deixando-lhe
-    ent\xE3o uma morada. As \xFAltimas palavras desta foram  \u201CVai e descobre
-    a verdade\u201D.\n\nRog\xE9rio parte ent\xE3o pela descoberta da verdade. O fen\xF3meno
-    \"Paradise Caf\xE9\".\n"
+  m_text: "Rog\xE9rio \xE9 um criminoso com um passado complicado. Foi criado apenas
+    pela sua m\xE3e, uma senhora doente e sem qualquer maneira de cuidar do filho.\n\nEnquanto
+    crian\xE7a viu-se obrigado a passar o seu tempo nas ruas de forma a arranjar
+    dinheiro para a sua m\xE3e, fazendo com que desde muito novo tivesse contacto
+    com armas, \xE1lcool e drogas.\n\nNaquela altura dif\xEDcil, onde n\xE3o podia
+    gastar muito dinheiro, Rog\xE9rio s\xF3 tinha um hobby, jogar numa antiga ZX
+    Spectrum. \n\nUm dia ao frequentar a feira local, encontrou o jogo \u201CParadise
+    Caf\xE9\u201D. Este decidiu compr\xE1-lo com os trocos que tinha, mas a sua m\xE3e
+    proibiu-o de jogar com o argumento  que iria trazer desastres at\xE9 ele.\n\nObviamente
+    que Rog\xE9rio ignorou a sua m\xE3e e jogava \xE0s escondidas. Interrogava-se
+    o porqu\xEA de tanto alarido por parte desta, porque apesar do jogo retratar
+    temas adultos, n\xE3o havia nada que ele j\xE1 n\xE3o tivesse visto.\n\nO controverso
+    jogo tinha-se tornado t\xE3o presente na sua vida, que este decidiu procurar
+    mais informa\xE7\xF5es sobre as origens deste, mas sem sucesso. Tudo em volta
+    de \"Paradise Caf\xE9\" era um mist\xE9rio.\n\nEnt\xE3o a trag\xE9dia chegou
+    \xE0 vida de Rog\xE9rio, a sua m\xE3e n\xE3o resistiu \xE0 doen\xE7a e acabou
+    por morrer, deixando-lhe ent\xE3o uma morada. As \xFAltimas palavras desta foram 
+    \u201CVai e descobre a verdade\u201D.\n\nTudo apontou para uma vila remota, em
+    tudo semelhante ao jogo que tanto adorava. O caf\xE9 era real e Rog\xE9rio sentia
+    uma liga\xE7\xE3o com este local que outrora desconhecera.\n\nResta saber que
+    verdade o lugar encerra.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}
   m_sharedMaterial: {fileID: -6599218658625429098, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}

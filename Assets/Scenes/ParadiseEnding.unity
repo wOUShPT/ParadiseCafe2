@@ -530,6 +530,7 @@ GameObject:
   - component: {fileID: 1196556395}
   - component: {fileID: 1196556394}
   - component: {fileID: 1196556393}
+  - component: {fileID: 1196556398}
   - component: {fileID: 1196556397}
   m_Layer: 5
   m_Name: Canvas
@@ -611,6 +612,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 891969590}
+  - {fileID: 1536537007}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -619,7 +621,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1196556397
+--- !u!95 &1196556397
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196556392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d904fcb43eb4d4843842f8ccb88f0ef0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1196556398
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -628,9 +649,158 @@ MonoBehaviour:
   m_GameObject: {fileID: 1196556392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de952596af766e84baaae2d42474e29b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d25e721788974740b730e05cf384344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1536537006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1536537007}
+  - component: {fileID: 1536537009}
+  - component: {fileID: 1536537008}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1536537007
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536537006}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.000063, y: 1.000063, z: 1.000063}
+  m_Children: []
+  m_Father: {fileID: 1196556396}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00012207031, y: -981.0636}
+  m_SizeDelta: {x: 1343.3575, y: 496.8649}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1536537008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536537006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Estou a escrever isto, na esperan\xE7a que algu\xE9m me procure um dia.
+    Quem ler isto certamente procura a minha verdade. \r\n\r\nQuando eu era novo,
+    s\xF3 me queria divertir, n\xE3o queria saber de nada, s\xF3 me queria divertir,
+    fiz coisas que n\xE3o tem perd\xE3o. \r\n\r\nAbandonei a minha mulher, abandonei
+    os meus amigos e com maior dor, abandonei o meu filho. Com que prop\xF3sito?
+    Umas noites de festa deitado com putas? A troco de qu\xEA?\r \n\nUma vida de
+    arrependimento...\n\r\nPerdi tudo por uns momentos de fama e provavelmente j\xE1
+    ningu\xE9m se lembra de mim. Neste momento sou uma mancha na vida das pessoas.\r\n\r\nEspero
+    que me possam perdoar, especialmente o meu filho. Dava tudo para o ter visto
+    crescer e ensin\xE1-lo a ser um homem melhor do que eu, ensin\xE1-lo a n\xE3o
+    cometer os mesmos erros.\n\r\nEspero que ao contar a minha hist\xF3ria as pessoas
+    percebam o porqu\xEA de ter desaparecido e de n\xE3o querer estar mais ligado
+    a esta vida. De certa forma isto \xE9 a minha carta de despedida, anseio um dia
+    poder mudar a minha vida e ter algo para mostrar, sei l\xE1 talvez virar professor
+    ou assim. Quero influenciar as pessoas de uma forma positiva e ser lembrado por
+    isso.\r\t\t\t\t\t\t               \n\nDamatta"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}
+  m_sharedMaterial: {fileID: -6599218658625429098, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1536537009
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536537006}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1640847565
 PrefabInstance:
   m_ObjectHideFlags: 0

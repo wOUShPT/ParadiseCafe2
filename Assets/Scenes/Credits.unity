@@ -180,10 +180,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Francisco Lamelas - 3D Artist, Lead Animator\n\nGustavo Maldonado - Lead
-    Programmer, 3D Artist\n\nJos\xE9 Santos - Game Designer, Game Writer, Lead Sound
-    Designer\n\nRicardo Fernandes - Lead Game Writer, Lead Game Designer, Animator\n\nTom\xE1s
-    Marques - 3D Artist, Level Designer"
+  m_text: 'Obrigado por jogares!
+
+
+    Criado por DaBoinna'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}
   m_sharedMaterial: {fileID: -6599218658625429098, guid: 8932a6e8454df6e41a28e54c3364679a, type: 2}

@@ -55,7 +55,7 @@ public class DayCycleController : MonoBehaviour
 
         if (sunLight != null)
         {
-            sunPivotTransform.localRotation = Quaternion.Euler(new Vector3((timePercentage * 360f) - 90f, 170, 0));
+            sunPivotTransform.localRotation = Quaternion.Euler(new Vector3((timePercentage * 360f) - 90f, 0, 0));
             skyBoxMaterial.SetVector("_SunDirection", sunPivotTransform.forward);
             skyBoxMaterial.SetVector("_MoonDirection",-sunPivotTransform.forward);
         }
