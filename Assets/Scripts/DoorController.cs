@@ -37,7 +37,14 @@ public class DoorController : MonoBehaviour
         _doorTriggered = new StringEvent();
         _doorTriggered.AddListener(_levelManager.LoadCafe);
     }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        _doorOpenSound.start();
+        _doorTriggered.Invoke(this, destinationSpawnLocation);
+    }
 
+    /*
     private void OnTriggerStay(Collider other)
     {
         if (isEnabled)
@@ -57,6 +64,8 @@ public class DoorController : MonoBehaviour
         }
     }
 
+    
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -64,6 +73,7 @@ public class DoorController : MonoBehaviour
             _promptText.SetActive(false);
         }
     }
+    */
     
 }
 
