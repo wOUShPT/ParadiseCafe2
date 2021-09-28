@@ -525,6 +525,181 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""FreeCam"",
+            ""id"": ""9686ac5f-3e46-4abf-a8e3-b12386b15150"",
+            ""actions"": [
+                {
+                    ""name"": ""HorizontalMovement"",
+                    ""type"": ""Value"",
+                    ""id"": ""3151c99f-9e5b-44a8-84ab-55152e44fa23"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""VerticalMovement"",
+                    ""type"": ""Button"",
+                    ""id"": ""861db65b-2ba3-4e06-82da-780103cb64e7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""Value"",
+                    ""id"": ""55550a55-5b5f-4533-8854-50357f9b5034"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""Axis"",
+                    ""id"": ""3e8368ef-f384-4478-bf08-15362a02b91d"",
+                    ""path"": ""2DVector(mode=2)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HorizontalMovement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""262a82aa-614a-4b0c-9722-1442a29d0fbf"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HorizontalMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""de9f37c1-d95a-42d9-814c-fef77d468c6c"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HorizontalMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""eeb8e5bd-62cb-45c7-ae1c-e748348e59c6"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HorizontalMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""8c3785c9-6d7b-4880-badf-29605bd33349"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HorizontalMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Axis"",
+                    ""id"": ""a2f7a02f-44bd-4548-888f-70fe1c473d5b"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VerticalMovement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""420614b3-a77a-423f-b771-51d798dcff83"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VerticalMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""e92b61ef-580f-4afc-9127-36a1f522229d"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""VerticalMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Axis"",
+                    ""id"": ""5b4fce22-e7fd-4b32-9b02-aedf34a0f122"",
+                    ""path"": ""2DVector(mode=2)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""e512a132-4b56-4f07-816f-716a6f6c59da"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""f4ff3230-ae20-4459-9a27-54577b355a08"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""f16784bf-8d5c-47b5-a530-ee5a27333f8a"",
+                    ""path"": ""<Gamepad>/rightStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""bf43edea-6642-4c85-bc27-c3f0905f8104"",
+                    ""path"": ""<Gamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -568,6 +743,11 @@ public class @InputActions : IInputActionCollection, IDisposable
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_Navigate = m_Menu.FindAction("Navigate", throwIfNotFound: true);
         m_Menu_Confirm = m_Menu.FindAction("Confirm", throwIfNotFound: true);
+        // FreeCam
+        m_FreeCam = asset.FindActionMap("FreeCam", throwIfNotFound: true);
+        m_FreeCam_HorizontalMovement = m_FreeCam.FindAction("HorizontalMovement", throwIfNotFound: true);
+        m_FreeCam_VerticalMovement = m_FreeCam.FindAction("VerticalMovement", throwIfNotFound: true);
+        m_FreeCam_Look = m_FreeCam.FindAction("Look", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -719,6 +899,55 @@ public class @InputActions : IInputActionCollection, IDisposable
         }
     }
     public MenuActions @Menu => new MenuActions(this);
+
+    // FreeCam
+    private readonly InputActionMap m_FreeCam;
+    private IFreeCamActions m_FreeCamActionsCallbackInterface;
+    private readonly InputAction m_FreeCam_HorizontalMovement;
+    private readonly InputAction m_FreeCam_VerticalMovement;
+    private readonly InputAction m_FreeCam_Look;
+    public struct FreeCamActions
+    {
+        private @InputActions m_Wrapper;
+        public FreeCamActions(@InputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @HorizontalMovement => m_Wrapper.m_FreeCam_HorizontalMovement;
+        public InputAction @VerticalMovement => m_Wrapper.m_FreeCam_VerticalMovement;
+        public InputAction @Look => m_Wrapper.m_FreeCam_Look;
+        public InputActionMap Get() { return m_Wrapper.m_FreeCam; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(FreeCamActions set) { return set.Get(); }
+        public void SetCallbacks(IFreeCamActions instance)
+        {
+            if (m_Wrapper.m_FreeCamActionsCallbackInterface != null)
+            {
+                @HorizontalMovement.started -= m_Wrapper.m_FreeCamActionsCallbackInterface.OnHorizontalMovement;
+                @HorizontalMovement.performed -= m_Wrapper.m_FreeCamActionsCallbackInterface.OnHorizontalMovement;
+                @HorizontalMovement.canceled -= m_Wrapper.m_FreeCamActionsCallbackInterface.OnHorizontalMovement;
+                @VerticalMovement.started -= m_Wrapper.m_FreeCamActionsCallbackInterface.OnVerticalMovement;
+                @VerticalMovement.performed -= m_Wrapper.m_FreeCamActionsCallbackInterface.OnVerticalMovement;
+                @VerticalMovement.canceled -= m_Wrapper.m_FreeCamActionsCallbackInterface.OnVerticalMovement;
+                @Look.started -= m_Wrapper.m_FreeCamActionsCallbackInterface.OnLook;
+                @Look.performed -= m_Wrapper.m_FreeCamActionsCallbackInterface.OnLook;
+                @Look.canceled -= m_Wrapper.m_FreeCamActionsCallbackInterface.OnLook;
+            }
+            m_Wrapper.m_FreeCamActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @HorizontalMovement.started += instance.OnHorizontalMovement;
+                @HorizontalMovement.performed += instance.OnHorizontalMovement;
+                @HorizontalMovement.canceled += instance.OnHorizontalMovement;
+                @VerticalMovement.started += instance.OnVerticalMovement;
+                @VerticalMovement.performed += instance.OnVerticalMovement;
+                @VerticalMovement.canceled += instance.OnVerticalMovement;
+                @Look.started += instance.OnLook;
+                @Look.performed += instance.OnLook;
+                @Look.canceled += instance.OnLook;
+            }
+        }
+    }
+    public FreeCamActions @FreeCam => new FreeCamActions(this);
     private int m_GamePadSchemeIndex = -1;
     public InputControlScheme GamePadScheme
     {
@@ -749,5 +978,11 @@ public class @InputActions : IInputActionCollection, IDisposable
     {
         void OnNavigate(InputAction.CallbackContext context);
         void OnConfirm(InputAction.CallbackContext context);
+    }
+    public interface IFreeCamActions
+    {
+        void OnHorizontalMovement(InputAction.CallbackContext context);
+        void OnVerticalMovement(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
     }
 }

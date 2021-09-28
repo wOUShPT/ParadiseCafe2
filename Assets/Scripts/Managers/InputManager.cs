@@ -12,6 +12,10 @@ public class InputManager : MonoBehaviour
     private float _confirmButton = 0;
     private float _escapeButton = 0;
     private float _quitButton = 0;
+    private Vector2 _freeCamHorizontalMovementInputDirection = Vector2.zero;
+    private float _freeCamVerticalMovementInputDirection = 0;
+    private Vector2 _freeCamLookInputDirection = Vector2.zero;
+    
 
     private void OnEnable()
     {
@@ -32,6 +36,12 @@ public class InputManager : MonoBehaviour
             _controls.Player.Escape.canceled += ctx => _escapeButton = 0;
             _controls.Player.Quit.performed += ctx => _quitButton = ctx.ReadValue<float>();
             _controls.Player.Quit.canceled += ctx => _quitButton = 0;
+            _controls.FreeCam.HorizontalMovement.performed += ctx => _freeCamHorizontalMovementInputDirection = ctx.ReadValue<Vector2>();
+            _controls.FreeCam.HorizontalMovement.canceled += ctx => _freeCamHorizontalMovementInputDirection = Vector2.zero;
+            _controls.FreeCam.VerticalMovement.performed += ctx => _freeCamVerticalMovementInputDirection = ctx.ReadValue<float>();
+            _controls.FreeCam.VerticalMovement.canceled += ctx => _freeCamVerticalMovementInputDirection = 0;
+            _controls.FreeCam.Look.performed += ctx => _freeCamLookInputDirection = ctx.ReadValue<Vector2>();
+            _controls.FreeCam.Look.canceled += ctx => _freeCamLookInputDirection = Vector2.zero;
         }
     }
 
@@ -48,6 +58,11 @@ public class InputManager : MonoBehaviour
     public float EscapeButton => _escapeButton;
 
     public float QuitButton => _quitButton;
+    
+    public Vector3 FreeCamMovementInputDirection => new Vector3( _freeCamHorizontalMovementInputDirection.x, _freeCamVerticalMovementInputDirection, _freeCamHorizontalMovementInputDirection.y);
+
+    public Vector2 FreeCamLookInputDirection => _freeCamLookInputDirection;
+
 
     private void OnDisable()
     {
@@ -77,4 +92,19 @@ public class InputManager : MonoBehaviour
             _controls.Menu.Disable();
         }
     }
+
+    public void ToggleFreeCamControls(bool state)
+    {
+        if (state)
+        {
+            _controls.FreeCam.Enable();  
+        }
+        else
+        {
+            _controls.FreeCam.Disable();;  
+        }
+        
+    }
+    
+        
 }

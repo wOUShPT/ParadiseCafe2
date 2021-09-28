@@ -105,7 +105,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DitherAmount: 1.27
+    - _DitherAmount: 0
     - _DitherOpacity: 0
     - _DstBlend: 0
     - _EnvironmentReflections: 1
