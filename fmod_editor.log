@@ -7,116 +7,13 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002073BD70328 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000220EB4BC3B8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          :  (00000207FD004BB8)
-[LOG] SoundI::release                          :     Grilos1 (00000207FC1FCC58)
-[LOG] SoundI::release                          :  (00000207FD008538)
-[LOG] SoundI::release                          :     Grilos2 (00000207FC200878)
-[LOG] SoundI::release                          : Guna4 (00000207FD28B8D8)
-[LOG] SoundI::release                          :     Guna4 (00000207FC1FFD18)
-[LOG] SoundI::release                          :     Guna4 (00000207FD28DC48)
-[LOG] SoundI::release                          : MalhãoTriste (00000207FD28FFB8)
-[LOG] SoundI::release                          :     MalhãoTriste (00000207FC1FB738)
-[LOG] SoundI::release                          :     MalhãoTriste (00000207FD28E4B8)
-[LOG] SoundI::release                          : Café1 (00000207FD28A648)
-[LOG] SoundI::release                          :     Café1 (00000207FC1FE7F8)
-[LOG] SoundI::release                          :     Café1 (00000207FD28A7F8)
-[LOG] SoundI::release                          : Oliveirinha (00000207FD28D228)
-[LOG] SoundI::release                          :     Oliveirinha (00000207FC1FE178)
-[LOG] SoundI::release                          :     Oliveirinha (00000207FD28C9B8)
-[LOG] SoundI::release                          : Mozart (00000207FD28FAA8)
-[LOG] SoundI::release                          :     Mozart (00000207FC1FFEB8)
-[LOG] SoundI::release                          :     Mozart (00000207FD28DFA8)
-[LOG] SoundI::release                          : Sexy (00000207FD28A138)
-[LOG] SoundI::release                          :     Sexy (00000207FC1FDAF8)
-[LOG] SoundI::release                          :     Sexy (00000207FD28E668)
-[LOG] SoundI::release                          :  (00000207FD005FD8)
-[LOG] SoundI::release                          :     ReceberDinheiro (00000207FC1FD618)
-[LOG] SoundI::release                          :  (00000207FD0048D8)
-[LOG] SoundI::release                          :     Amanhecer (00000207FC1FCDF8)
-[LOG] SoundI::release                          :  (00000207FD004768)
-[LOG] SoundI::release                          :     SexOralTest2Update (00000207FC1FD7B8)
-[LOG] SoundI::release                          :  (00000207FD005CF8)
-[LOG] SoundI::release                          :     Fap (00000207FC1FCF98)
-[LOG] SoundI::release                          :  (00000207FD005738)
-[LOG] SoundI::release                          :     SexIdleTest1 (00000207FC200D58)
-[LOG] SoundI::release                          :  (00000207FD0079B8)
-[LOG] SoundI::release                          :     SelecionarInteração (00000207FC1FBC18)
-[LOG] SoundI::release                          :  (00000207FD008818)
-[LOG] SoundI::release                          :     PerderDinheiro (00000207FC1FC438)
-[LOG] SoundI::release                          :  (00000207FD008C68)
-[LOG] SoundI::release                          :     stepsound (00000207FC200398)
-[LOG] SoundI::release                          :  (00000207FD004488)
-[LOG] SoundI::release                          :     Step1 (00000207FC201718)
-[LOG] SoundI::release                          :  (00000207FD0045F8)
-[LOG] SoundI::release                          :     Step2 (00000207FC1FEB38)
-[LOG] SoundI::release                          :  (00000207FD007B28)
-[LOG] SoundI::release                          :     Step3 (00000207FC200A18)
-[LOG] SoundI::release                          :  (00000207FD009508)
-[LOG] SoundI::release                          :     Anoitecer (00000207FC1FB0B8)
-[LOG] SoundI::release                          :  (00000207FD006708)
-[LOG] SoundI::release                          :     SaltarFala (00000207FC1FC5D8)
-[LOG] SoundI::release                          :  (00000207FD004A48)
-[LOG] SoundI::release                          :     Gaivotas (00000207FC2006D8)
-[LOG] SoundI::release                          :  (00000207FD007568)
-[LOG] SoundI::release                          :     Pássaro2 (00000207FC1FCAB8)
-[LOG] SoundI::release                          :  (00000207FD009228)
-[LOG] SoundI::release                          :     Pássaro3 (00000207FC1FF4F8)
-[LOG] SoundI::release                          :  (00000207FD009AC8)
-[LOG] SoundI::release                          :     Pássaro4 (00000207FC200BB8)
-[LOG] SoundI::release                          :  (00000207FD008AF8)
-[LOG] SoundI::release                          :     Pássaro5 (00000207FC1FF358)
-[LOG] SoundI::release                          :  (00000207FD0083C8)
-[LOG] SoundI::release                          :     Pássaro6 (00000207FC1FC298)
-[LOG] SoundI::release                          :  (00000207FD009DA8)
-[LOG] SoundI::release                          :     Pássaro7 (00000207FC1FD138)
-[LOG] SoundI::release                          :  (00000207FD009398)
-[LOG] SoundI::release                          :     Pássaro8 (00000207FC1FC918)
-[LOG] SoundI::release                          :  (00000207FD006148)
-[LOG] SoundI::release                          :     Pássaro9 (00000207FC1FECD8)
-[LOG] SoundI::release                          :  (00000207FD009F18)
-[LOG] SoundI::release                          :     Pássaro10 (00000207FC200EF8)
-[LOG] SoundI::release                          :  (00000207FD005E68)
-[LOG] SoundI::release                          :     Pássaro11 (00000207FC1FE318)
-[LOG] SoundI::release                          :  (00000207FD0069E8)
-[LOG] SoundI::release                          :     Pássaro12 (00000207FC1FF838)
-[LOG] SoundI::release                          :  (00000207FD0055C8)
-[LOG] SoundI::release                          :     Pássaro1 (00000207FC200538)
-[LOG] SoundI::release                          :  (00000207FD009678)
-[LOG] SoundI::release                          :     EntrarSair (00000207FC1FE998)
-[LOG] SoundI::release                          :  (00000207FD008F48)
-[LOG] SoundI::release                          :     InteraçãoOld (00000207FC1FBA78)
-[LOG] SoundI::release                          :  (00000207FD0086A8)
-[LOG] SoundI::release                          :     MudarDeInteração (00000207FC1FF1B8)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -124,5 +21,3 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.

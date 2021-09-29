@@ -652,6 +652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d25e721788974740b730e05cf384344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneTransition: {fileID: 1796525752}
 --- !u!1 &1536537006
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +960,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39daf8e89aaec364ab9a708db39285eb, type: 3}
+--- !u!95 &1796525752 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7729310709748413565, guid: 39daf8e89aaec364ab9a708db39285eb, type: 3}
+  m_PrefabInstance: {fileID: 1796525751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1835922502
 PrefabInstance:
   m_ObjectHideFlags: 0

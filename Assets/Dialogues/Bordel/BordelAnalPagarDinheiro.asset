@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 791a0e0fe32985c4aadda462cc187629, type: 3}
-  m_Name: BordelAnalPagaDinheiro
+  m_Name: BordelAnalPagarDinheiro
   m_EditorClassIdentifier: 
   type: 0
   characterName: "Let\xEDcia"

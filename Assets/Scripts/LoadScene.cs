@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     public string sceneName;
+    public Animator sceneTransition;
 
     private void Start()
     {
@@ -14,8 +15,11 @@ public class LoadScene : MonoBehaviour
         Cursor.visible = false;
     }
 
-    public void LoadGame()
+    public IEnumerator LoadGame()
     {
+        sceneTransition.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneName);
+        yield return null;
     }
 }

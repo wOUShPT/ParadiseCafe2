@@ -27,9 +27,6 @@ public class BrothelController : MonoBehaviour
     public Transform vaginalPivot;
     public Transform analPivot;
     public Transform payPivot;
-    public int oralPrice;
-    public int vaginalPrice;
-    public int analPrice;
     private Animator _sceneTransitionAnimator;
     public BrothelSounds _brothelSounds;
     void Start()
